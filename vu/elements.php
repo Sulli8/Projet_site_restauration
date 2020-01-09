@@ -16,7 +16,7 @@
 		<!-- Site Title -->
 		<title>Macro</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 			<!--
 			CSS
 			============================================= -->
@@ -24,77 +24,37 @@
 			<link rel="stylesheet" href="css/font-awesome.min.css">
 			<link rel="stylesheet" href="css/bootstrap.css">
 			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/jquery-ui.css">				
-			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/jquery-ui.css">
+			<link rel="stylesheet" href="css/nice-select.css">
 			<link rel="stylesheet" href="css/animate.min.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">				
+			<link rel="stylesheet" href="css/owl.carousel.css">
 			<link rel="stylesheet" href="css/main.css">
 		</head>
-		<body>	
-			<header id="header">
-				<div class="header-top">
-					<div class="container">
-				  		<div class="row justify-content-center">
-						      <div id="logo">
-						        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
-						      </div>
-				  		</div>			  					
-					</div>
-				</div>
-				<div class="container main-menu">
-					<div class="row align-items-center justify-content-center d-flex">			
-				      <nav id="nav-menu-container">
-				        <ul class="nav-menu">
-				          <li><a href="index.html">Home</a></li>
-				          <li><a href="about.html">About</a></li>
-				          <li><a href="menu.html">Menu</a></li>
-				          <li><a href="gallery.html">Gallery</a></li>
-				          <li class="menu-has-children"><a href="">Blog</a>
-				            <ul>
-				              <li><a href="blog-home.html">Blog Home</a></li>
-				              <li><a href="blog-single.html">Blog Single</a></li>
-				            </ul>
-				          </li>	
-				          <li class="menu-has-children"><a href="">Pages</a>
-				            <ul>
-				            	  <li><a href="elements.html">Elements</a></li>
-						          <li class="menu-has-children"><a href="">Level 2 </a>
-						            <ul>
-						              <li><a href="#">Item One</a></li>
-						              <li><a href="#">Item Two</a></li>
-						            </ul>
-						          </li>					                		
-				            </ul>
-				          </li>					          					          		          
-				          <li><a href="contact.html">Contact</a></li>
-				        </ul>
-				      </nav><!-- #nav-menu-container -->					      		  
-					</div>
-				</div>
-			</header><!-- #header -->
-			
+		<body>
+		<?php include "header.php" ?>
+
 			<!-- start banner Area -->
-			<section class="relative about-banner" id="home">	
+			<section class="relative about-banner" id="home">
 				<div class="overlay overlay-bg"></div>
-				<div class="container">				
+				<div class="container">
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Elements		
-							</h1>	
+								Elements
+							</h1>
 							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="elements.html"> Elements</a></p>
-						</div>	
+						</div>
 					</div>
 				</div>
 			</section>
-			<!-- End banner Area -->	
+			<!-- End banner Area -->
 
 			<!-- Start Sample Area -->
 			<section class="sample-text-area">
 				<div class="container">
 					<h3 class="text-heading">Text Sample</h3>
 					<p class="sample-text">
-						Every avid independent filmmaker has <b>Bold</b> about making that <i>Italic</i> interest documentary, or short film to show off their creative prowess. Many have great ideas and want to “wow” the<sup>Superscript</sup> scene, or video renters with their big project.  But once you have the<sub>Subscript</sub> “in the can” (no easy feat), how do you move from a <del>Strike</del> through of master DVDs with the <u>“Underline”</u> marked hand-written title inside a secondhand CD case, to a pile of cardboard boxes full of shiny new, retail-ready DVDs, with UPC barcodes and polywrap sitting on your doorstep?  You need to create eye-popping artwork and have your project replicated. Using a reputable full service DVD Replication company like PacificDisc, Inc. to partner with is certainly a helpful option to ensure a professional end result, but to help with your DVD replication project, here are 4 easy steps to follow for good DVD replication results: 
+						Every avid independent filmmaker has <b>Bold</b> about making that <i>Italic</i> interest documentary, or short film to show off their creative prowess. Many have great ideas and want to “wow” the<sup>Superscript</sup> scene, or video renters with their big project.  But once you have the<sub>Subscript</sub> “in the can” (no easy feat), how do you move from a <del>Strike</del> through of master DVDs with the <u>“Underline”</u> marked hand-written title inside a secondhand CD case, to a pile of cardboard boxes full of shiny new, retail-ready DVDs, with UPC barcodes and polywrap sitting on your doorstep?  You need to create eye-popping artwork and have your project replicated. Using a reputable full service DVD Replication company like PacificDisc, Inc. to partner with is certainly a helpful option to ensure a professional end result, but to help with your DVD replication project, here are 4 easy steps to follow for good DVD replication results:
 
 					</p>
 				</div>
@@ -251,7 +211,7 @@
 						<div class="row">
 							<div class="col-lg-12">
 								<blockquote class="generic-blockquote">
-									“Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new online casinos started taking root. These began to operate under a different business umbrella, and by doing that, rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems that would accept this new clarification and start doing business with me. Listed in this article are the electronic banking” 
+									“Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new online casinos started taking root. These began to operate under a different business umbrella, and by doing that, rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems that would accept this new clarification and start doing business with me. Listed in this article are the electronic banking”
 								</blockquote>
 							</div>
 						</div>
@@ -480,7 +440,7 @@
 											</select>
 										</div>
 									</div>
-									
+
 									<div class="mt-10">
 										<textarea class="single-textarea" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required></textarea>
 									</div>
@@ -615,96 +575,7 @@
 			</div>
 			<!-- End Align Area -->
 
-			<!-- start footer Area -->		
-			<footer class="footer-area">
-				<div class="footer-widget-wrap">
-					<div class="container">
-						<div class="row section-gap">
-							<div class="col-lg-4  col-md-6 col-sm-6">
-								<div class="single-footer-widget">
-									<h4>Opening Hours</h4>
-									<ul class="hr-list">
-										<li class="d-flex justify-content-between">
-											<span>Monday - Friday</span> <span>08.00 am - 10.00 pm</span>
-										</li>
-										<li class="d-flex justify-content-between">
-											<span>Saturday</span> <span>08.00 am - 10.00 pm</span>
-										</li>
-										<li class="d-flex justify-content-between">
-											<span>Sunday</span> <span>08.00 am - 10.00 pm</span>
-										</li>																				
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-4  col-md-6 col-sm-6">
-								<div class="single-footer-widget">
-									<h4>Contact Us</h4>
-									<p>
-										56/8, los angeles, rochy beach, Santa monica, United states of america - 1205
-									</p>
-									<p class="number">
-										012-6532-568-9746 <br>
-										012-6532-569-9748
-									</p>
-								</div>
-							</div>						
-							<div class="col-lg-4  col-md-6 col-sm-6">
-								<div class="single-footer-widget">
-									<h4>Newsletter</h4>
-									<p>You can trust us. we only send promo offers, not a single spam.</p>
-									<div class="d-flex flex-row" id="mc_embed_signup">
-
-
-										  <form class="navbar-form" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
-										    <div class="input-group add-on align-items-center d-flex">
-										      	<input class="form-control" name="EMAIL" placeholder="Your Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email address'" required="" type="email">
-												<div style="position: absolute; left: -5000px;">
-													<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-												</div>
-										      <div class="input-group-btn">
-										        <button class="genric-btn"><span class="lnr lnr-arrow-right"></span></button>
-										      </div>
-										    </div>
-										      <div class="info mt-20"></div>
-										  </form>
-									</div>
-								</div>
-							</div>						
-						</div>					
-					</div>					
-				</div>
-				<div class="footer-bottom-wrap">
-					<div class="container">
-						<div class="row footer-bottom d-flex justify-content-between align-items-center">
-							<p class="col-lg-8 col-mdcol-sm-6 -6 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-							<ul class="col-lg-4 col-mdcol-sm-6 -6 social-icons text-right">
-	                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-	                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-	                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-	                            <li><a href="#"><i class="fa fa-behance"></i></a></li>           
-	                        </ul>
-						</div>						
-					</div>
-				</div>
-			</footer>
-			<!-- End footer Area -->	
-
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
-			<script src="js/popper.min.js"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>		
- 			<script src="js/jquery-ui.js"></script>					
-  			<script src="js/easing.min.js"></script>			
-			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>	
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>						
-			<script src="js/jquery.nice-select.min.js"></script>					
-			<script src="js/owl.carousel.min.js"></script>			
-            <script src="js/isotope.pkgd.min.js"></script>								
-			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
+			<!-- start footer Area -->
+<?php include "footer.php" ?>
 		</body>
 	</html>

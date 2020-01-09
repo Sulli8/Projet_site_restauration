@@ -1,15 +1,25 @@
+<?php
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
     <title></title>
+<style>
+
+
+</style>
   </head>
-  <body>
-    <form class="box" action="" method="post">
-      <h1 >Contactez-nous : </h1>
+  <body class="fond">
+    <form class="box" action="../classe/classe_connexion.php " method="post">
+      <h1 >Connexion</h1>
       <label   class="label" >Entrez votre adresse mail : </label>
       <div class="inputbox">
-
 
         <input  type="Mail" name="mail" placeholder="Mail" required=""/>
 
@@ -21,18 +31,6 @@
         <input type="password" name="mot_de_passe" placeholder="Mot de passe" required=""/>
 
       </div>
-
-      <label  class="label">Laissez-nous un commentaire :</label>
-      <div class="inputbox" >
-
-        <input type="Commentaires" name="commentaires" placeholder="Commentaires" required=""/>
-
-      </div>
-
-
-
-
-
 
       <div>
         <input type="submit" value="Connexion"/>

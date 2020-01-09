@@ -16,87 +16,51 @@
 		<!-- Site Title -->
 		<title>Macro</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 			<!--
 			CSS
 			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/jquery-ui.css">				
-			<link rel="stylesheet" href="css/nice-select.css">							
-			<link rel="stylesheet" href="css/animate.min.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">				
-			<link rel="stylesheet" href="css/main.css">
+			<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+				<!--
+				CSS
+				============================================= -->
+				<link rel="stylesheet" href="../css/linearicons.css">
+				<link rel="stylesheet" href="../css/font-awesome.min.css">
+				<link rel="stylesheet" href="../css/bootstrap.css">
+				<link rel="stylesheet" href="../css/magnific-popup.css">
+				<link rel="stylesheet" href="../css/jquery-ui.css">
+				<link rel="stylesheet" href="../css/nice-select.css">
+				<link rel="stylesheet" href="../css/animate.min.css">
+				<link rel="stylesheet" href="../css/owl.carousel.css">
+				<link rel="stylesheet" href="../css/main.css">
 		</head>
-		<body>	
-			<header id="header">
-				<div class="header-top">
-					<div class="container">
-				  		<div class="row justify-content-center">
-						      <div id="logo">
-						        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
-						      </div>
-				  		</div>			  					
-					</div>
-				</div>
-				<div class="container main-menu">
-					<div class="row align-items-center justify-content-center d-flex">			
-				      <nav id="nav-menu-container">
-				        <ul class="nav-menu">
-				          <li><a href="index.html">Home</a></li>
-				          <li><a href="about.html">About</a></li>
-				          <li><a href="menu.html">Menu</a></li>
-				          <li><a href="gallery.html">Gallery</a></li>
-				          <li class="menu-has-children"><a href="">Blog</a>
-				            <ul>
-				              <li><a href="blog-home.html">Blog Home</a></li>
-				              <li><a href="blog-single.html">Blog Single</a></li>
-				            </ul>
-				          </li>	
-				          <li class="menu-has-children"><a href="">Pages</a>
-				            <ul>
-				            	  <li><a href="elements.html">Elements</a></li>
-						          <li class="menu-has-children"><a href="">Level 2 </a>
-						            <ul>
-						              <li><a href="#">Item One</a></li>
-						              <li><a href="#">Item Two</a></li>
-						            </ul>
-						          </li>					                		
-				            </ul>
-				          </li>					          					          		          
-				          <li><a href="contact.html">Contact</a></li>
-				        </ul>
-				      </nav><!-- #nav-menu-container -->					      		  
-					</div>
-				</div>
-			</header><!-- #header -->
+		<body>
+			<?php include "header.php"?>
 
 			<!-- start banner Area -->
-			<section class="banner-area relative blog-home-banner" id="home">	
+			<section class="banner-area relative blog-home-banner" id="home">
 				<div class="overlay overlay-bg"></div>
-				<div class="container">				
+				<div class="container">
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content blog-header-content col-lg-12">
 							<h1 class="text-white">
 								Dude You’re Getting
-								a Telescope				
-							</h1>	
+								a Telescope
+							</h1>
 							<p class="text-white">
 								There is a moment in the life of any aspiring astronomer that it is time to buy that first
 							</p>
 							<a href="blog-single.html" class="primary-btn">View More</a>
-						</div>	
+						</div>
 					</div>
 				</div>
 			</section>
-			<!-- End banner Area -->				  
+			<!-- End banner Area -->
 
 			<!-- Start top-category-widget Area -->
 			<section class="top-category-widget-area pt-90 pb-90 ">
 				<div class="container">
-					<div class="row">		
+					<div class="row">
 						<div class="col-lg-4">
 							<div class="single-cat-widget">
 								<div class="content relative">
@@ -107,7 +71,7 @@
 								  	  </div>
 								      <div class="content-details">
 								        <h4 class="content-title mx-auto text-uppercase">Social life</h4>
-								        <span></span>								        
+								        <span></span>
 								        <p>Enjoy your social life together</p>
 								      </div>
 								    </a>
@@ -124,7 +88,7 @@
 								  	  </div>
 								      <div class="content-details">
 								        <h4 class="content-title mx-auto text-uppercase">Politics</h4>
-								        <span></span>								        
+								        <span></span>
 								        <p>Be a part of politics</p>
 								      </div>
 								    </a>
@@ -147,12 +111,12 @@
 								    </a>
 								</div>
 							</div>
-						</div>												
+						</div>
 					</div>
-				</div>	
+				</div>
 			</section>
 			<!-- End top-category-widget Area -->
-			
+
 			<!-- Start post-content Area -->
 			<section class="post-content-area">
 				<div class="container">
@@ -170,7 +134,7 @@
 										<p class="user-name col-lg-12 col-md-12 col-6"><a href="#">Mark wiens</a> <span class="lnr lnr-user"></span></p>
 										<p class="date col-lg-12 col-md-12 col-6"><a href="#">12 Dec, 2017</a> <span class="lnr lnr-calendar-full"></span></p>
 										<p class="view col-lg-12 col-md-12 col-6"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
-										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>						
+										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>
 									</div>
 								</div>
 								<div class="col-lg-9 col-md-9 ">
@@ -196,7 +160,7 @@
 										<p class="user-name col-lg-12 col-md-12 col-6"><a href="#">Mark wiens</a> <span class="lnr lnr-user"></span></p>
 										<p class="date col-lg-12 col-md-12 col-6"><a href="#">12 Dec, 2017</a> <span class="lnr lnr-calendar-full"></span></p>
 										<p class="view col-lg-12 col-md-12 col-6"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
-										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>						
+										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>
 									</div>
 								</div>
 								<div class="col-lg-9 col-md-9 ">
@@ -222,7 +186,7 @@
 										<p class="user-name col-lg-12 col-md-12 col-6"><a href="#">Mark wiens</a> <span class="lnr lnr-user"></span></p>
 										<p class="date col-lg-12 col-md-12 col-6"><a href="#">12 Dec, 2017</a> <span class="lnr lnr-calendar-full"></span></p>
 										<p class="view col-lg-12 col-md-12 col-6"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
-										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>						
+										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>
 									</div>
 								</div>
 								<div class="col-lg-9 col-md-9">
@@ -248,7 +212,7 @@
 										<p class="user-name col-lg-12 col-md-12 col-6"><a href="#">Mark wiens</a> <span class="lnr lnr-user"></span></p>
 										<p class="date col-lg-12 col-md-12 col-6"><a href="#">12 Dec, 2017</a> <span class="lnr lnr-calendar-full"></span></p>
 										<p class="view col-lg-12 col-md-12 col-6"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
-										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>						
+										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>
 									</div>
 								</div>
 								<div class="col-lg-9 col-md-9">
@@ -274,7 +238,7 @@
 										<p class="user-name col-lg-12 col-md-12 col-6"><a href="#">Mark wiens</a> <span class="lnr lnr-user"></span></p>
 										<p class="date col-lg-12 col-md-12 col-6"><a href="#">12 Dec, 2017</a> <span class="lnr lnr-calendar-full"></span></p>
 										<p class="view col-lg-12 col-md-12 col-6"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
-										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>						
+										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>
 									</div>
 								</div>
 								<div class="col-lg-9 col-md-9">
@@ -287,7 +251,7 @@
 									</p>
 									<a href="blog-single.html" class="primary-btn">View More</a>
 								</div>
-							</div>														
+							</div>
 		                    <nav class="blog-pagination justify-content-center d-flex">
 		                        <ul class="pagination">
 		                            <li class="page-item">
@@ -374,7 +338,7 @@
 												<a href="blog-single.html"><h6>Asteroids telescope</h6></a>
 												<p>02 Hours ago</p>
 											</div>
-										</div>															
+										</div>
 									</div>
 								</div>
 								<div class="single-sidebar-widget ads-widget">
@@ -424,9 +388,9 @@
 												<p>Adventure</p>
 												<p>44</p>
 											</a>
-										</li>															
+										</li>
 									</ul>
-								</div>	
+								</div>
 								<div class="single-sidebar-widget newsletter-widget">
 									<h4 class="newsletter-title">Newsletter</h4>
 									<p>
@@ -444,10 +408,10 @@
 									      </div>
 									    </div>
 									    <a href="#" class="bbtns">Subcribe</a>
-									</div>	
+									</div>
 									<p class="text-bottom">
 										You can unsubscribe at any time
-									</p>								
+									</p>
 								</div>
 								<div class="single-sidebar-widget tag-cloud-widget">
 									<h4 class="tagcloud-title">Tag Clouds</h4>
@@ -465,104 +429,15 @@
 										<li><a href="#">Lifestyle</a></li>
 										<li><a href="#">Adventure</a></li>
 									</ul>
-								</div>								
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>	
+				</div>
 			</section>
 			<!-- End post-content Area -->
-			
-			<!-- start footer Area -->		
-			<footer class="footer-area">
-				<div class="footer-widget-wrap">
-					<div class="container">
-						<div class="row section-gap">
-							<div class="col-lg-4  col-md-6 col-sm-6">
-								<div class="single-footer-widget">
-									<h4>Opening Hours</h4>
-									<ul class="hr-list">
-										<li class="d-flex justify-content-between">
-											<span>Monday - Friday</span> <span>08.00 am - 10.00 pm</span>
-										</li>
-										<li class="d-flex justify-content-between">
-											<span>Saturday</span> <span>08.00 am - 10.00 pm</span>
-										</li>
-										<li class="d-flex justify-content-between">
-											<span>Sunday</span> <span>08.00 am - 10.00 pm</span>
-										</li>																				
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-4  col-md-6 col-sm-6">
-								<div class="single-footer-widget">
-									<h4>Contact Us</h4>
-									<p>
-										56/8, los angeles, rochy beach, Santa monica, United states of america - 1205
-									</p>
-									<p class="number">
-										012-6532-568-9746 <br>
-										012-6532-569-9748
-									</p>
-								</div>
-							</div>						
-							<div class="col-lg-4  col-md-6 col-sm-6">
-								<div class="single-footer-widget">
-									<h4>Newsletter</h4>
-									<p>You can trust us. we only send promo offers, not a single spam.</p>
-									<div class="d-flex flex-row" id="mc_embed_signup">
 
-
-										  <form class="navbar-form" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
-										    <div class="input-group add-on align-items-center d-flex">
-										      	<input class="form-control" name="EMAIL" placeholder="Your Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email address'" required="" type="email">
-												<div style="position: absolute; left: -5000px;">
-													<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-												</div>
-										      <div class="input-group-btn">
-										        <button class="genric-btn"><span class="lnr lnr-arrow-right"></span></button>
-										      </div>
-										    </div>
-										      <div class="info mt-20"></div>
-										  </form>
-									</div>
-								</div>
-							</div>						
-						</div>					
-					</div>					
-				</div>
-				<div class="footer-bottom-wrap">
-					<div class="container">
-						<div class="row footer-bottom d-flex justify-content-between align-items-center">
-							<p class="col-lg-8 col-mdcol-sm-6 -6 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-							<ul class="col-lg-4 col-mdcol-sm-6 -6 social-icons text-right">
-	                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-	                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-	                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-	                            <li><a href="#"><i class="fa fa-behance"></i></a></li>           
-	                        </ul>
-						</div>						
-					</div>
-				</div>
-			</footer>
-			<!-- End footer Area -->	
-
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
-			<script src="js/popper.min.js"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>		
- 			<script src="js/jquery-ui.js"></script>					
-  			<script src="js/easing.min.js"></script>			
-			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>	
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>						
-			<script src="js/jquery.nice-select.min.js"></script>					
-			<script src="js/owl.carousel.min.js"></script>			
-            <script src="js/isotope.pkgd.min.js"></script>								
-			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
+			<!-- start footer Area -->
+	<?php include "footer.php"?>
 		</body>
 	</html>
