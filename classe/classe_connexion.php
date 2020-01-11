@@ -1,6 +1,6 @@
 
 <?php
-
+echo "gbhjknl";
 class Connexion {
 
   private $_mail;

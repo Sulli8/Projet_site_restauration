@@ -14,10 +14,10 @@
     <div class="row align-items-center justify-content-center d-flex">
         <nav id="nav-menu-container">
           <ul class="nav-menu">
-            <li><a href="index.html">Restaurant</a></li>
+            <li><a href="index.php">Restaurant</a></li>
             <li><a href="localisation.php">Localisations</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="gallery.html">Galerie</a></li>
+            <li><a href="menu.php">Menu</a></li>
+            <li><a href="gallery.php">Galerie</a></li>
             <li class="menu-has-children"><a href="">Blog</a>
               <ul>
                 <li><a href="blog-home.html">Blog Home</a></li>
@@ -35,7 +35,7 @@
                 </li>
               </ul>
             </li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.php">Contact</a></li>
             <li><a href="formulaire_connexion.php">Connexion</a></li>
             <li><a href="formulaire_inscription.php">Inscription</a></li>
           </ul>

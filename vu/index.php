@@ -47,7 +47,7 @@
 							"La cuisine est multi-sensorielle. Elle s'adresse à l'oeil, à la bouche, au nez, à l'oreille et à l'esprit. Aucun art ne possède cette complexité"
 							<h6 style="margin-top:-20px;color:white;">Pierre Gagnaire</h6>
 							</p>
-							<a href="Voir_tous_les_menus.html" class="primary-btn text-uppercase">Regardez-nos menus</a>
+							<a href="Voir_tous_les_menus.php" class="primary-btn text-uppercase">Regardez-nos menus</a>
 						</div>
 					</div>
 				</div>

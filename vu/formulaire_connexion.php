@@ -14,21 +14,59 @@ session_start();
 
 
 </style>
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+  <!--
+  CSS
+  ============================================= -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!--
+    CSS
+    ============================================= -->
+        <link rel="stylesheet" href="../css/css_formulaire_connexion/formulaire_connexion.css">
+    <link rel="stylesheet" href="../css/linearicons.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/nice-select.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.css">
+    <link rel="stylesheet" href="../css/main.css">
+
   </head>
-  <body class="fond">
-    <form class="box" action="../classe/classe_connexion.php " method="post">
-      <h1 >Connexion</h1>
-      <label   class="label" >Entrez votre adresse mail : </label>
+  <body style="  background-image:url(../img/sandwich.jpg);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;">
+    <?php include "header.php" ?>
+
+
+<div>
+
+</div>
+
+    <form style="  margin: 230px auto;;
+      width:400px;
+      padding:10px;
+      height:400px;
+      padding:10px 20px;
+      background-color:red;
+      box-shadow: 0 15px 25px rgba(0,0,0,.5);
+      border-radius: 10px;" class="box" action="../classe/classe_connexion.php" method="post">
+      <h1 style="color:white;">Connexion</h1>
+      <label  style="color:white;" >Entrez votre adresse mail : </label>
       <div class="inputbox">
 
         <input  type="Mail" name="mail" placeholder="Mail" required=""/>
 
       </div>
 
-      <label  class="label">Entrez votre mot de passe :</label>
+      <label  style="color:white;">Entrez votre mot de passe :</label>
       <div class="inputbox" >
 
-        <input type="password" name="mot_de_passe" placeholder="Mot de passe" required=""/>
+        <input type="password" name="mdp" placeholder="Mot de passe" required=""/>
 
       </div>
 
@@ -43,6 +81,6 @@ session_start();
         <a  style="color:white;" href="formulaire_inscription.php">Inscription</a>
       </div>
     </form>
-
+<?php include "footer.php" ?>
   </body>
 </html>

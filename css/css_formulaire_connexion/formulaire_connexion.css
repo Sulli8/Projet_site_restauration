@@ -1,0 +1,8 @@
+.fond{
+  background-image:url(../../img/sandwich.jpg);
+  background-image: url(../img/banner/dev3.jpg);
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
