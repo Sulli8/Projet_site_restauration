@@ -60,40 +60,116 @@
 
             <div class="filters-content">
                 <div class="row grid">
-                    <div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
+                    <div class="col-lg-4 col-md-6 col-sm-6 all *">
                       <div class="single-gallery">
-                        <img class="img-fluid" src="img/g1.jpg" alt="">
+                        <div style="height:200px;width:200px;">
+                            <img class="img-fluid" src="../img/king_size.png" alt="">
+                        </div>
+
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 all dinner">
+                    <div class="col-lg-4 col-md-6 col-sm-6 all *">
                       <div class="single-gallery">
-                        <img class="img-fluid" src="img/g2.jpg" alt="">
+                        <div style="height:200px;width:200px;">
+                            <img class="img-fluid" src="../img/marco_wrap.jpg" alt="">
+                        </div>
+
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 all budget-meal">
+                    <div class="col-lg-4 col-md-6 col-sm-6 all *">
                       <div class="single-gallery">
-                        <img class="img-fluid" src="img/g3.jpg" alt="">
+                          <div style="height:200px;width:200px;">
+                        <img class="img-fluid" src="../img/royal_bagel.jpg" alt="">
+                      </div>
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
+                    <div class="col-lg-4 col-md-6 col-sm-6 all *">
                       <div class="single-gallery">
-                        <img class="img-fluid" src="img/g4.jpg" alt="">
+                          <div style="height:200px;width:200px;">
+                        <img class="img-fluid" src="../img/triple_cheese.png" alt="">
+                      </div>
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 all lunch">
+                    <div class="col-lg-4 col-md-6 col-sm-6 all * ">
                       <div class="single-gallery">
-                        <img class="img-fluid" src="img/g5.jpg" alt="">
+                          <div style="height:200px;width:200px;">
+                        <img class="img-fluid" src="../img/salade.jpg" alt="">
+                      </div>
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 all buffet">
                       <div class="single-gallery">
-                        <img class="img-fluid" src="img/g6.jpg" alt="">
+                          <div style="height:200px;width:200px;margin-top:0px;">
+                        <img class="img-fluid" src="../img/steak.jpg" alt="">
+                      </div>
                       </div>
                     </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
+                      <div class="single-gallery">
+                        <div style="height:200px;width:200px;">
+                            <img class="img-fluid" src="../img/petit_dejeuner.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
+                      <div class="single-gallery">
+                        <div style="height:200px;width:200px;">
+                            <img class="img-fluid" src="../img/petit_dejeuner_1.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
+                      <div class="single-gallery">
+                        <div style="height:200px;width:200px;">
+                            <img class="img-fluid" src="../img/petit_dejeuner_2.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 all lunch">
+                      <div class="single-gallery">
+                        <div style="height:200px;width:200px;">
+                            <img class="img-fluid" src="../img/petite_faim_1.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 all lunch">
+                      <div class="single-gallery">
+                        <div style="height:200px;width:200px;">
+                            <img class="img-fluid" src="../img/petite_faim_2.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 all lunch">
+                      <div class="single-gallery">
+                        <div style="height:200px;width:200px;">
+                            <img class="img-fluid" src="../img/petite_faim_3.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 all lunch">
+                      <div class="single-gallery">
+                        <div style="height:200px;width:200px;">
+                            <img class="img-fluid" src="../img/petite_faim_4.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
                 </div>
             </div>
 
-        </div>
+
     </section>
   <?php include "footer.php" ?>
 </body>

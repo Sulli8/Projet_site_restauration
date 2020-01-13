@@ -64,7 +64,7 @@
 								En ce moment, découvrez deux recettes inédites Signature by Marco restaurant.
 	Que vous soyez adepte de saveurs subtilement relevées ou plutôt fan de fromage, il y en a pour tous les goûts !
 							</p>
-							<a href="menu_Sandwich_du_jour" class="primary-btn">Voir le menu</a>
+							<a href="menu_sandwich_du_jour.php" class="primary-btn">Voir le menu</a>
 						</div>
 						<div class="col-lg-6 home-about-right">
 							<img class="img-fluid" src="img/about-img.jpg" alt="">
@@ -126,7 +126,7 @@
 					<div class="row">
 						<div class="active-review-carusel">
 							<div class="single-review">
-								<img src="img/user.png" alt="">
+								<img src="../img/professionnel_3.jpg" alt="">
 								<h4>Wilson</h4>
 								<div class="star">
 									<span class="fa fa-star checked"></span>
@@ -140,7 +140,7 @@
 								</p>
 							</div>
 							<div class="single-review">
-								<img src="img/user.png" alt="">
+								<img src="../img/professionnel_2.jpg" alt="">
 								<h4>John</h4>
 								<div class="star">
 									<span class="fa fa-star checked"></span>
@@ -154,7 +154,7 @@
 								</p>
 							</div>
 							<div class="single-review">
-								<img src="img/user.png" alt="">
+								<img src="../img/professionnel_1.jpg" alt="">
 								<h4>Brad</h4>
 								<div class="star">
 									<span class="fa fa-star checked"></span>
@@ -168,7 +168,7 @@
 								</p>
 							</div>
 							<div class="single-review">
-								<img src="img/user.png" alt="">
+								<img src="../img/professionnel_4.jpg" alt="">
 								<h4>Davis</h4>
 								<div class="star">
 									<span class="fa fa-star checked"></span>
@@ -203,10 +203,10 @@
 					<div class="row">
 						<div class="col-lg-3 col-md-6 col-sm-6 single-blog">
 							<div class="thumb">
-								<img class="img-fluid" src="img/b1.jpg" alt="">
+								<img class="img-fluid" src="../img/triple_cheese.png" alt="">
 							</div>
 							<p class="date">10 décembre 2019</p>
-							<a href="blog-single.html"><h4>Le tripple cheese</h4></a>
+							<a href="Voir_tous_les_menus.php"><h4>Le triple cheese</h4></a>
 							<p>
 							Goutez à son fromage et son mélange de saveurs
 							</p>
@@ -217,10 +217,12 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-sm-6 single-blog">
 							<div class="thumb">
-								<img class="img-fluid" src="img/b2.jpg" alt="">
+									<div style="height:200px; width:200px;">
+								<img class="img-fluid" src="../img/royal_bagel.jpg" alt="" width="300" height="300">
+							</div>
 							</div>
 							<p class="date">03 mai 2018</p>
-							<a href="blog-single.html"><h4>Le royal bagel</h4></a>
+							<a href="Voir_tous_les_menus.php"><h4>Le royal bagel</h4></a>
 							<p>
 								Un sandwich qui n'est pas destiné au petit joueur.
 							</p>
@@ -231,10 +233,13 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-sm-6 single-blog">
 							<div class="thumb">
-								<img class="img-fluid" src="img/b3.jpg" alt="">
+								<div style="height:200px;">
+										<img class="img-fluid" src="../img/king_size.png" alt="" width="300" height="300">
+								</div>
+
 							</div>
 							<p class="date">10 Jan 2018</p>
-							<a href="blog-single.html"><h4>le King Size</h4></a>
+							<a href="Voir_tous_les_menus.php"><h4>le King Size</h4></a>
 							<p>
 						Un incontournables, goutez au plus grand chef d'oauvres de marco restaurant
 							</p>
@@ -245,10 +250,13 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-sm-6 single-blog">
 							<div class="thumb">
-								<img class="img-fluid" src="img/b4.jpg" alt="">
+
+										<img class="img-fluid" src="../img/marco_wrap.jpg" alt="" width="300" height="300">
+
+
 							</div>
 							<p class="date">10 août 2017</p>
-							<a href="blog-single.html"><h4>Le Marco Wrap</h4></a>
+							<a href="Voir_tous_les_menus.php"><h4>Le Marco Wrap</h4></a>
 							<p>
 								Goutez, au plus classique des sandwichs de marco restaurant
 							</p>
