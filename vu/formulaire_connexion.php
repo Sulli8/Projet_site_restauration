@@ -76,7 +76,7 @@ session_start();
 
 
       <div>
-        <a style="color:white;" href="mot_de_passe_oublie.php">Mot de passe oublié?</a>
+        <a style="color:white;" href="#">Mot de passe oublié?</a>
 
         <a  style="color:white;" href="formulaire_inscription.php">Inscription</a>
       </div>
