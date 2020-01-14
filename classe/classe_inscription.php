@@ -9,6 +9,13 @@ class Inscription {
   private $_telephone;
   private $_mdp;
 
+  $donnee = array('Nom'=>$nom,
+  'Prenom'=>$prenom,
+  'Mail'=>$mail,
+  'Adresse'=>$adresse,
+  'Telephone'=>$telephone,
+  'Mdp'=>$mdp
+);
   public function __construct($nom,$prenom,$mail,$adresse,$telephone,$mdp){
     $this->setNom($nom);
     $this->setPrenom($prenom);
@@ -16,6 +23,17 @@ class Inscription {
     $this->setAdresse($adresse);
     $this->setTelephone($telephone);
     $this->setMdp($mdp);
+
+
+  }
+
+  public function hydrate(array $donnee){
+    foreach($donnee as $key => $value){
+        $method = 'set'.ucfirst($key);
+        if(method_exist($this,$method)){
+          $this->$method($value);
+        }
+      }
 
 
   }
@@ -88,13 +106,12 @@ class Inscription {
     }
 
 
-    $req = $bdd->prepare('INSERT INTO profil_adherent(nom,prenom,mail,adresse,telephone,mot_de_passe) VALUES(:nom,prenom,mail,adresse,telephone,mot_de_passe)');
+    $req = $bdd->prepare('INSERT INTO profil_adherent(nom,prenom,mail,adresse,telephone,mot_de_passe) VALUES(:nom,:prenom,:mail,:adresse,:telephone,:mot_de_passe)');
     $req->execute(array('nom'=>$this->_nom,'prenom'=>$this->_prenom,'mail'=>$this->_mail,'adresse'=>$this->_adresse,'telephone'=>$this->_telephone,'mot_de_passe'=>md5($this->_mdp)));
     $inscription = $req->fetch();
     var_dump($inscrpition);
     if($inscription== true){
       header("Location: ../vu/index.php");
-      echo "inscrit";
     }
 
     else{

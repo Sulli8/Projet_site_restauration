@@ -5,9 +5,24 @@ class Connexion {
   private $_mail;
   private $_mdp;
 
+
+$donnee = array(
+  'Mail'=>$mail,
+  'Mdp'=>$mdp,
+);
   public function __construct($mail,$mdp){
-    $this->setmail($mail);
-    $this->setmdp($mdp);
+    $this->setMail($mail);
+    $this->setMdp($mdp);
+
+  }
+
+  public function hydrate(array $donnee){
+    foreach($donne as $key => $value){
+          $method = 'set'.ucfirst($key);
+          if(method_exist($this,$method)){
+            $this->$method($value);
+          }
+        }
 
   }
   public function setmail($mail){
