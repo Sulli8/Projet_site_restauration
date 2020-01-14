@@ -35,6 +35,9 @@
       <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
+
+    <div style="margin-top:45px;background-color:red;width:2000px;height:100px;">
+</div>
     <?php include "header.php" ?>
     <section class="gallery-area section-gap" id="gallery">
         <div class="container">
@@ -49,7 +52,7 @@
   </div>
 
             <ul class="filter-wrap filters col-lg-12 no-padding">
-                <li class="active" data-filter="*">Tout les menus</li>
+                <li class="active" data-filter="*">Toutes les nouveautés </li>
                 <li data-filter=".breakfast">Petit déjeuner</li>
                 <li data-filter=".lunch">Petite faim</li>
                 <li data-filter=".dinner">Dinner</li>
@@ -64,6 +67,11 @@
                       <div class="single-gallery">
                         <div style="height:200px;width:200px;">
                             <img class="img-fluid" src="../img/king_size.png" alt="">
+
+
+                             <a href="">Ajouter à votre panier  </a>
+
+
                         </div>
 
                       </div>
@@ -72,6 +80,7 @@
                       <div class="single-gallery">
                         <div style="height:200px;width:200px;">
                             <img class="img-fluid" src="../img/marco_wrap.jpg" alt="">
+                             <a href="">Ajouter à votre panier  </a>
                         </div>
 
                       </div>
@@ -80,6 +89,7 @@
                       <div class="single-gallery">
                           <div style="height:200px;width:200px;">
                         <img class="img-fluid" src="../img/royal_bagel.jpg" alt="">
+                         <a href="">Ajouter à votre panier  </a>
                       </div>
                       </div>
                     </div>
@@ -87,6 +97,8 @@
                       <div class="single-gallery">
                           <div style="height:200px;width:200px;">
                         <img class="img-fluid" src="../img/triple_cheese.png" alt="">
+                         <a href=""> Ajouter à votre panier </a>
+
                       </div>
                       </div>
                     </div>
@@ -94,14 +106,16 @@
                       <div class="single-gallery">
                           <div style="height:200px;width:200px;">
                         <img class="img-fluid" src="../img/salade.jpg" alt="">
-                      </div>
+                       <a href=""> Ajouter à votre panier </a>
+                     </div>
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 all buffet">
                       <div class="single-gallery">
                           <div style="height:200px;width:200px;margin-top:0px;">
                         <img class="img-fluid" src="../img/steak.jpg" alt="">
-                      </div>
+                       <a href=""> Ajouter à votre panier </a>
+                     </div>
                       </div>
                     </div>
 
@@ -110,7 +124,8 @@
                       <div class="single-gallery">
                         <div style="height:200px;width:200px;">
                             <img class="img-fluid" src="../img/petit_dejeuner.jpg" alt="">
-                        </div>
+                       <a href=""> Ajouter à votre panier</a>
+                       </div>
                       </div>
                     </div>
 
@@ -118,7 +133,9 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
                       <div class="single-gallery">
                         <div style="height:200px;width:200px;">
-                            <img class="img-fluid" src="../img/petit_dejeuner_1.png" alt="">
+
+                             <img class="img-fluid" src="../img/petit_dejeuner_1.png" alt="">
+                                  <a href="">Ajouter à votre panier</a>
                         </div>
                       </div>
                     </div>
@@ -126,7 +143,9 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
                       <div class="single-gallery">
                         <div style="height:200px;width:200px;">
-                            <img class="img-fluid" src="../img/petit_dejeuner_2.jpg" alt="">
+
+                             <img class="img-fluid" src="../img/petit_dejeuner_2.jpg" alt="">
+                                    <a href=""> Ajouter à votre panier</a>
                         </div>
                       </div>
                     </div>
@@ -135,6 +154,7 @@
                       <div class="single-gallery">
                         <div style="height:200px;width:200px;">
                             <img class="img-fluid" src="../img/petite_faim_1.png" alt="">
+                                   <a href=""> Ajouter à votre panier</a>
                         </div>
                       </div>
                     </div>
@@ -142,7 +162,9 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 all lunch">
                       <div class="single-gallery">
                         <div style="height:200px;width:200px;">
-                            <img class="img-fluid" src="../img/petite_faim_2.png" alt="">
+
+                             <img class="img-fluid" src="../img/petite_faim_2.png" alt="">
+                                    <a href=""> Ajouter à votre panier</a>
                         </div>
                       </div>
                     </div>
@@ -151,6 +173,7 @@
                       <div class="single-gallery">
                         <div style="height:200px;width:200px;">
                             <img class="img-fluid" src="../img/petite_faim_3.png" alt="">
+                                 <a href=""> Ajouter à votre panier </a>
                         </div>
                       </div>
                     </div>
@@ -158,7 +181,9 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 all lunch">
                       <div class="single-gallery">
                         <div style="height:200px;width:200px;">
-                            <img class="img-fluid" src="../img/petite_faim_4.png" alt="">
+
+                             <img class="img-fluid" src="../img/petite_faim_4.png" alt="">
+                                  <a href=""> Ajouter à votre panier</a>
                         </div>
                       </div>
                     </div>
