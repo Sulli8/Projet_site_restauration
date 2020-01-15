@@ -49,7 +49,7 @@ $donnee = array(
 
 
     try {
-      $bdd = new PDO('mysql:host=localhost;dbname=projet_site_lycee;charset=utf8','root','');
+      $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
 
     }
     catch(Exception $e)

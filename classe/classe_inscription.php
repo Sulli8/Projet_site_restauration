@@ -67,7 +67,7 @@ class Inscription {
 
   public function setAdresse($adresse){
     if(empty($adresse)){
-      header("Location:../vu/formulaire_connexion.php");
+      header("Location:../vu/formulaire_inscription.php");
       return;
 
     }
@@ -77,7 +77,7 @@ class Inscription {
 
   public function telephone($telephone){
     if(empty($telephone)){
-      header("Location:../vu/formulaire_connexion.php");
+      header("Location:../vu/formulaire_inscription.php");
       return;
 
     }
@@ -86,7 +86,7 @@ class Inscription {
 
   public function setmdp($mdp){
     if(empty($mdp)){
-      header("Location:../vu/formulaire_connexion.php");
+      header("Location:../vu/formulaire_inscription.php");
       return;
     }
     $this->_mdp = $mdp;
@@ -97,7 +97,7 @@ class Inscription {
     if(isset($this->_nom) && isset($this->_prenom) && isset($this->_mail) && isset($this->_adresse) && isset($this->telephone) && isset($this->_mdp)){
 
     try {
-      $bdd = new PDO('mysql:host=localhost;dbname=projet_site_lycee;charset=utf8','root','');
+      $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
 
     }
     catch(Exception $e)
@@ -106,7 +106,7 @@ class Inscription {
     }
 
 
-    $req = $bdd->prepare('INSERT INTO profil_adherent(nom,prenom,mail,adresse,telephone,mot_de_passe) VALUES(:nom,:prenom,:mail,:adresse,:telephone,:mot_de_passe)');
+    $req = $bdd->prepare('INSERT INTO adherent(nom,prenom,mail,adresse,telephone,mot_de_passe) VALUES(:nom,:prenom,:mail,:adresse,:telephone,:mot_de_passe)');
     $req->execute(array('nom'=>$this->_nom,'prenom'=>$this->_prenom,'mail'=>$this->_mail,'adresse'=>$this->_adresse,'telephone'=>$this->_telephone,'mot_de_passe'=>md5($this->_mdp)));
     $inscription = $req->fetch();
     var_dump($inscrpition);
@@ -127,7 +127,7 @@ class Inscription {
 }
 
 
-$inscription = new Inscription($_POST["nom"],$_POST["prenom"],$_POS["mail"],$_POST["adresse"],$_POST["telephone"],$_POST["mot_de_passe"]);
+$inscription = new Inscription($_POST["nom"],$_POST["prenom"],$_POS["mail"],$_POST["adresse"],$_POST["telephone"],$_POST["mdp"]);
 $inscription->inscription();
 
  ?>

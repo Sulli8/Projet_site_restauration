@@ -7,9 +7,9 @@
     <title>Inscription</title>
   </head>
   <body class="fond">
-    <?php include "navbar.php" ?>
+    <?php include "header.php" ?>
 
-      <form class="box" action="..\traitement\traitement_incription_parent.php" method="post">
+      <form class="box" action="..\classe\classe_inscription.php" method="post">
         <h1>Inscription</h1>
         <label class="label" for="">Nom</label>
         <div class="inputbox">
