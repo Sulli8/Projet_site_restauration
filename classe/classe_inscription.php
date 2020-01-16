@@ -9,13 +9,6 @@ class Inscription {
   private $_telephone;
   private $_mdp;
 
-  $donnee = array('Nom'=>$nom,
-  'Prenom'=>$prenom,
-  'Mail'=>$mail,
-  'Adresse'=>$adresse,
-  'Telephone'=>$telephone,
-  'Mdp'=>$mdp
-);
   public function __construct($nom,$prenom,$mail,$adresse,$telephone,$mdp){
     $this->setNom($nom);
     $this->setPrenom($prenom);
@@ -27,41 +20,37 @@ class Inscription {
 
   }
 
-  public function hydrate(array $donnee){
-    foreach($donnee as $key => $value){
-        $method = 'set'.ucfirst($key);
-        if(method_exist($this,$method)){
-          $this->$method($value);
-        }
-      }
 
-
-  }
 
   public function setNom($nom){
     if(empty($nom)){
-      header("Location:../vu/formulaire_connexion.php");
+      header("Location:../vu/formulaire_inscription.php");
       return;
 
     }
     $this->_nom = $nom;
+
+
   }
 
   public function setPrenom($prenom){
     if(empty($prenom)){
-      header("Location:../vu/formulaire_connexion.php");
+      header("Location:../vu/formulaire_inscription.php");
       return;
 
     }
     $this->_prenom = $prenom;
+
   }
   public function setMail($mail){
     if(empty($mail)){
-      header("Location:../vu/formulaire_connexion.php");
+      header("Location:../vu/formulaire_inscription.php");
       return;
 
     }
     $this->_mail = $mail;
+
+
 
   }
 
@@ -72,24 +61,30 @@ class Inscription {
 
     }
     $this->_adresse = $adresse;
+
+
   }
 
 
-  public function telephone($telephone){
+  public function setTelephone($telephone){
     if(empty($telephone)){
       header("Location:../vu/formulaire_inscription.php");
       return;
 
     }
-    $this->_telephone= $tlephone;
+    $this->_telephone= $telephone;
+
+
   }
 
-  public function setmdp($mdp){
+  public function setMdp($mdp){
     if(empty($mdp)){
       header("Location:../vu/formulaire_inscription.php");
       return;
     }
     $this->_mdp = $mdp;
+
+
   }
 
   public function inscription(){
@@ -107,9 +102,9 @@ class Inscription {
 
 
     $req = $bdd->prepare('INSERT INTO adherent(nom,prenom,mail,adresse,telephone,mot_de_passe) VALUES(:nom,:prenom,:mail,:adresse,:telephone,:mot_de_passe)');
-    $req->execute(array('nom'=>$this->_nom,'prenom'=>$this->_prenom,'mail'=>$this->_mail,'adresse'=>$this->_adresse,'telephone'=>$this->_telephone,'mot_de_passe'=>md5($this->_mdp)));
+    $req->execute(array('nom'=>$this->_nom,'prenom'=>$this->_prenom,'mail'=>$this->_mail,'adresse'=>$this->_adresse,'telephone'=>$this->_telephone,'mot_de_passe'=>$this->_mdp));
     $inscription = $req->fetch();
-    var_dump($inscrpition);
+    var_dump($inscription);
     if($inscription== true){
       header("Location: ../vu/index.php");
     }

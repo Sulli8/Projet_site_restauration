@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <!--  <link rel="stylesheet" href="../CSS/formulaire2.css">-->
-        <link rel="stylesheet" href="../CSS/formulaire2.css">
     <title>Inscription</title>
   </head>
   <body class="fond">
     <?php include "header.php" ?>
 
-      <form class="box" action="..\classe\classe_inscription.php" method="post">
+      <form class="" action="..\classe\classe_inscription.php" method="post">
         <h1>Inscription</h1>
+
         <label class="label" for="">Nom</label>
-        <div class="inputbox">
+        <div class="">
           <input type="text" name="nom" placeholder="Nom"/>
         </div>
 
@@ -39,10 +39,7 @@
   </div>
         <label class="label" for="">Numéro de téléphone</label>
   <div class="inputbox">
-
-
-
-          <input type="text" name="numero" placeholder="Numéro"/>
+<input type="text" name="telephone" placeholder="Numéro"/>
         </div>
 
 
@@ -59,6 +56,5 @@
         </div>
 
       </form>
-    </form>
   </body>
 </html>
