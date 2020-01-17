@@ -35,7 +35,7 @@ session_start();
     <link rel="stylesheet" href="../css/main.css">
 
   </head>
-  <body style="  background-image:url(../img/sandwich.jpg);
+  <body style="  background-image:url(../img/formulaire_connexion.jpg);
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,7 +52,8 @@ session_start();
       padding:10px;
       height:400px;
       padding:10px 20px;
-      background-color:red;
+       opacity : 0.9;
+      background-color:#990017;
       box-shadow: 0 15px 25px rgba(0,0,0,.5);
       border-radius: 10px;" class="box" action="../classe/classe_connexion.php" method="post">
       <h1 style="color:white;">Connexion</h1>

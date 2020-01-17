@@ -14,7 +14,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Marco restaurant</title>
+		<title>Hippopotamus</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 			<!--
@@ -37,17 +37,17 @@
 		<body>
 	<?php include "header.php"?>
 			<!-- start banner Area -->
-			<section class="banner-area">
+			<section style="background-image:url(../img/hippopotamus.jpg);">
 				<div class="container">
 					<div class="row fullscreen align-items-center justify-content-between">
 						<div class="col-lg-12 banner-content">
 
-							<h1 class="text-white">Marco restaurant</h1>
+							<h1 class="text-white">Hippopotamus</h1>
 							<p class="text-white">
 							"La cuisine est multi-sensorielle. Elle s'adresse à l'oeil, à la bouche, au nez, à l'oreille et à l'esprit. Aucun art ne possède cette complexité"
 							<h6 style="margin-top:-20px;color:white;">Pierre Gagnaire</h6>
 							</p>
-							<a href="Voir_tous_les_menus.php" class="primary-btn text-uppercase">Regardez-nos menus</a>
+							<a href="Voir_tous_les_menus.php" style="color:white;background-color:#990017;padding:20px;">Regardez-nos menus</a>
 						</div>
 					</div>
 				</div>
@@ -59,7 +59,7 @@
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-lg-6 home-about-left">
-							<h1>Sandwich du jour</h1>
+							<h1>Plat du jour</h1>
 							<p>
 								En ce moment, découvrez deux recettes inédites Signature by Marco restaurant.
 	Que vous soyez adepte de saveurs subtilement relevées ou plutôt fan de fromage, il y en a pour tous les goûts !
@@ -79,41 +79,24 @@
             <!-- End menu-area Area -->
 
 			<!-- Start reservation Area -->
-			<section class="reservation-area section-gap relative">
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-					<div class="row justify-content-between align-items-center">
-						<div class="col-lg-6 reservation-left">
-							<h1 class="text-white">Réservez vos sièges pour confirmer si vous venez avec votre famille</h1>
-						</div>
-						<div class="col-lg-5 reservation-right">
-							<form class="form-wrap text-center" action="">
-								<input type="text" class="form-control" name="name" placeholder="Nom" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'" >
-								<input type="text" class="form-control" name="FirsName" placeholder="Prénom" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your First Name'"/>
-								<input type="email" class="form-control" name="email" placeholder="Adresse e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'" >
-								<input type="text" class="form-control" name="phone" placeholder="Numéro de téléphone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" >
-								<input type="text" class="form-control date-picker" name="date" placeholder="Réservez une date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date & time'" >
-								<div class="form-select" id="service-select">
-									<select>
-										<option data-display="">Selectionner un évènement</option>
-										<option value="1">Anniversaire</option>
-										<option value="2">Dîner entre amis</option>
-											<option value="2">Réserver une table</option>
 
-									</select>
-								</div>
-								<input type="submit" value="Réservation"class="primary-btn text-uppercase mt-20"></input>
-							</form>
-						</div>
-					</div>
+
+
+
+				<img src="../img/hippotamus-boeuf.png"></img>
+
+				<div style="background-color:white;height:50px;">
 				</div>
-			</section>
 
 
-			<section>
-<p>Toutes les nouveautés : image sandwich</p>
+					<img style="height:800px;" src="../img/plat.jpg"> 		
+						 </img>
 
-			</section>
+
+
+
+
+
 			<!-- End reservation Area -->
 
 			<!-- Start gallery-area Area -->
@@ -121,12 +104,12 @@
             <!-- End gallery-area Area -->
 
 			<!-- Start review Area -->
-			<section class="review-area section-gap">
+			<section class=" review-area section-gap">
 				<div class="container">
 					<div class="row">
 						<div class="active-review-carusel">
 							<div class="single-review">
-								<img src="../img/professionnel_3.jpg" alt="">
+								<img src="../img/professionnel_3.jpg"   width="300" height="300" alt="">
 								<h4>Wilson</h4>
 								<div class="star">
 									<span class="fa fa-star checked"></span>
@@ -140,7 +123,7 @@
 								</p>
 							</div>
 							<div class="single-review">
-								<img src="../img/professionnel_2.jpg" alt="">
+								<img src="../img/professionnel_2.jpg"   width="200" height="300" alt="">
 								<h4>John</h4>
 								<div class="star">
 									<span class="fa fa-star checked"></span>
@@ -154,7 +137,7 @@
 								</p>
 							</div>
 							<div class="single-review">
-								<img src="../img/professionnel_1.jpg" alt="">
+								<img src="../img/professionnel_1.jpg"  width="300" height="300" alt="">
 								<h4>Brad</h4>
 								<div class="star">
 									<span class="fa fa-star checked"></span>
@@ -168,7 +151,7 @@
 								</p>
 							</div>
 							<div class="single-review">
-								<img src="../img/professionnel_4.jpg" alt="">
+								<img src="../img/professionnel_4.jpg" width="300" height="300"alt="">
 								<h4>Davis</h4>
 								<div class="star">
 									<span class="fa fa-star checked"></span>
@@ -193,80 +176,18 @@
 					<div class="row d-flex justify-content-center">
 						<div class="menu-content pb-70 col-lg-8">
 							<div class="title text-center">
-								<h1 class="mb-10">Les classiques</h1>
+
 						<p>
 							"Un grand restaurant ne se résume pas uniquement aux clients et aux belles voitures. Derrière il y a de la rigueur, de la passion, de l'amour du travail bien fait, de la discipline et de la transmission du savoir."
 						</p>
+
+						<img src="../img/logo-hippopotamus.svg"></img>
+						<a></a>
+							<a></a>
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-lg-3 col-md-6 col-sm-6 single-blog">
-							<div class="thumb">
-								<img class="img-fluid" src="../img/triple_cheese.png" alt="">
-							</div>
-							<p class="date">10 décembre 2019</p>
-							<a href="Voir_tous_les_menus.php"><h4>Le triple cheese</h4></a>
-							<p>
-							Goutez à son fromage et son mélange de saveurs
-							</p>
-							<div class="meta-bottom d-flex justify-content-between">
-								<p><span class="lnr lnr-heart"></span> 15 j'aime</p>
-								<p><span class="lnr lnr-bubble"></span> 02 Commentaires</p>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6 single-blog">
-							<div class="thumb">
-									<div style="height:200px; width:200px;">
-								<img class="img-fluid" src="../img/royal_bagel.jpg" alt="" width="300" height="300">
-							</div>
-							</div>
-							<p class="date">03 mai 2018</p>
-							<a href="Voir_tous_les_menus.php"><h4>Le royal bagel</h4></a>
-							<p>
-								Un sandwich qui n'est pas destiné au petit joueur.
-							</p>
-							<div class="meta-bottom d-flex justify-content-between">
-								<p><span class="lnr lnr-heart"></span> 80 j'aimes</p>
-								<p><span class="lnr lnr-bubble"></span> 10 Commentaires</p>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6 single-blog">
-							<div class="thumb">
-								<div style="height:200px;">
-										<img class="img-fluid" src="../img/king_size.png" alt="" width="300" height="300">
-								</div>
 
-							</div>
-							<p class="date">10 Jan 2018</p>
-							<a href="Voir_tous_les_menus.php"><h4>le King Size</h4></a>
-							<p>
-						Un incontournables, goutez au plus grand chef d'oauvres de marco restaurant
-							</p>
-							<div class="meta-bottom d-flex justify-content-between">
-								<p><span class="lnr lnr-heart"></span> 300 j'aimes</p>
-								<p><span class="lnr lnr-bubble"></span> 100 Commentaires</p>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6 single-blog">
-							<div class="thumb">
-
-										<img class="img-fluid" src="../img/marco_wrap.jpg" alt="" width="300" height="300">
-
-
-							</div>
-							<p class="date">10 août 2017</p>
-							<a href="Voir_tous_les_menus.php"><h4>Le Marco Wrap</h4></a>
-							<p>
-								Goutez, au plus classique des sandwichs de marco restaurant
-							</p>
-							<div class="meta-bottom d-flex justify-content-between">
-								<p><span class="lnr lnr-heart"></span> 100 j'aimes</p>
-								<p><span class="lnr lnr-bubble"></span> 100 Commentaires</p>
-							</div>
-						</div>
-					</div>
-				</div>
 			</section>
 			<!-- End blog Area -->
 

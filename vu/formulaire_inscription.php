@@ -39,7 +39,7 @@
   </div>
         <label class="label" for="">Numéro de téléphone</label>
   <div class="inputbox">
-<input type="text" name="telephone" placeholder="Numéro"/>
+<input type="text" name="numero" placeholder="Numéro"/>
         </div>
 
 

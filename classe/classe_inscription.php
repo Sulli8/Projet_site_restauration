@@ -101,8 +101,8 @@ class Inscription {
     }
 
 
-    $req = $bdd->prepare('INSERT INTO adherent(nom,prenom,mail,adresse,telephone,mot_de_passe) VALUES(:nom,:prenom,:mail,:adresse,:telephone,:mot_de_passe)');
-    $req->execute(array('nom'=>$this->_nom,'prenom'=>$this->_prenom,'mail'=>$this->_mail,'adresse'=>$this->_adresse,'telephone'=>$this->_telephone,'mot_de_passe'=>$this->_mdp));
+    $req = $bdd->prepare('INSERT INTO adherent(nom,prenom,mail,adresse,numero,mot_de_passe) VALUES(:nom,:prenom,:mail,:adresse,:numero,:mot_de_passe)');
+    $req->execute(array('nom'=>$this->_nom,'prenom'=>$this->_prenom,'mail'=>$this->_mail,'adresse'=>$this->_adresse,'numero'=>$this->_telephone,'mot_de_passe'=>$this->_mdp));
     $inscription = $req->fetch();
     var_dump($inscription);
     if($inscription== true){
@@ -122,7 +122,7 @@ class Inscription {
 }
 
 
-$inscription = new Inscription($_POST["nom"],$_POST["prenom"],$_POS["mail"],$_POST["adresse"],$_POST["telephone"],$_POST["mdp"]);
+$inscription = new Inscription($_POST["nom"],$_POST["prenom"],$_POS["mail"],$_POST["adresse"],$_POST["numero"],$_POST["mdp"]);
 $inscription->inscription();
 
  ?>

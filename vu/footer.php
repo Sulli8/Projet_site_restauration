@@ -1,39 +1,39 @@
 <footer class="footer-area">
-  <div class="footer-widget-wrap">
+  <div class="wrap" style="background-color:#990017;">
     <div class="container">
       <div class="row section-gap">
         <div class="col-lg-4  col-md-6 col-sm-6">
-          <div class="single-footer-widget">
-            <h4>Horaires d'ouverture</h4>
+          <div class="single">
+            <h4 style="color:white;">Horaires d'ouverture</h4>
             <ul class="hr-list">
               <li class="d-flex justify-content-between">
-                <span>Lundi - Vendredi</span> <span>11h - 22h</span>
+                <span style="color:white;" >Lundi - Vendredi</span> <span  style="color:white;">11h - 22h</span>
               </li>
               <li class="d-flex justify-content-between">
-                <span>Samedi</span> <span>12h- 01h</span>
+                <span style="color:white;" >Samedi</span> <span style="color:white;">12h- 01h</span>
               </li>
               <li class="d-flex justify-content-between">
-                <span>Dimanche</span> <span>10h - 01h</span>
+                <span style="color:white;">Dimanche</span> <span style="color:white;">10h - 01h</span>
               </li>
             </ul>
           </div>
         </div>
         <div class="col-lg-4  col-md-6 col-sm-6">
-          <div class="single-footer-widget">
-            <h4>Contactez-nous</h4>
-            <p>
+          <div class="">
+            <h4 style="color:white;">Contactez-nous</h4>
+            <p style="color:white;">
               19 avenue des miosotis Sarcelles
             </p>
-            <p class="">
+            <p class="" style="color:white;">
               Numéro de téléphone : 07 82 67 60 26<br>
               Fixe : 01 43 88 93 80
             </p>
           </div>
         </div>
         <div class="col-lg-4  col-md-6 col-sm-6">
-          <div class="single-footer-widget">
-            <h4>PLus d'informations</h4>
-            <p>Recevez toutes les nouveautés par e-mail</p>
+          <div class="">
+            <h4 style="color:white;">PLus d'informations</h4>
+            <p style="color:white;">Recevez toutes les nouveautés par e-mail</p>
             <div class="d-flex flex-row" id="mc_embed_signup">
 
 
