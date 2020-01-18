@@ -4,9 +4,6 @@
   <div class="header-top">
     <div class="container">
         <div class="row justify-content-center">
-            <div id="logo">
-              <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
-            </div>
         </div>
     </div>
   </div>
