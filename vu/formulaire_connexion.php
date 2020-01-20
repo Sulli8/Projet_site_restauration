@@ -67,7 +67,7 @@ session_start();
       <label  style="color:white;">Entrez votre mot de passe :</label>
       <div class="inputbox" >
 
-        <input type="password" name="mdp" placeholder="Mot de passe" required=""/>
+        <input type="password" name="mot_de_passe" placeholder="Mot de passe" required=""/>
 
       </div>
 
