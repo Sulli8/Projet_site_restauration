@@ -73,6 +73,7 @@ class Inscription {
   }
 
 
+
   public function setMdp($mdp){
     if(empty($mdp)){
       header("Location:../vu/formulaire_inscription.php");
@@ -85,9 +86,6 @@ class Inscription {
   public function inscription(){
 
     if(isset($this->_nom) && isset($this->_prenom) && isset($this->_mail) && isset($this->_adresse) && isset($this->_numero) && isset($this->_mdp)){
-
-
-
 
     $req = $bdd->prepare('INSERT INTO adherent(nom,prenom,mail,adresse,numero,mot_de_passe) VALUES(:nom,:prenom,:mail,:adresse,:numero,:mot_de_passe)');
     $req->execute(array('nom'=>$this->_nom,'prenom'=>$this->_prenom,'mail'=>$this->_mail,'adresse'=>$this->_adresse,'numero'=>$this->_numero,'mot_de_passe'=>$this->_mdp));
@@ -108,5 +106,8 @@ class Inscription {
 
 $inscription = new Inscription($_POST["nom"],$_POST["prenom"],$_POST["mail"],$_POST["adresse"],$_POST["numero"],$_POST["mdp"]);
 $inscription->inscription();
+
+
+
 
  ?>
