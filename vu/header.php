@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+ ?>
 
 <header id="header">
   <div class="header-top">
@@ -33,8 +35,17 @@
               </ul>
             </li>
             <li><a href="contact.php">Contact</a></li>
-            <li><a href="formulaire_connexion.php">Connexion</a></li>
-            <li><a href="formulaire_inscription.php">Inscription</a></li>
+
+            <?php if(empty($_SESSION)){   ?>
+           <li><a href="formulaire_connexion.php">Connexion</a></li>
+          <li><a href="formulaire_inscription.php">inscription</a></li>
+
+         <?php } else { ?>
+
+            <li><a href="se_deconnecter.php">Déconnexion</a></li>
+              <li><a href="formulaire_reservation.php">Réservation</a></li>
+
+          <?php } ?>
           </ul>
         </nav><!-- #nav-menu-container -->
     </div>

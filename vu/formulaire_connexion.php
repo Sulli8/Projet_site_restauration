@@ -1,8 +1,3 @@
-<?php
-
-session_start();
-
-?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -55,7 +50,7 @@ session_start();
        opacity : 0.9;
       background-color:#990017;
       box-shadow: 0 15px 25px rgba(0,0,0,.5);
-      border-radius: 10px;" class="box" action="../classe/classe_connexion.php" method="post">
+      border-radius: 10px;" class="box" action="../classe/classe_erreur_connexion.php" method="post">
       <h1 style="color:white;">Connexion</h1>
       <label  style="color:white;" >Entrez votre adresse mail : </label>
       <div class="inputbox">
