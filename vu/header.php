@@ -44,6 +44,8 @@ session_start();
 
             <li><a href="se_deconnecter.php">Déconnexion</a></li>
               <li><a href="formulaire_reservation.php">Réservation</a></li>
+                <li><a href="formulaire_modification.php">Modification</a></li>
+
 
           <?php } ?>
           </ul>

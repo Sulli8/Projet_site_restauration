@@ -2,7 +2,6 @@
 
 require_once('classe_source.php');
 require_once('classe_erreur_connexion.php');
-require_once('classe_erreur_reservation.php');
 class Manager{
 
   public function __construct(){
@@ -55,33 +54,7 @@ class Manager{
     }
   }
 
-  public function reservation(reservation $reservation){
-    try {
-        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
-     }
-    catch(Exception $e)
-    {
-      die('ERREUR:'.$e->getMessage());
-    }
-    $c =  $req_2 = $bdd->prepare('INSERT INTO reservation(nom,prenom,mail,telephone,dates,nombre_de_personne,heure) VALUES(?,?,?,?,?,?,?)');
-     $reservation_2 = $req_2->execute(array(
-    $reservation->getNom(),
-    $reservation->getPrenom(),
-    $reservation->getMail(),
-    $reservation->getTelephone(),
-    $reservation->getDate(),
-    $reservation->getNombre_de_personne(),$reservation->getHeure()));
 
-
-    if($reservation_2 == true){
-        header("Location: ../vu/index.php");
-    }
-    else {
-        header("Location: ../vu/formulaire_reservation.php");
-    }
-
-
-  }
 
 
 

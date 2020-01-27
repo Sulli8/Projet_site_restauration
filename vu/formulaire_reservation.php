@@ -39,7 +39,7 @@
 
       </div>
       <div class="col-lg-5 reservation-right">
-        <form action="../classe/classe_erreur_reservation.php"   style="
+        <form action="../classe/classe_erreur_reservation.php" method="post"   style="
         margin-left:-320px;
             width:400px;
             padding:10px;
@@ -54,35 +54,35 @@
 
 <div>
   <label style="color:white;">Nom </label>
-  <input type="text" class="form-control" name="nom" placeholder="Nom" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'"/>
+  <input type="text" class="form-control" name="nom" placeholder="Nom" />
 </div>
 <div>
   <label style="color:white;">Prénom</label>
-  <input type="text" class="form-control" name="prenom" placeholder="Prénom" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your First Name'"/>
+  <input type="text" class="form-control" name="prenom" placeholder="Prénom"/>
 </div>
         <div>
           <label style="color:white;">Email</label>
-            <input type="text" class="form-control" name="email" placeholder="Adresse e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'" >
+            <input type="text" class="form-control" name="mail" placeholder="Adresse e-mail" >
         </div>
 
         <div>
           <label for="" style="color:white;">Téléphone</label>
-            <input type="text" class="form-control" name="telephone" placeholder="Numéro de téléphone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" >
+            <input type="text" class="form-control" name="telephone" placeholder="Numéro de téléphone"  >
         </div>
 
 
         <div>
           <label for=""style="color:white;">Date de réservation </label>
-            <input type="text" class="form-control date-picker" name="date" placeholder="Réservez une date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date & time'" >
+            <input type="text" class="form-control date-picker" name="dates" placeholder="Réservez une date"  >
         </div>
 
         <div>
 
           <label style="color:white;">Nombre de personnes</label>
-          <input type="text" class="form-control" name="nombre_de_personne" placeholder="Nombre de personnes" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" >
+          <input type="text" class="form-control" name="nombre_de_personne" placeholder="Nombre de personnes"  >
         </div>
 
-          <div class="form-select" id="service-select">
+          <div >
               <label for="" style="color:white;">Heure de réservation </label>
               <input type="text" class="form-control" name="heure" placeholder="Heure de réservation" />
 
