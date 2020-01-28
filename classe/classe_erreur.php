@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once('classe_manager.php');
+require_once('classe_manager_connexion_inscription.php');
 require_once('classe_source.php');
 
 if(empty($_POST['nom'])|| empty($_POST['prenom'])|| empty($_POST['adresse'])|| empty($_POST['mail'])||empty($_POST['numero'])||empty($_POST['mot_de_passe'])){

@@ -1,4 +1,5 @@
-DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -66,7 +67,7 @@ DOCTYPE html>
       </div>
 
       <div>
-        <input type="submit" value="Connexion"/>
+        <input type="submit" value="Afficher"/>
       </div>
 
 
@@ -76,6 +77,8 @@ DOCTYPE html>
         <a  style="color:white;" href="formulaire_inscription.php">Inscription</a>
       </div>
     </form>
+
+    <?php var_dump($_SESSION); ?>
 <?php include "footer.php" ?>
   </body>
 </html>

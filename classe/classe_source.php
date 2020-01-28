@@ -1,6 +1,6 @@
 
 <?php
-require_once('classe_manager.php');
+require_once('classe_manager_connexion_inscription.php');
 class tableau {
   public $_nom,$_prenom,$_mail,$_adresse,$_numero,$_mdp;
 

@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -36,45 +35,35 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;">
-
-  <?php   include("../vu/header.php");  ?>
-
-<?php
-
-    try {
-        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
-     }
-    catch(Exception $e)
-    {
-      die('ERREUR:'.$e->getMessage());
-    }
- ?>
- <?php
-    $req_4 = $bdd->query('SELECT * FROM  adherent');
-    $modification = $req_4->fetch();
-
-?>
-<div style="margin-left:500px;margin-top:300px;height:300px;width:300px;border:1px solid white;color:white;font-size:20px;">
+    <?php include "header.php" ?>
 
 
-<?php
+<div>
 
-      $tableau = array("nom"=>"Nom : ".$modification["nom"]."<br />","prenom"=>"Prénom : ".$modification["prenom"]."<br />","mail"=>"Mail : ".$modification["mail"]."<br />","adresse"=>"Adresse :".$modification["adresse"]."<br />","telephone"=>"Téléphone :".$modification['telephone']."<br />","Mot_de_passe"=>"Mot de passe :".$modification["mot_de_passe"]."<br />")
-function hydrate($tableau){
-  foreach($tableau as $key => $value){
-    ?>
-
-      <a href="../vu/<?php echo $key; ?>.php">Modifier </a> <?php echo $value; ?> <br />
-
-  <?php } ?>
-
-<?php } ?>
-<?php
-hydrate($tableau);
-var_dump($_SESSION);
-
-?>
 </div>
 
+    <form style="  margin: 230px auto;;
+      width:400px;
+      padding:10px;
+      height:400px;
+      padding:10px 20px;
+       opacity : 0.9;
+      background-color:#990017;
+      box-shadow: 0 15px 25px rgba(0,0,0,.5);
+      border-radius: 10px;" class="box" action="../traitement/traitement_adresse.php" method="post">
+      <h1 style="color:white;">Modification </h1>
+      <label  style="color:white;" >Entrez votre adresse : </label>
+      <div class="inputbox">
 
-<?php  include("../vu/footer.php"); ?>
+        <input  type="text" name="adresse" placeholder="Adresse" required=""/>
+
+      </div>
+
+      <div>
+        <input type="submit" value="Modification"/>
+      </div>
+
+    </form>
+<?php include "footer.php" ?>
+  </body>
+</html>

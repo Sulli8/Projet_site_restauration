@@ -40,10 +40,9 @@ class Manager{
     var_dump($req);
     $req->execute(array('mail'=>$donnees->getMail(),'mot_de_passe'=>$donnees->getMot_de_passe()));
     $connexion = $req->fetch();
-    var_dump($connexion);
     if($connexion == true){
       session_start();
-        $_SESSION['id']=$connexion['id'];
+        $_SESSION['id'] = $connexion['ID'];
         $_SESSION['nom']=$connexion['nom'];
         $_SESSION['prenom']=$connexion['prenom'];
       header("Location: ../vu/index.php");

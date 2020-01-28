@@ -159,7 +159,9 @@
 			</style>
 		</head>
 		<body>
+
 	<?php include "header.php"?>
+	
 			<!-- start banner Area -->
 			<section style="background-image:url(../img/hippopotamus.jpg);">
 				<div class="container">
@@ -179,6 +181,7 @@
 			<!-- End banner Area -->
 <div style="height:50px;">
 </div>
+
 			<!-- Start home-about Area -->
 			<section style="	border: double 4px rgba(22,22,22,0.85); background-color:#D2B48C;"class="home-about-area section-gap">
 				<div class="container">
