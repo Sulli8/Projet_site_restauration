@@ -30,69 +30,48 @@
 			<link rel="stylesheet" href="../css/owl.carousel.css">
 			<link rel="stylesheet" href="../css/main.css">
 			<style>
-
 			.container {
-  position: relative;
 
-}
+			}
 
-.image {
-  display: block;
-	height: 150px;
-	width: 200px;
-	margin-top:-100px;
+			.image {
+			  opacity: 1;
+			  display: block;
+			  width: 200px;
+			  height: 150px;
+			  transition: .5s ease;
+			  backface-visibility: hidden;
+			}
 
-}
+			.middle {
+			  transition: .5s ease;
+			  opacity: 0;
+			  -ms-transform: translate(-50%, -50%);
+			  text-align: center;
+			}
 
-.overlay {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 150px;
-  width: 200px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #990017;
-	margin-left: 10px;
-	margin-left: 10px;
-}
+			.container:hover .image {
+			  opacity: 0.3;
+			}
 
-.container:hover .overlay {
-  opacity: 1;
-}
+			.container:hover .middle {
+			  opacity: 1;
+				transform: rotate(-5deg);
+				transition: 0.5s;
+			}
 
-.text {
-  color: white;
-  font-size: 20px;
+			.text {
+			  background-color: #fff;
+			  color: #990017;
+				width:200px;
+				margin-top:-140px;
+				margin-left:200px;
+			  font-size: 16px;
 
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
+			}
 .change:hover{
 	background-color:#990017;
 	color:white;
-}
-
-.bouton_2{
-	background:#990017;
-	line-height:42px;
-	color:#fff;
-	font-size:14px;font-weight:500;
-	-webkit-transition:all 0.3s ease 0s;
-	-moz-transition:all 0.3s ease 0s;
-	-o-transition:all 0.3s ease 0s;
-	transition:all 0.3s ease 0s;
-	text-align:center;
-}
-.bouton_2:hover{
-	transition:0.5s;
-	background:white;
-	border-color:#fff;
-	color:#990017;
 }
 			.bouton{
 				background:#990017;
@@ -241,7 +220,7 @@
 
 
 			<!-- Start home-about Area -->
-			<section style="	border: double 4px rgba(22,22,22,0.85); background-color:#D2B48C;"class="home-about-area section-gap">
+			<section style="border: double 4px rgba(22,22,22,0.85); background-color:#D2B48C;"class="home-about-area section-gap">
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-lg-6 home-about-left">
@@ -262,7 +241,7 @@
 
 
 
-		 <section style="margin-bottom:200px;background-color:black;" class=" review-area section-gap">
+		 <section style="height:600px;margin-bottom:200px;background-color:black;" class=" review-area section-gap">
 
 			 <h1 style="width:300px;color:#990017;margin-top:-80px;margin-left:100px;">Nos nouveaux restaurants:</h1>
 
@@ -332,23 +311,27 @@
 
 				 <img class="rotate" style="margin-left:100px;margin-top:-800px;"width="200" height="150"src="../img/blumhouse.jpg"><a href="blumhouse.php" /> </img>
 
-
 				 <img class="rotate" style="margin-left:-205px;margin-top:-400px;"width="200" height="150"src="../img/nouveau_menu.png"> <a href="nouveau_menu.php" /> </img>
-				  <img class="rotate" style="margin-left:50px;margin-top:-400px;"width="200" height="150"src="../img/hippo.png"><a href="hippo.php" />  </img>
-
 <div class="container">
-					 <img class="image" style="" width="200" height="150"src="../img/hippo_2.jpg"><a href="hippo_2php" />  </img>
-<div class="overlay">
-					 <div class="text" style="width:200px;margin-left:100px;margin-top:50px;">
-
-					 	22 avenue du Général Leclerc, 92100
-					 	Boulogne-billancourt </div>
+					<img class="rotate" style="margin-left:200px;margin-top:-440px;"width="200" height="150"src="../img/hippo.png"><a href="hippo.php" />  </img>
+<div class="middle">
+	<div class="text" style="">
+28 Avenue de Paris, 95230 Soisy-sous-Montmorency
+	</div>
 </div>
-					</div>
+</div>
+<div class="container">
+					 <img class="image rotate" style="margin-left:200px;margin-top:-480px;"width="200" height="150"src="../img/hippo_2.jpg"><a href="hippo_2php" />  </img>
+<div class="middle">
+					 <div class="text">
 
-
+		Hippopotamus Boulogne-Billancourt
+		Ouvert – Ferme à 23:00
+		22 avenue du Général Leclerc
+		Boulogne-billancourt, Île-de-France 92100</div>
+</div>
+	</div>
 		</section>
-
 
 			<!-- End home-about Area -->
 
