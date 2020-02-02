@@ -31,9 +31,68 @@
 			<link rel="stylesheet" href="../css/main.css">
 			<style>
 
+			.container {
+  position: relative;
+
+}
+
+.image {
+  display: block;
+	height: 150px;
+	width: 200px;
+	margin-top:-100px;
+
+}
+
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  width: 200px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #990017;
+	margin-left: 10px;
+	margin-left: 10px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .change:hover{
 	background-color:#990017;
 	color:white;
+}
+
+.bouton_2{
+	background:#990017;
+	line-height:42px;
+	color:#fff;
+	font-size:14px;font-weight:500;
+	-webkit-transition:all 0.3s ease 0s;
+	-moz-transition:all 0.3s ease 0s;
+	-o-transition:all 0.3s ease 0s;
+	transition:all 0.3s ease 0s;
+	text-align:center;
+}
+.bouton_2:hover{
+	transition:0.5s;
+	background:white;
+	border-color:#fff;
+	color:#990017;
 }
 			.bouton{
 				background:#990017;
@@ -161,7 +220,7 @@
 		<body>
 
 	<?php include "header.php"?>
-	
+
 			<!-- start banner Area -->
 			<section style="background-image:url(../img/hippopotamus.jpg);">
 				<div class="container">
@@ -179,23 +238,22 @@
 				</div>
 			</section>
 			<!-- End banner Area -->
-<div style="height:50px;">
-</div>
+
 
 			<!-- Start home-about Area -->
 			<section style="	border: double 4px rgba(22,22,22,0.85); background-color:#D2B48C;"class="home-about-area section-gap">
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-lg-6 home-about-left">
-							<h1>Plat du jour : </h1> <p>"Boeuf Bourguignon et plein d'autre encore..."</p>
+							<h1>Plat du jour : </h1> <p style="font-size:20px;">"Boeuf Bourguignon"</p>
 							<p style="color:black;">
 								En ce moment, découvrez deux recettes inédites Signature by Marco restaurant.
 	Que vous soyez adepte de saveurs subtilement relevées ou plutôt fan de fromage, il y en a pour tous les goûts !
 							</p>
-							<a href="menu_sandwich_du_jour.php" class="bouton">Voir le plat</a>
+							<a href="voir_le_plat.php" class="bouton">Voir le plat</a>
 						</div>
 						<div class="col-lg-6 home-about-right">
-							<img class="img-fluid" src="../img/plat_du_jour.png" alt="">
+							<img style="border: 2px solid black;"class="img-fluid" src="../img/plat_du_jour.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -204,9 +262,9 @@
 
 
 
-		 <section style="background-color:black;" class=" review-area section-gap">
+		 <section style="margin-bottom:200px;background-color:black;" class=" review-area section-gap">
 
-			 <h1 class="slide"style="width:300px;border:3px solid white;color:#990017;margin-top:20px;margin-left:100px;">Nouveautés:</h1>
+			 <h1 style="width:300px;color:#990017;margin-top:-80px;margin-left:100px;">Nos nouveaux restaurants:</h1>
 
 
 			<div style="margin-left:500px;" class="container">
@@ -272,12 +330,25 @@
 				</div>
 			</div>
 
-				 <img class="rotate" style="margin-left:100px;margin-top:-800px;"width="200" height="150"src="../img/blumhouse.jpg"> </img>
-				 <img class="rotate" style="margin-left:-205px;margin-top:-400px;"width="200" height="150"src="../img/nouveau_menu.png"> </img>
-				  <img class="rotate" style="margin-left:50px;margin-top:-400px;"width="200" height="150"src="../img/hippo.png"> </img>
-					 <img class="rotate" style="margin-left:-205px;margin-top:-800px;"width="200" height="150"src="../img/hippo_2.jpg"> </img>
+				 <img class="rotate" style="margin-left:100px;margin-top:-800px;"width="200" height="150"src="../img/blumhouse.jpg"><a href="blumhouse.php" /> </img>
+
+
+				 <img class="rotate" style="margin-left:-205px;margin-top:-400px;"width="200" height="150"src="../img/nouveau_menu.png"> <a href="nouveau_menu.php" /> </img>
+				  <img class="rotate" style="margin-left:50px;margin-top:-400px;"width="200" height="150"src="../img/hippo.png"><a href="hippo.php" />  </img>
+
+<div class="container">
+					 <img class="image" style="" width="200" height="150"src="../img/hippo_2.jpg"><a href="hippo_2php" />  </img>
+<div class="overlay">
+					 <div class="text" style="width:200px;margin-left:100px;margin-top:50px;">
+
+					 	22 avenue du Général Leclerc, 92100
+					 	Boulogne-billancourt </div>
+</div>
+					</div>
+
+
 		</section>
-</section>
+
 
 			<!-- End home-about Area -->
 
@@ -286,7 +357,7 @@
             <!-- End menu-area Area -->
 						<div class="container">
 
-					<h1 class="text1" style="margin-top:20px;margin-left:300px;">Le Steak house à la française</h1>
+					<h1 class="text1" style="margin-top:-190px;margin-left:300px;">Le Steak house à la française</h1>
 						</div>
 
 			<!-- Start reservation Area -->
@@ -328,7 +399,7 @@
 		rendez-vous sur votre nouvel espace fidélité.
 	</p>
 
-<a href="espace_fidelite.php" class="text" style="margin-left:-600px;"id="hexagon">
+<a href="CGU.pdf" class="text" style="margin-left:-600px;"id="hexagon">
 <p style="margin-top:15px ;margin-left:25px;">	Espace Fidélité</p>
 </a>
 

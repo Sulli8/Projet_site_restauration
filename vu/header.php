@@ -15,7 +15,6 @@ session_start();
           <ul class="nav-menu">
             <li><a href="index.php">Restaurant</a></li>
             <li><a href="localisation.php">Localisations</a></li>
-            <li><a href="menu.php">Menu</a></li>
             <li><a href="gallery.php">Galerie</a></li>
             <li class="menu-has-children"><a href="">Blog</a>
               <ul>
