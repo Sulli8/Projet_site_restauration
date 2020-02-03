@@ -29,6 +29,7 @@
 			<link rel="stylesheet" href="../css/animate.min.css">
 			<link rel="stylesheet" href="../css/owl.carousel.css">
 			<link rel="stylesheet" href="../css/main.css">
+			<script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
 			<style>
 			.container {
 
@@ -313,7 +314,7 @@
 
 				 <img class="rotate" style="margin-left:-205px;margin-top:-400px;"width="200" height="150"src="../img/nouveau_menu.png"> <a href="nouveau_menu.php" /> </img>
 <div class="container">
-					<img class="rotate" style="margin-left:200px;margin-top:-440px;"width="200" height="150"src="../img/hippo.png"><a href="hippo.php" />  </img>
+					<img class="rotate" style="margin-left:300px;margin-top:-440px;"width="200" height="150"src="../img/hippo.png"><a href="hippo.php" />  </img>
 <div class="middle">
 	<div class="text" style="">
 28 Avenue de Paris, 95230 Soisy-sous-Montmorency
@@ -321,7 +322,7 @@
 </div>
 </div>
 <div class="container">
-					 <img class="image rotate" style="margin-left:200px;margin-top:-480px;"width="200" height="150"src="../img/hippo_2.jpg"><a href="hippo_2php" />  </img>
+					 <img class="image rotate" style="margin-left:300px;margin-top:-480px;"width="200" height="150"src="../img/hippo_2.jpg"><a href="hippo_2php" />  </img>
 <div class="middle">
 					 <div class="text">
 

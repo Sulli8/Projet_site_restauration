@@ -41,8 +41,20 @@
   <div class="row d-flex justify-content-center">
     <div class="menu-content pb-70 col-lg-8">
       <div class="title text-center">
-        <h1 class="mb-10">What kind of Foods we serve for you</h1>
-        <p>Who are in extremely love with eco friendly system.</p>
+        <h1 class="mb-10">Panier</h1>
+        <?php
+
+
+        try {
+            $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
+         }
+        catch(Exception $e)
+        {
+          die('ERREUR:'.$e->getMessage());
+        }
+        $req = $bdd->query('SELECT repas from panier');
+        $tableau = $req->fetchall();
+         ?>
       </div>
     </div>
   </div>
@@ -61,8 +73,9 @@
                     <div class="col-md-6 all breakfast">
         <div class="single-menu">
           <div class="title-wrap d-flex justify-content-between">
-            <h4>Cappuccion</h4>
-            <h4 class="price">$49</h4>
+            <h4>Pâte chinoise</h4>
+            <h4 class="price"><?php   echo $tableau[0][0]."  €";
+ ?></h4>
           </div>
           <p>
             Usage of the Internet is becoming more common due to rapid advance.
@@ -72,8 +85,9 @@
                     <div class="col-md-6 all dinner">
         <div class="single-menu">
           <div class="title-wrap d-flex justify-content-between">
-            <h4>Americano</h4>
-            <h4 class="price">$49</h4>
+            <h4>Boeuf à l'ail</h4>
+            <h4 class="price"><?php     echo $tableau[1][0]."  €";
+ ?></h4>
           </div>
           <p>
             Usage of the Internet is becoming more common due to rapid advance.
@@ -83,8 +97,9 @@
                     <div class="col-md-6 all budget-meal">
         <div class="single-menu">
           <div class="title-wrap d-flex justify-content-between">
-            <h4>Macchiato</h4>
-            <h4 class="price">$49</h4>
+            <h4>Buger à l'oignon</h4>
+            <h4 class="price"><?php     echo $tableau[2][0]."  €";
+ ?></h4>
           </div>
           <p>
             Usage of the Internet is becoming more common due to rapid advance.
@@ -94,8 +109,9 @@
                     <div class="col-md-6 all breakfast">
         <div class="single-menu">
           <div class="title-wrap d-flex justify-content-between">
-            <h4>Mocha</h4>
-            <h4 class="price">$49</h4>
+            <h4>Crème brulée</h4>
+            <h4 class="price"><?php     echo $tableau[3][0]."  €";
+ ?></h4>
           </div>
           <p>
             Usage of the Internet is becoming more common due to rapid advance.
@@ -105,8 +121,9 @@
                     <div class="col-md-6 all lunch">
         <div class="single-menu">
           <div class="title-wrap d-flex justify-content-between">
-            <h4>Piccolo Latte</h4>
-            <h4 class="price">$49</h4>
+            <h4>Pâte au chorizo</h4>
+            <h4 class="price"><?php     echo $tableau[4][0]."  €";
+ ?></h4>
           </div>
           <p>
             Usage of the Internet is becoming more common due to rapid advance.
@@ -116,8 +133,9 @@
                     <div class="col-md-6 all buffet">
         <div class="single-menu">
           <div class="title-wrap d-flex justify-content-between">
-            <h4>Ristretto</h4>
-            <h4 class="price">$49</h4>
+            <h4>Cafe + cookies aux chocolats</h4>
+            <h4 class="price"><?php     echo $tableau[5][0]."  €";
+ ?></h4>
           </div>
           <p>
             Usage of the Internet is becoming more common due to rapid advance.

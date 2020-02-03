@@ -1,7 +1,16 @@
 <?php
 session_start();
  ?>
+	<script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
+  <script>
 
+  var cpt = 0;
+function myfunction(){
+  cpt+=1;
+  document.getElementById("compteur").innerHTML = cpt;
+}
+
+  </script>
 <header id="header">
   <div class="header-top">
     <div class="container">
@@ -26,10 +35,6 @@ session_start();
               <ul>
                   <li><a href="elements.html">Prix du meilleur chef</a></li>
                 <li class="menu-has-children"><a href="">Salon de la Restauration</a>
-                  <ul>
-                    <li><a href="#">Sandwich && Snack Show</a></li>
-                    <li><a href="#">Food in Sud</a></li>
-                  </ul>
                 </li>
               </ul>
             </li>
@@ -45,6 +50,8 @@ session_start();
               <li><a href="formulaire_reservation.php">Réservation</a></li>
                 <li><a href="formulaire_modification.php">Modification</a></li>
 
+                <li><p style="color:white;"  id="compteur"></p></li>
+<a href="panier.php"><i style=";margin-left:10px;font-size:20px;" class="fas fa-shopping-cart"></i></a>
 
           <?php } ?>
           </ul>
