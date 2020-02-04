@@ -54,25 +54,23 @@
     $modification = $req_4->fetch();
 
 ?>
-<div style="margin-left:500px;margin-top:300px;height:300px;width:300px;border:1px solid white;color:white;font-size:20px;">
+<div style="margin-bottom:200px;background-color:black;margin-left:100px;margin-top:200px;height:300px;width:600px;border:1px solid white;color:white;font-size:20px;">
 
 
 <?php
 
-      $tableau = array("nom"=>"Nom : ".$modification["nom"]."<br />","prenom"=>"Prénom : ".$modification["prenom"]."<br />","mail"=>"Mail : ".$modification["mail"]."<br />","adresse"=>"Adresse :".$modification["adresse"]."<br />","telephone"=>"Téléphone :".$modification['telephone']."<br />","Mot_de_passe"=>"Mot de passe :".$modification["mot_de_passe"]."<br />")
+      $tableau = array("nom"=>$modification["nom"]."<br />","prenom"=>$modification["prenom"]."<br />","mail"=>$modification["mail"]."<br />","adresse"=>$modification["adresse"]."<br />","telephone"=>$modification['telephone']."<br />","Mot_de_passe"=>$modification["mot_de_passe"]."<br />");
 function hydrate($tableau){
   foreach($tableau as $key => $value){
     ?>
 
-      <a href="../vu/<?php echo $key; ?>.php">Modifier </a> <?php echo $value; ?> <br />
+      <a href="../vu/<?php echo $key; ?>.php">Modifier </a> <?php echo ucfirst($key)." : ".$value; ?> <br />
 
   <?php } ?>
 
 <?php } ?>
 <?php
 hydrate($tableau);
-var_dump($_SESSION);
-
 ?>
 </div>
 

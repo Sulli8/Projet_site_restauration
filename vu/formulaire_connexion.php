@@ -67,12 +67,12 @@
       </div>
 
       <div>
-        <input type="submit" value="Connexion"/>
+        <input style="color:#990017;" type="submit" value="Connexion"/>
       </div>
 
 
       <div>
-        <a style="color:white;" href="#">Mot de passe oublié?</a>
+        <a style="color:white;" href="mot_de_passe_oublie.php">Mot de passe oublié?</a>
 
         <a  style="color:white;" href="formulaire_inscription.php">Inscription</a>
       </div>

@@ -87,7 +87,7 @@
                             <img style="height:200px;margin-top:-30px;" class="box img-fluid" src="../img/repas.jpeg" alt="">
 <div style="width:300px;">
 
-  <a onclick="myfunction()"> 20,90€ - Ajouter à votre panier  </a>
+  <a onclick="myfunction()" href="../traitement/traitement_panier_repas.php"> 20,90€ - Ajouter à votre panier  </a>
 
 </div>
 
@@ -101,7 +101,7 @@
                         <div style="height:200px;width:200px;">
                             <img style="height:200px;margin-top:-30px;" class="box img-fluid" src="../img/repas_2.jpeg" alt="">
 <div style="width:300px;">
-       <a href="../traitement/traitement_panier_repas_2.php">15,60€ -Ajouter à votre panier  </a>
+       <a onclick="myfunction()" href="../traitement/traitement_panier_repas_2.php">15,60€ -Ajouter à votre panier  </a>
 </div>
 
                         </div>
@@ -113,7 +113,7 @@
                           <div style="height:200px;width:200px;">
                         <img style="height:200px;margin-top:-30px;"  class="box img-fluid" src="../img/repas_3.jpeg" alt="">
 <div style="width:300px;">
-       <a href="../traitement/traitement_panier_repas_3.php">25,90€ -Ajouter à votre panier  </a>
+       <a onclick="myfunction()" href="../traitement/traitement_panier_repas_3.php">25,90€ -Ajouter à votre panier  </a>
 </div>
 
                       </div>
@@ -124,7 +124,7 @@
                           <div style="height:200px;width:200px;">
                         <img style="height:200px;margin-top:-30px;"  class="box img-fluid" src="../img/repas_4.jpeg" alt="">
                   <div style="width:300px;">
-                         <a href="../traitement/traitement_panier_repas_4.php">10,90€ - Ajouter à votre panier </a>
+                         <a onclick="myfunction()" href="../traitement/traitement_panier_repas_4.php">10,90€ - Ajouter à votre panier </a>
 </div>
                       </div>
                       </div>
@@ -134,7 +134,7 @@
                           <div style="height:200px;width:200px;">
                         <img style="height:200px;margin-top:-30px;"  class="box img-fluid" src="../img/repas_5.jpeg" alt="">
                         <div style="width:300px;">
-                               <a href="../traitement/traitement_panier_repas_4.php">18,90€ - Ajouter à votre panier </a>
+                               <a onclick="myfunction()" href="../traitement/traitement_panier_repas_4.php">18,90€ - Ajouter à votre panier </a>
       </div>
                      </div>
                       </div>
@@ -145,7 +145,7 @@
                           <div style="height:200px;width:200px;">
                         <img style="height:200px;margin-top:-30px;"  class="box img-fluid" src="../img/repas_6.jpeg" alt="">
                         <div style="width:300px;">
-                               <a href="../traitement/traitement_panier_repas_4.php">9,90€ - Ajouter à votre panier </a>
+                               <a onclick="myfunction()" href="../traitement/traitement_panier_repas_4.php">9,90€ - Ajouter à votre panier </a>
       </div>
                      </div>
                       </div>
@@ -156,7 +156,7 @@
                           <div style="height:200px;width:200px;">
                         <img style="height:200px;margin-top:-30px;"  class="box img-fluid" src="../img/repas_7.jpeg" alt="">
                         <div style="width:300px;">
-                               <a href="../traitement/traitement_panier_repas_4.php">13,90€ - Ajouter à votre panier </a>
+                               <a onclick="myfunction()" href="../traitement/traitement_panier_repas_4.php">13,90€ - Ajouter à votre panier </a>
       </div>
                      </div>
                       </div>
@@ -166,7 +166,7 @@
                           <div style="height:200px;width:200px;margin-top:0px;">
                         <img style="height:200px;margin-top:-30px;"  class="box img-fluid" src="../img/steak.jpeg" alt="">
                         <div style="width:300px;">
-                               <a href="../traitement/traitement_panier_repas_4.php">17,90€ - Ajouter à votre panier </a>
+                               <a onclick="myfunction()" href="../traitement/traitement_panier_repas_4.php">17,90€ - Ajouter à votre panier </a>
       </div>
                      </div>
                       </div>
@@ -177,7 +177,7 @@
                           <div style="height:200px;width:200px;margin-top:0px;">
                         <img style="height:200px;margin-top:-30px;"  class="box img-fluid" src="../img/steak_2.jpeg" alt="">
                         <div style="width:300px;">
-                               <a href="../traitement/traitement_panier_repas_4.php">19,90€ - Ajouter à votre panier </a>
+                               <a onclick="myfunction()" href="../traitement/traitement_panier_repas_4.php">19,90€ - Ajouter à votre panier </a>
       </div>
                      </div>
                       </div>
@@ -188,7 +188,7 @@
                           <div style="height:300px;width:200px;margin-top:0px;">
                         <img style="height:200px;margin-top:-30px;"  class="box img-fluid" src="../img/steak_3.jpeg" alt="">
                         <div style="width:300px;">
-                               <a href="../traitement/traitement_panier_repas_4.php">26,90€ - Ajouter à votre panier </a>
+                               <a onclick="myfunction()" href="../traitement/traitement_panier_repas_4.php">26,90€ - Ajouter à votre panier </a>
       </div>
                      </div>
                       </div>
@@ -200,7 +200,7 @@
                         <div style="height:200px;width:200px;">
                             <img style="height:200px;margin-top:-30px;" class="box img-fluid" src="../img/cafe.jpeg" alt="">
                             <div style="width:300px;">
-                                   <a href="../traitement/traitement_panier_repas_4.php">4,90€ - Ajouter à votre panier </a>
+                                   <a  onclick="myfunction()" href="../traitement/traitement_panier_repas_4.php">4,90€ - Ajouter à votre panier </a>
           </div>
                        </div>
                       </div>
@@ -213,7 +213,7 @@
 
                              <img style="height:200px;margin-top:-30px;"  class="box img-fluid" src="../img/cafe_1.jpeg" alt="">
                              <div style="width:300px;">
-                                    <a href="../traitement/traitement_panier_repas_4.php">5,90€ - Ajouter à votre panier </a>
+                                    <a onclick="myfunction()" href="../traitement/traitement_panier_repas_4.php">5,90€ - Ajouter à votre panier </a>
            </div>
                         </div>
                       </div>
@@ -225,7 +225,7 @@
 
                              <img style="height:200px;margin-top:-30px;"  class="box img-fluid" style="height:300px;" src="../img/cafe_2.jpeg" alt="">
                              <div style="width:300px;">
-                                    <a href="../traitement/traitement_panier_repas_4.php">2,90€ - Ajouter à votre panier </a>
+                                    <a onclick="myfunction()" href="../traitement/traitement_panier_repas_4.php">2,90€ - Ajouter à votre panier </a>
            </div>
                         </div>
                       </div>
@@ -236,7 +236,7 @@
                         <div style="height:200px;width:200px;">
                             <img style="height:200px;margin-top:-30px;"  class="box img-fluid" src="../img/petite_faim.jpeg" alt="">
                             <div style="width:300px;">
-                                   <a href="../traitement/traitement_panier_repas_4.php">7,90€ - Ajouter à votre panier </a>
+                                   <a onclick="myfunction()"  href="../traitement/traitement_panier_repas_4.php">7,90€ - Ajouter à votre panier </a>
           </div>
                         </div>
                       </div>
@@ -248,7 +248,7 @@
 
                              <img style="height:200px;margin-top:-130px;"  class="box img-fluid" src="../img/petite_faim_2.jpeg" alt="">
                              <div style="width:300px;">
-                                    <a href="../traitement/traitement_panier_repas_4.php">9,20€ - Ajouter à votre panier </a>
+                                    <a onclick="myfunction()" href="../traitement/traitement_panier_repas_4.php">9,20€ - Ajouter à votre panier </a>
            </div>
                         </div>
                       </div>
@@ -259,7 +259,7 @@
                         <div style="height:200px;width:200px;">
                             <img style="height:200px;margin-top:-30px;"  class="box img-fluid" src="../img/petite_faim_3.jpeg" alt="">
                             <div style="width:300px;">
-                                   <a href="../traitement/traitement_panier_repas_4.php">6,90€ - Ajouter à votre panier </a>
+                                   <a onclick="myfunction()" href="../traitement/traitement_panier_repas_4.php">6,90€ - Ajouter à votre panier </a>
           </div>
                         </div>
                       </div>

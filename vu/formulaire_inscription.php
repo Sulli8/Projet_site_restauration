@@ -32,45 +32,46 @@
     <?php include "header.php" ?>
 
       <form class="" action="../classe/classe_erreur.php" method="post"
-        style="  margin: 230px auto;;
+        style="  margin: 230px auto;
+        margin-top:150px;
           width:400px;
           padding:10px;
-          height:400px;
+          height:500px;
           padding:10px 20px;
            opacity : 0.9;
           background-color:#990017;
           box-shadow: 0 15px 25px rgba(0,0,0,.5);
           border-radius: 10px;">
-        <h1>Inscription</h1>
+        <h1 style="text-align:center;">Inscription</h1>
+        <label class="label" style="color:white;"for="">Entrez votre nom :</label>
         <div>
-          <label class="label" for="">Nom</label>
-          <input type="text" name="nom" placeholder="Nom"/>
+          <input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="text" name="nom" placeholder="Nom"/>
         </div>
 
         <div>
-          <label>Prenom</label>
-          <input type="text" name="prenom" placeholder="Prenom"/>
+          <label style="color:white;">Prenom :</label>
+          <input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="text" name="prenom" placeholder="Prenom"/>
         </div>
 
         <div>
-          <label class="label"  for="">Mail</label>
-          <input type="text" name="mail"  placeholder="Mail"value=""/>
+          <label class="label" style="color:white;" for="">Mail :</label>
+          <input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="text" name="mail"  placeholder="Mail"value=""/>
         </div>
 
 <div>
-  <label class="label" for="">Adresse</label>
-    <input type="text" name="adresse" placeholder="Adresse">
+  <label class="label" style="color:white;" for="">Adresse :</label>
+    <input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="text" name="adresse" placeholder="Adresse">
 </div>
 
 
-        <label class="label" for="">Numéro de téléphone</label>
+        <label class="label" style="color:white;" for="">Numéro de téléphone :</label>
 
-<input type="text" name="numero" placeholder="Numéro"/>
+<input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="text" name="numero" placeholder="Numéro"/>
 
-<label class="label" for="">Mot de passe</label>
-          <input type="password" name="mot_de_passe" placeholder="Mot de passe"/>
+<label class="label" style="color:white;" for="">Mot de passe :</label>
+          <input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="password" name="mot_de_passe" placeholder="Mot de passe"/>
 
-          <input type="submit" value="S'inscrire"/>
+          <input  style="color:#990017;margin-top:10px;display:block;margin-left:0px;" type="submit" value="S'inscrire"/>
 
       </form>
       <?php include "footer.php" ?>

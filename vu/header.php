@@ -1,16 +1,24 @@
 <?php
 session_start();
- ?>
-	<script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
-  <script>
+
+$stocker =  "<script>
 
   var cpt = 0;
 function myfunction(){
   cpt+=1;
-  document.getElementById("compteur").innerHTML = cpt;
+  document.getElementById('compteur').innerHTML = cpt;
+  return cpt;
 }
+  </script>";
 
-  </script>
+$_SESSION["compteur"] = $stocker;
+
+
+
+
+ ?>
+	<script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
+
 <header id="header">
   <div class="header-top">
     <div class="container">
@@ -50,8 +58,8 @@ function myfunction(){
               <li><a href="formulaire_reservation.php">Réservation</a></li>
                 <li><a href="formulaire_modification.php">Modification</a></li>
 
-                <li><p style="color:white;"  id="compteur"></p></li>
-<a href="panier.php"><i style=";margin-left:10px;font-size:20px;" class="fas fa-shopping-cart"></i></a>
+                <li><a href="panier.php"><p style="margin-left:920px;color:white;"  id="compteur"><?php echo $_SESSION["compteur"] ?></p><i style="margin-top:-50px;margin-left:1000px;font-size:20px;" class="fas fa-shopping-cart"></i></a></li>
+
 
           <?php } ?>
           </ul>

@@ -45,40 +45,37 @@
     <form style="  margin: 230px auto;;
       width:400px;
       padding:10px;
-      height:400px;
+      height:300px;
       padding:10px 20px;
        opacity : 0.9;
       background-color:#990017;
       box-shadow: 0 15px 25px rgba(0,0,0,.5);
       border-radius: 10px;" class="box" action="../traitement/modification.php" method="post">
-      <h1 style="color:white;">Modification </h1>
+      <h1 style="text-align: center; color:white;">Modification </h1>
       <label  style="color:white;" >Entrez votre adresse mail : </label>
       <div class="inputbox">
 
-        <input  type="Mail" name="mail" placeholder="Mail" required=""/>
+        <input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;" type="Mail" name="mail" placeholder="Mail" required=""/>
 
       </div>
 
       <label  style="color:white;">Entrez votre mot de passe :</label>
       <div class="inputbox" >
 
-        <input type="password" name="mot_de_passe" placeholder="Mot de passe" required=""/>
+        <input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;" type="password" name="mot_de_passe" placeholder="Mot de passe" required=""/>
 
       </div>
 
       <div>
-        <input type="submit" value="Afficher"/>
+        <input style="color:#990017;margin-top:10px;" type="submit" value="Afficher"/>
       </div>
 
-
       <div>
-        <a style="color:white;" href="#">Mot de passe oublié?</a>
+        <a style="color:white;" href="mot_de_passe_oublie.php">Mot de passe oublié?</a>
 
         <a  style="color:white;" href="formulaire_inscription.php">Inscription</a>
       </div>
     </form>
-
-    <?php var_dump($_SESSION); ?>
 <?php include "footer.php" ?>
   </body>
 </html>
