@@ -101,9 +101,10 @@ Lorsqu'on survole le bloc devant, on applique une rotation au bloc derriere
   </head>
   <body style="background-color:#D2B48C;">
 
-<div style="margin-top:20px;width:2000px;height:100px;background-color:#000000;">
-    <?php include "header.php" ?>
+<div style="margin-top:20px;width:1400px;height:145px;background-color:#000000;">
+
 </div>
+    <?php include "header.php" ?>
       <h1 class="reverse d1" style="color:#fff;text-align:center;margin-top:20px;">Ouverture de la nouvelle salle d'hippopotamus : Bullshouse </h1>
 
 

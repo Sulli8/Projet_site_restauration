@@ -33,84 +33,57 @@
 			<link rel="stylesheet" href="../css/animate.min.css">
 			<link rel="stylesheet" href="../css/owl.carousel.css">
 			<link rel="stylesheet" href="../css/main.css">
+
+			<style>
+table{
+	border-spacing: 10px 1rem;
+}
+			td {
+				height:40px;
+				width:40px;
+			}
+			</style>
 	</head>
-		<body>
+		<body style="background-color:#D2B48C;">
 			<?php include "header.php" ?>
 
 			<!-- start banner Area -->
-			<section class="about-banner relative">
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="about-content col-lg-12">
-							<h1 class="text-white">
-								Gallery
-							</h1>
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="gallery.html"> Gallery</a></p>
-						</div>
-					</div>
-				</div>
-			</section>
+
 			<!-- End banner Area -->
 
 			<!-- Start gallery-area Area -->
-            <section class="gallery-area section-gap" id="gallery">
-                <div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-70 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">Food and Customer Gallery</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>
+            <table style="margin-bottom:20px;margin-left: 300px;margin-top:200px;">
 
-                    <ul class="filter-wrap filters col-lg-12 no-padding">
-                        <li class="active" data-filter="*">All Menu</li>
-                        <li data-filter=".breakfast">Breakfast</li>
-                        <li data-filter=".lunch">Lunch</li>
-                        <li data-filter=".dinner">Dinner</li>
-                        <li data-filter=".budget-meal">Budget Meal</li>
-                        <li data-filter=".buffet">Buffet</li>
-                    </ul>
+							<tr>
+<td><img width="200" height="200" src="../img/tableau/img_1.jpeg"> </img></td>
+<td><img width="200" height="200" src="../img/tableau/img_1.jpeg"> </img></td>
+<td><img width="200" height="200" src="../img/tableau/img_1.jpeg"> </img></td>
+<td><img width="200" height="200" src="../img/tableau/img_1.jpeg"> </img></td>
+							</tr>
 
-                    <div class="filters-content">
-                        <div class="row grid">
-                            <div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
-                            	<div class="single-gallery">
-                            		<img class="img-fluid" src="img/g1.jpg" alt="">
-                            	</div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 all dinner">
-                            	<div class="single-gallery">
-                            		<img class="img-fluid" src="img/g2.jpg" alt="">
-                            	</div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 all budget-meal">
-                            	<div class="single-gallery">
-                            		<img class="img-fluid" src="img/g3.jpg" alt="">
-                            	</div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
-                            	<div class="single-gallery">
-                            		<img class="img-fluid" src="img/g4.jpg" alt="">
-                            	</div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 all lunch">
-                            	<div class="single-gallery">
-                            		<img class="img-fluid" src="img/g5.jpg" alt="">
-                            	</div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 all buffet">
-                            	<div class="single-gallery">
-                            		<img class="img-fluid" src="img/g6.jpg" alt="">
-                            	</div>
-                            </div>
-                        </div>
-                    </div>
+							<tr>
+<td><img width="200" height="200" src="../img/tableau/img_1.jpeg"> </img></td>
+<td><img width="200" height="200" src="../img/tableau/img_1.jpeg"> </img></td>
+<td><img width="200" height="200" src="../img/tableau/img_1.jpeg"> </img></td>
+<td><img width="200" height="200" src="../img/tableau/img_1.jpeg"> </img></td>
+							</tr>
 
-                </div>
-            </section>
+							<tr>
+		<td><img width="200" height="200" src="../img/tableau/img_1.jpeg"> </img></td>
+		<td><img width="200" height="200" src="../img/tableau/img_1.jpeg"> </img></td>
+		<td><img width="200" height="200" src="../img/tableau/img_1.jpeg"> </img></td>
+		<td><img width="200" height="200" src="../img/tableau/img_1.jpeg"> </img></td>
+							</tr>
+							<tr>
+		<td><img width="200" height="200" src="../img/tableau/img_1.jpeg"> </img></td>
+		<td><img width="200" height="200" src="../img/tableau/img_1.jpeg"> </img></td>
+		<td><img width="200" height="200" src="../img/tableau/img_1.jpeg"> </img></td>
+		<td><img width="200" height="200" src="../img/tableau/img_1.jpeg"> </img></td>
+							</tr>
+
+
+						</table>
+
             <!-- End gallery-area Area -->
 
 			<!-- start footer Area -->

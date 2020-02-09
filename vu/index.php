@@ -322,7 +322,7 @@
 </div>
 </div>
 <div class="container">
-					 <img class="image rotate" style="margin-left:300px;margin-top:-480px;"width="200" height="150"src="../img/hippo_2.jpg"><a href="hippo_2php" />  </img>
+					 <img class="image rotate" style="margin-left:300px;margin-top:-480px;"width="200" height="150"src="../img/hippo_2.jpg"><a href="hippo_2.php" />  </img>
 <div class="middle">
 					 <div class="text">
 

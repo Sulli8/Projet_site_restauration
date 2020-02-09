@@ -33,38 +33,91 @@
       <link rel="stylesheet" href="../css/animate.min.css">
       <link rel="stylesheet" href="../css/owl.carousel.css">
       <link rel="stylesheet" href="../css/main.css">
+
+      <style>
+img:hover{
+  box-shadow: 10px 5px 5px black;
+  transition:0.5s;
+}
+      </style>
   </head>
   <body style="background-color:#D2B48C;">
 
-<div style="margin-top:20px;width:2000px;height:100px;background-color:#000000;">
+<div style="margin-top:20px;width:2000px;height:120px;background-color:#000000;">
     <?php include "header.php" ?>
 </div>
 
-      <h1 style="background-color: black;cheight:100%;width:100%;color:white;text-align:center;margin-top:200px;">Ouverture du Blumhouse</h1>
+      <h1 style="height:100%;width:100%;text-align:center;margin-top:90px;">Ouverture du Steakhouse</h1>
+
+      <section style="margin-left:-370px;" class=" review-area section-gap">
+
+       <div style="margin-left:500px;" class="container">
+         <div class="row">
+           <div class="active-review-carusel">
+             <div class="single-review">
+               <img src="../img/blumhouse_6.jpeg"   width="400" height="400" alt="">
+           </div>
+             <div class="single-review">
+               <img src="../img/blumhouse_7.jpeg"   width="400" height="400" alt="">
+
+             </div>
+             <div class="single-review">
+               <img src="../img/blumhouse_8.jpeg"  width="400" height="400" alt="">
+
+             </div>
+             <div class="single-review">
+               <img src="../img/blumhouse_9.jpeg" width="400" height="400"alt="">
+
+             </div>
+           </div>
+         </div>
+       </div>
 
 
-      <img style="margin-left:300px;"width="800" src="../img/blumhouse_2.jpg"></img>
+
+     </section>
 
 
-  <div style="height:100px;"></div>
+  <div style="height:20px;"></div>
 <div style="margin-left:300px;width:800px;">
-      <strong style="color:white;"> C'est au tour de notre restaurant de Boulogne-Billancourt d’incarner le concept de Steak House à la française.</strong>
+      <strong style="color:white;"> C'est au tour de notre restaurant de Toulouse d'ouvrir ses portes</strong>
       <p style="color:white;">
-        Hippopotamus Boulogne-Billancourt s’est entièrement transformé : un tout nouveau décor, une toute nouvelle carte et le goût unique de la cuisson à la braise !
-        Entre amis et/ou collègues, en couple ou en famille, venez vivre une nouvelle expérience. Nos équipes vous attendent au 22 avenue du Général Leclerc 92100 Boulogne-Billancourt.
+        " Ainsi, l'art de la cuisine, tout éphémère qu'il soit, dépasse de loin le plaisir de manger. Les cinq sens se combinent pour apporter cette touche subtile que le rustaud ne saura saisir."
+Didier Hallépée
+
+
+Il n'y a pas de bonne cuisine si au départ elle n'est pas faite par amitié pour celui ou celle à qui elle est destinée.
+La cuisine française est la meilleure du monde ! Cette gloire éclatera par dessus toutes les autres, lorsque l'humanité plus sage, mettra le service de la broche au dessus du service de l'épée.
+
+Paul Bocusse
+
+
       </p>
 </div>
 
 
-<img style="width:500px;margin-left:120px;" src="../img/blumhouse_3.jpg" />
+<img style="margin-top:30px;height:400px;width:400px;margin-left:120px;" src="../img/blumhouse_3.jpeg" />
 
-<p style="color:white;margin-top:-200px;margin-left:800px;width:400px;">
-  Hippopotamus Mulhouse Dornach s’est entièrement transformé : un tout nouveau décor, une toute nouvelle carte et le goût unique de la cuisson à la braise !
-Entre amis et/ou collègues, en couple ou en famille, venez vivre une nouvelle expérience. Nos équipes vous attendent au 36 rue Paul Cézanne 68200 Mulhouse.
+<p style="color:white;margin-top:-300px;margin-left:800px;width:400px;">
+  "Je ferai la cuisine, tu parleras ! - Tu veux que je parle ? Avec des mots ? pourquoi crois tu qu'ils ont inventé les fleurs ?"
+
+La cuisine française est la meilleure du monde ! Cette gloire éclatera par dessus toutes les autres, lorsque l'humanité plus sage, mettra le service de la broche au dessus du service de l'épée.
+
+
+Paul Gaubert
+
+
 </p>
 
-<img style="margin-top:120px;margin-bottom:20px;margin-left:800px;"src="../img/blumhouse_4.jpeg" />
-<p style="color:white;margin-bottom:300px;margin-left:90px;margin-top:-300px;width:700px;"> « Hippopotamus s’est offert une nouvelle image de marque. L’enseigne a retravaillé l’offre notamment avec la cuisson à la braise et les résultats sont là. Aujourd’hui, je constate que dès qu’on ouvre un Steakhouse à la française, comme j’ai pu le faire précédemment à Rueil- Malmaison, les clients sont au rendez-vous. Pour moi, tous les facteurs de succès sont réunis, autant de raisons qui m’ont poussé à devenir franchisé Hippopotamus avec un deuxième établissement » Ayman Makki – franchisé multisite</p>
+<img style="width:500px;margin-top:230px;margin-bottom:20px;margin-left:800px;"src="../img/blumhouse_5.jpeg" />
+<p style="color:white;margin-bottom:300px;margin-left:90px;margin-top:-300px;width:700px;">
+  "Il n'y a pas de bonne cuisine si au départ elle n'est pas faite par amitié pour celui ou celle à qui elle est destinée."
+
+  Paul Bocuse
+
+  "Ainsi, l'art de la cuisine, tout éphémère qu'il soit, dépasse de loin le plaisir de manger. Les cinq sens se combinent pour apporter cette touche subtile que le rustaud ne saura saisir."
+  Didier Hallépée
+</p>
 
     <?php include "footer.php" ?>
 

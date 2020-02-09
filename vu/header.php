@@ -19,7 +19,7 @@ $_SESSION["compteur"] = $stocker;
  ?>
 	<script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
 
-<header id="header">
+<header style="width:1400px;" id="header">
   <div class="header-top">
     <div class="container">
         <div class="row justify-content-center">
@@ -34,17 +34,8 @@ $_SESSION["compteur"] = $stocker;
             <li><a href="localisation.php">Localisations</a></li>
             <li><a href="gallery.php">Galerie</a></li>
             <li class="menu-has-children"><a href="">Blog</a>
-              <ul>
-                <li><a href="blog-home.html">Blog Home</a></li>
-                <li><a href="blog-single.html">Blog Single</a></li>
-              </ul>
             </li>
             <li class="menu-has-children"><a href="">Evènements</a>
-              <ul>
-                  <li><a href="elements.html">Prix du meilleur chef</a></li>
-                <li class="menu-has-children"><a href="">Salon de la Restauration</a>
-                </li>
-              </ul>
             </li>
             <li><a href="contact.php">Contact</a></li>
 
