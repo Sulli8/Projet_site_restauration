@@ -3,7 +3,7 @@ session_start();
 $mailto = $_POST['mail'];
 $_SESSION['mail']=$_POST['mail'];
 try {
-  $bdd = new PDO('mysql:host=localhost;dbname=projet_site_lycee;charset=utf8','root','');
+  $bdd = new PDO('mysql:host=localhost;dbname=projet_site_lycee;charset=utf8','root','root');
 }
 catch(Exception $e)
 {

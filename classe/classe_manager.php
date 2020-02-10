@@ -11,7 +11,7 @@ class Manager{
 
   public function inscription(tableau $donnees){
     try {
-        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
+        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
      }
     catch(Exception $e)
     {
@@ -30,7 +30,7 @@ class Manager{
   public function connexion(tableau $donnees){
 
     try {
-        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
+        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
      }
     catch(Exception $e)
     {
@@ -57,7 +57,7 @@ class Manager{
 
   public function reservation(reservation $reservation){
     try {
-        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
+        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
      }
     catch(Exception $e)
     {

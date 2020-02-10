@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 <head>
@@ -14,7 +15,7 @@
   <!-- meta character set -->
   <meta charset="UTF-8">
   <!-- Site Title -->
-  <title>Macro</title>
+  <title>Panier</title>
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
     <!--
@@ -46,7 +47,7 @@
 
 
         try {
-            $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
+            $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
          }
         catch(Exception $e)
         {

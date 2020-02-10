@@ -35,18 +35,18 @@
 				<link rel="stylesheet" href="../css/main.css">
 		</head>
 		<body>
+
 		<?php include "header.php"?>
+
 			<!-- start banner Area -->
-			<section class="relative about-banner">
-				<div class="overlay overlay-bg"></div>
+			<section style="background-size: 1400px 450px;background-repeat: no-repeat;background-image:url(../img/tableau/food_hotel_tech_logo.jpg);"class="relative">
+				<div class=""></div>
 				<div class="container">
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Blog Details Page
+
 							</h1>
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span><a href="blog-home.html">Blog </a> <span class="lnr lnr-arrow-right"></span> <a href="blog-single.html"> Blog Details Page</a></p>
-						</div>
 					</div>
 				</div>
 			</section>
@@ -84,21 +84,43 @@
 									</div>
 								</div>
 								<div class="col-lg-9 col-md-9">
-									<h3 class="mt-20 mb-20">Astronomy Binoculars A Great Alternative</h3>
+									<h3 class="mt-20 mb-20">Participation au food hotel : Le batiment intelligent surprise de l'édition 2020</h3>
 									<p class="excert">
-										MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+
+									Fort du succès des trois précédents salons dans la capitale et des débuts prometteurs de sa première édition décentralisée, à Nice, à l’automne dernier, FHT investit à nouveau le Paris Event Center de la porte de La Villette.
+									<p>
+									Créé par Karen Serfaty en 2017, le salon du digital et des innovations technologiques dédiées à l’hôtellerie et la restauration, réserve encore, cette année, de belles surprises à ses visiteurs.
 									</p>
 									<p>
-										Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed
-									</p>
-									<p>
-										Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed
+										Le « Smart Hôtel Resto » figure, certainement, au premier rang des nouveautés de cette édition 2020. Ce « bâtiment intelligent » propose aux professionnels une immersion dans les univers digital et domotique.
 									</p>
 								</div>
 								<div class="col-lg-12">
 									<div class="quotes">
-										MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.
+
+									<div style="margin-left:0px;" class="container">
+										<div class="row">
+											<div class="active-review-carusel">
+												<div class="single-review">
+												<img width="300" height="300" src="../img/tableau/food_hotel_tech.jpg"></img>
+
+												</div>
+												<div class="single-review">
+													<img src="../img/tableau/food_hotel_tech_2.jpeg"   width="200" height="300" alt="">
+												</div>
+												<div class="single-review">
+													<img src="../img/tableau/food_hotel_tech_3.jpeg"  width="300" height="300" alt="">
+												</div>
+											</div>
+										</div>
+										<p>
+									Ils pourront, notamment, y apprivoiser des outils destinés à optimiser les dépenses énergétiques ou à personnaliser l’expérience client. Ce nouvel élément devrait porter la surface du salon à 10 000 m².
+										</p>
 									</div>
+
+
+
+								</div>
 									<div class="row mt-30 mb-30">
 										<div class="col-6">
 											<img class="img-fluid" src="img/blog/post-img1.jpg" alt="">
@@ -107,12 +129,7 @@
 											<img class="img-fluid" src="img/blog/post-img2.jpg" alt="">
 										</div>
 										<div class="col-lg-12 mt-30">
-											<p>
-												MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower.
-											</p>
-											<p>
-												MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower.
-											</p>
+
 										</div>
 									</div>
 								</div>

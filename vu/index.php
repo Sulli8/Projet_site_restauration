@@ -1,3 +1,4 @@
+
 	<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
@@ -252,7 +253,7 @@
 					<div class="active-review-carusel">
 						<div class="single-review">
 							<img src="../img/nouvelle_carte.jpeg"   width="300" height="300" alt="">
-							<h4>Wilson</h4>
+							<h4 style="color:white;">Wilson</h4>
 							<div class="star">
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
@@ -260,13 +261,13 @@
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star"></span>
 							</div>
-							<p>
+							<p style="color:white;">
 								"Cuisine de qualité avec bons produits frais."
 							</p>
 						</div>
 						<div class="single-review">
 							<img src="../img/steak_ail.jpg"   width="200" height="300" alt="">
-							<h4>John</h4>
+							<h4 style="color:white;">John</h4>
 							<div class="star">
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
@@ -274,13 +275,13 @@
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star"></span>
 							</div>
-							<p>
+							<p style="color:white;">
 								"On s'est régalé!! Les prix des menus sont correct.""
 							</p>
 						</div>
 						<div class="single-review">
 							<img src="../img/steak_au_poivre.jpeg"  width="300" height="300" alt="">
-							<h4>Brad</h4>
+							<h4 style="color:white;">Brad</h4>
 							<div class="star">
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
@@ -288,13 +289,13 @@
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star"></span>
 							</div>
-							<p>
+							<p style="color:white;">
 								Le patron et le personnel sont très aimable et sympathique.
 							</p>
 						</div>
 						<div class="single-review">
 							<img src="../img/steak_feu.jpg" width="300" height="300"alt="">
-							<h4>Davis</h4>
+							<h4 style="color:white;">Davis</h4>
 							<div class="star">
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
@@ -302,17 +303,29 @@
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star"></span>
 							</div>
-							<p>
+							<p style="color:white;">
 								Nous y sommes allés en WE et nous avons profité du karaoké et soirée dansante.
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-
-				 <img class="rotate" style="margin-left:100px;margin-top:-800px;"width="200" height="150"src="../img/blumhouse.jpg"><a href="blumhouse.php" /> </img>
-
-				 <img class="rotate" style="margin-left:-205px;margin-top:-400px;"width="200" height="150"src="../img/nouveau_menu.png"> <a href="nouveau_menu.php" /> </img>
+<div class="container">
+				 <img class="rotate" style="margin-left:-20px;margin-top:-840px;"width="200" height="150"src="../img/blumhouse.jpg"><a href="blumhouse.php" /> </img>
+				 <div class="middle">
+				 	<div class="text" style="">
+				 9 Avenue des myosotis, 95230 Sarcelles
+			 				 	</div>
+				</div>
+</div>
+<div class="container">
+				 <img class="rotate" style="margin-left:-20px;margin-top:-440px;"width="200" height="150"src="../img/nouveau_menu.png"> <a href="nouveau_menu.php" /> </img>
+<div class="middle">
+	<div class="text" style="">
+10 Avenue de Paul bert, 95230 Cergy
+	</div>
+</div>
+</div>
 <div class="container">
 					<img class="rotate" style="margin-left:300px;margin-top:-440px;"width="200" height="150"src="../img/hippo.png"><a href="hippo.php" />  </img>
 <div class="middle">
