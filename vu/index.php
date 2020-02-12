@@ -32,9 +32,7 @@
 			<link rel="stylesheet" href="../css/main.css">
 			<script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
 			<style>
-			.container {
-
-			}
+		
 
 			.image {
 			  opacity: 1;

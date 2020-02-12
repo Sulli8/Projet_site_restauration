@@ -39,7 +39,7 @@
 		<?php include "header.php"?>
 
 			<!-- start banner Area -->
-			<section style="background-size: 1400px 450px;background-repeat: no-repeat;background-image:url(../img/tableau/food_hotel_tech_logo.jpg);"class="relative">
+			<section style="background-size: 1400px 450px;background-repeat: no-repeat;background-image:url(../img/tableau/food_hotel_logo.jpg);"class="relative">
 				<div class=""></div>
 				<div class="container">
 					<div class="row d-flex align-items-center justify-content-center">
@@ -53,7 +53,7 @@
 			<!-- End banner Area -->
 
 			<!-- Start post-content Area -->
-			<section class="post-content-area single-post-area">
+			<section class=" single-post-area">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8 posts-list">
