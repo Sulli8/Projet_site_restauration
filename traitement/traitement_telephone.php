@@ -2,7 +2,6 @@
 <?php
 //Code de modification mail
 session_start();
-var_dump($_SESSION);
 $id = $_SESSION['id'];
 $bdd = new PDO("mysql:host=localhost;dbname=restauration;",'root','root');
 // Création de l'objet PDO

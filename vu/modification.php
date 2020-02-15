@@ -37,10 +37,12 @@
     background-repeat: no-repeat;
     background-position: center center;">
 
-  <?php   include("../vu/header.php");  ?>
+  <?php   include("header.php");  ?>
+
+
 
 <?php
-
+if($_POST["mail"] == $_SESSION['mail'] && $_POST["mot_de_passe"] == $_SESSION['mot_de_passe']){
     try {
         $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
      }
@@ -71,8 +73,18 @@ function hydrate($tableau){
 <?php } ?>
 <?php
 hydrate($tableau);
+
+
 ?>
 </div>
 
 
-<?php  include("../vu/footer.php"); ?>
+<?php  }
+
+
+else{
+  header("Location:index.php");
+}
+
+include("footer.php");
+ ?>

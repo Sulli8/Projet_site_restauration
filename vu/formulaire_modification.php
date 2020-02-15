@@ -50,7 +50,7 @@
        opacity : 0.9;
       background-color:#990017;
       box-shadow: 0 15px 25px rgba(0,0,0,.5);
-      border-radius: 10px;" class="box" action="../traitement/modification.php" method="post">
+      border-radius: 10px;" class="box" action="modification.php" method="post">
       <h1 style="text-align: center; color:white;">Modification </h1>
       <label  style="color:white;" >Entrez votre adresse mail : </label>
       <div class="inputbox">

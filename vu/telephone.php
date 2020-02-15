@@ -63,7 +63,6 @@
         <input type="submit" value="Modification"/>
       </div>
 
-<?php var_dump($_SESSION); ?>
     </form>
 <?php include "footer.php" ?>
   </body>

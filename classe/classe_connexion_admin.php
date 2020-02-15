@@ -23,9 +23,26 @@
         <link rel="stylesheet" href="../css/animate.min.css">
         <link rel="stylesheet" href="../css/owl.carousel.css">
         <link rel="stylesheet" href="../css/main.css">
+        <script src="../javascript/bouton.js"></script>
+
+        <style>
+
+#formulaire{
+  margin-left: 800px;
+  margin-top:50px ;
+}
+
+#label{
+  color:white;
+}
+
+
+        </style>
   </head>
+
+
   <body style="  background-image:url(../img/tableau/admin.jpeg);
-    height: 800px;
+    height: 1000px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;">
@@ -53,10 +70,13 @@ public function admin_connexion(admin $donnees){
     $admin_req = $bdd->query('SELECT * FROM  reservation');
     $query = $admin_req->fetch();
     $result = array_unique($query);
-  
+
 ?>
-<div style="margin-bottom:200px;background-color:black;margin-left:100px;margin-top:200px;height:700px;width:600px;border:1px solid white;color:white;font-size:20px;">
+
+<div style="margin-bottom:200px;background-color:black;margin-left:150px;margin-top:-100px;height:700px;width:600px;border:1px solid white;color:white;font-size:20px;">
 <p style="text-align:center;color:white;">Les réservations :</p>
+
+
 <?php
     foreach($result as $key => $value){
       ?>
@@ -74,8 +94,18 @@ public function admin_connexion(admin $donnees){
 }
 
 ?>
-</div>
 
+</div>
+<input id="bouton"  type="button" style="color:white;background-color:#990017;margin-top:300px ;margin-left:800px;" value="Déposer une commision" onclick="bouton()" />
+
+<form method="POST" action="../vu/evenement.php" id="formulaire">
+
+<div id="label"></div>
+<div id="input"></div>
+<div id="submit"></div>
+
+</form>
   </body>
+
 
 </html>

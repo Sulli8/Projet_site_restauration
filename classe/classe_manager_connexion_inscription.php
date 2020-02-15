@@ -16,8 +16,8 @@ class Manager{
     {
       die('ERREUR:'.$e->getMessage());
     }
-    $b =  $req = $bdd->prepare('INSERT INTO adherent(nom,prenom,mail,adresse,telephone,mot_de_passe) VALUES(?,?,?,?,?,?)');
-     $a = $req->execute(array(
+    $req = $bdd->prepare('INSERT INTO adherent(nom,prenom,mail,adresse,telephone,mot_de_passe) VALUES(?,?,?,?,?,?)');
+    $a = $req->execute(array(
     $donnees->getNom(),
     $donnees->getPrenom(),
     $donnees->getMail(),
@@ -40,12 +40,15 @@ class Manager{
     var_dump($req);
     $req->execute(array('mail'=>$donnees->getMail(),'mot_de_passe'=>$donnees->getMot_de_passe()));
     $connexion = $req->fetch();
+
     if($connexion == true){
       session_start();
         $_SESSION['id'] = $connexion['ID'];
         $_SESSION['nom']=$connexion['nom'];
         $_SESSION['prenom']=$connexion['prenom'];
-      header("Location: ../vu/index.php");
+        $_SESSION['mail'] =  $connexion['mail'];
+        $_SESSION['mot_de_passe'] =  $connexion['mot_de_passe'];
+        header("Location: ../vu/index.php");
     }
 
     else{

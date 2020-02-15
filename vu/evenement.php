@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 	<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
@@ -65,14 +66,34 @@
 								</div>
 								<div class="col-lg-3  col-md-3 meta-details">
 									<ul class="tags">
-										<li><a href="#">Food,</a></li>
-										<li><a href="#">Technology,</a></li>
-										<li><a href="#">Politics,</a></li>
-										<li><a href="#">Lifestyle</a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
 									</ul>
 									<div class="user-details row">
-										<p class="user-name col-lg-12 col-md-12 col-6"><a href="#">Mark wiens</a> <span class="lnr lnr-user"></span></p>
-										<p class="date col-lg-12 col-md-12 col-6"><a href="#">12 Dec, 2017</a> <span class="lnr lnr-calendar-full"></span></p>
+										<p class="user-name col-lg-12 col-md-12 col-6"><a href="#">
+<?php
+
+error_reporting(-1);
+ini_set("display_errors",1);
+
+try {
+		$bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
+ }
+catch(Exception $e)
+{
+	die('ERREUR:'.$e->getMessage());
+}
+
+$nom_prenom = $bdd->prepare('SELECT nom,prenom FROM  adherent WHERE mail=:mail AND mot_de_passe=:mot_de_passe');
+$nom_prenom->execute(array('mail'=>$_SESSION['mail'],'mot_de_passe'=>$_SESSION['mot_de_passe']));
+$tableau = $nom_prenom->fetch();
+echo ucfirst($tableau['nom'])." ".ucfirst($tableau["prenom"]);
+
+ ?>
+      </a> <span class="lnr lnr-user"></span></p>
+										<p class="date col-lg-12 col-md-12 col-6"><a href="#"><?php echo date('l jS \of F Y h:i:s A'); ?></a> <span class="lnr lnr-calendar-full"></span></p>
 										<p class="view col-lg-12 col-md-12 col-6"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
 										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>
 										<ul class="social-links col-lg-12 col-md-12 col-6">
@@ -144,13 +165,11 @@
 											<a href="#"><span class="lnr text-white lnr-arrow-left"></span></a>
 										</div>
 										<div class="detials">
-											<p>Prev Post</p>
-											<a href="#"><h4>Space The Final Frontier</h4></a>
+											<a href="#"><h4>Espace commentaires</h4></a>
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
 										<div class="detials">
-											<p>Next Post</p>
 											<a href="#"><h4>Telescopes 101</h4></a>
 										</div>
 										<div class="arrow">
@@ -179,7 +198,7 @@
                                             </div>
                                         </div>
                                         <div class="reply-btn">
-                                               <a href="" class="btn-reply text-uppercase">reply</a>
+                                               <a href="" class="btn-reply text-uppercase">Reponse</a>
                                         </div>
                                     </div>
                                 </div>
@@ -198,7 +217,7 @@
                                             </div>
                                         </div>
                                         <div class="reply-btn">
-                                               <a href="" class="btn-reply text-uppercase">reply</a>
+                                               <a href="" class="btn-reply text-uppercase">Reponse</a>
                                         </div>
                                     </div>
                                 </div>
@@ -217,7 +236,7 @@
                                             </div>
                                         </div>
                                         <div class="reply-btn">
-                                               <a href="" class="btn-reply text-uppercase">reply</a>
+                                               <a href="" class="btn-reply text-uppercase">Reponse</a>
                                         </div>
                                     </div>
                                 </div>
@@ -236,7 +255,7 @@
                                             </div>
                                         </div>
                                         <div class="reply-btn">
-                                               <a href="" class="btn-reply text-uppercase">reply</a>
+                                               <a href="" class="btn-reply text-uppercase">Reponse</a>
                                         </div>
                                     </div>
                                 </div>
@@ -255,7 +274,7 @@
                                             </div>
                                         </div>
                                         <div class="reply-btn">
-                                               <a href="" class="btn-reply text-uppercase">reply</a>
+                                               <a href="" class="btn-reply text-uppercase">Reponse</a>
                                         </div>
                                     </div>
                                 </div>
@@ -291,9 +310,9 @@
 								</div>
 								<div class="single-sidebar-widget user-info-widget">
 									<img src="img/blog/user-info.png" alt="">
-									<a href="#"><h4>Charlie Barber</h4></a>
+									<a href="#"><h4>Sullivan Sextius </h4></a>
 									<p>
-										Senior blog writer
+										Administrateur
 									</p>
 									<ul class="social-links">
 										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -302,7 +321,15 @@
 										<li><a href="#"><i class="fa fa-behance"></i></a></li>
 									</ul>
 									<p>
-										Boot camps have its supporters andit sdetractors. Some people do not understand why you should have to spend money on boot camp when you can get. Boot camps have itssuppor ters andits detractors.
+
+										Commission :
+									<?php
+
+
+
+
+
+									 ?>
 									</p>
 								</div>
 								<div class="single-sidebar-widget popular-post-widget">
