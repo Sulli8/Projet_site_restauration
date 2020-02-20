@@ -37,7 +37,7 @@ class Manager{
     }
 
     $req = $bdd->prepare('SELECT * FROM  adherent WHERE mail=:mail and mot_de_passe=:mot_de_passe');
-    var_dump($req);
+    
     $req->execute(array('mail'=>$donnees->getMail(),'mot_de_passe'=>$donnees->getMot_de_passe()));
     $connexion = $req->fetch();
 

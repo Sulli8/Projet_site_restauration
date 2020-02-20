@@ -193,10 +193,14 @@ echo ucfirst($tableau['nom'])." ".ucfirst($tableau["prenom"]);
 									          <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i>
 											</div>
 									        </div>
-									        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Entrer email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'" >
+
+													<form method="post" action="../traitement/traitement_newsletter.php">
+									        <input name="adresse" style="width:290px;" type="text" class="form-control" id="inlineFormInputGroup" placeholder="Entrer email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'" >
 									      </div>
 									    </div>
-									    <a href="#" class="btn">Recevoir</a>
+									    <button type="submit" class="btn">Recevoir</button>
+
+										</form>
 									</div>
 
 								</div>

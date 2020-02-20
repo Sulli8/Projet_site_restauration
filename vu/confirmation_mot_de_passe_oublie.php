@@ -48,7 +48,7 @@
          opacity : 0.9;
         background-color:#990017;
         box-shadow: 0 15px 25px rgba(0,0,0,.5);
-        border-radius: 10px;" action="..\traitement\traitement_confirmation_mot_de_passe.php" method="post">
+        border-radius: 10px;" action="..\traitement\traitement_confirmation_mot_de_passe_oublie.php" method="post">
       <h1 style="color:#fff;">Réinitialiser mot de passe</h1>
 
       <label class="label" style="color:#fff;" >Entrez votre nouveau mot de passe : </label>
