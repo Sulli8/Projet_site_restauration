@@ -5,101 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My Google Map</title>
+
+  <!DOCTYPE html>
+  <html lang="zxx" class="no-js">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+      <!--
+      CSS
+      ============================================= -->
+      <link rel="stylesheet" href="../css/linearicons.css">
+      <link rel="stylesheet" href="../css/font-awesome.min.css">
+      <link rel="stylesheet" href="../css/bootstrap.css">
+      <link rel="stylesheet" href="../css/magnific-popup.css">
+      <link rel="stylesheet" href="../css/jquery-ui.css">
+      <link rel="stylesheet" href="../css/nice-select.css">
+      <link rel="stylesheet" href="../css/animate.min.css">
+      <link rel="stylesheet" href="../css/owl.carousel.css">
+      <link rel="stylesheet" href="../css/main.css">
+      <script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
   <style>
     #map{
       height:400px;
       width:100%;
     }
+
+
+    		body{
+    		 background-image:url(../img/geolocalisation.jpeg);
+    		    height: 600px;
+    		    background-size: cover;
+    		    background-repeat: no-repeat;
+
+
+    		}
   </style>
 </head>
 <body>
-  <h1>My Google Map</h1>
-  <div id="map"></div>
+  <div style="margin-bottom:300px;">
+  <?php include "header.php" ?>
+
+</div>
+
+  <h1 style="color:white;text-align:center;">Géolocalisation de notre restaurant :</h1>
+  <button style="margin-bottom: 200px;margin-top: 10px;margin-left: 600px;color:white;background-color:#990017;height:40px;" id = "find-me">Montrer ma localisation</button><br/>
+  <p id = "status"></p>
+  <a id = "map-link" target="_blank"></a>
+
   <script>
-    function initMap(){
-      // Map options
-      var options = {
-        zoom:8,
-        center:{lat:49,lng:2.3833}
-      }
+  function geoFindMe() {
 
-      // New map
-      var map = new google.maps.Map(document.getElementById('map'), options);
+    const status = document.querySelector('#status');
+    const mapLink = document.querySelector('#map-link');
 
-      // Listen for click on map
-      google.maps.event.addListener(map, 'click', function(event){
-        // Add marker
-        addMarker({coords:event.latLng});
-      });
+    mapLink.href = '';
+    mapLink.textContent = '';
 
-      /*
-      // Add marker
-      var marker = new google.maps.Marker({
-        position:{lat:42.4668,lng:-70.9495},
-        map:map,
-        icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
-      });
+    function success(position) {
+      const latitude  = position.coords.latitude;
+      const longitude = position.coords.longitude;
 
-      var infoWindow = new google.maps.InfoWindow({
-        content:'<h1>Lynn MA</h1>'
-      });
-
-      marker.addListener('click', function(){
-        infoWindow.open(map, marker);
-      });
-      */
-
-      // Array of markers
-      var markers = [
-        {
-          coords:{lat:42.4668,lng:-70.9495},
-          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-          content:'<h1>Lynn MA</h1>'
-        },
-        {
-          coords:{lat:42.8584,lng:-70.9300},
-          content:'<h1>Amesbury MA</h1>'
-        },
-        {
-          coords:{lat:42.7762,lng:-71.0773}
-        }
-      ];
-
-      // Loop through markers
-      for(var i = 0;i < markers.length;i++){
-        // Add marker
-        addMarker(markers[i]);
-      }
-
-      // Add Marker Function
-      function addMarker(props){
-        var marker = new google.maps.Marker({
-          position:props.coords,
-          map:map,
-          //icon:props.iconImage
-        });
-
-        // Check for customicon
-        if(props.iconImage){
-          // Set icon image
-          marker.setIcon(props.iconImage);
-        }
-
-        // Check content
-        if(props.content){
-          var infoWindow = new google.maps.InfoWindow({
-            content:props.content
-          });
-
-          marker.addListener('click', function(){
-            infoWindow.open(map, marker);
-          });
-        }
-      }
+      status.textContent = '';
+      mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+      mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
     }
-  </script>
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA372PcuJQKYrKADjhHTLLDVcfsoCzF-4M&callback=initMap">
-    </script>
+
+    function error() {
+      status.textContent = 'Unable to retrieve your location';
+    }
+
+    if (!navigator.geolocation) {
+      status.textContent = 'Geolocation is not supported by your browser';
+    } else {
+      status.textContent = 'Locating…';
+      navigator.geolocation.getCurrentPosition(success, error);
+    }
+
+  }
+
+  document.querySelector('#find-me').addEventListener('click', geoFindMe);
+</script>
+
+<?php include "footer.php" ?>
 </body>
 </html>

@@ -4,6 +4,7 @@ session_start();
 	<script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
 <style>
 
+
 .red{
     color:#FFF;
 }
@@ -34,10 +35,10 @@ session_start();
       <div style="margin-left:20px;">
         <nav id="nav-menu-container">
           <ul class="nav-menu">
+
             <li><a href="index.php">Restaurant</a></li>
             <li><a href="localisation.php">Localisations</a></li>
             <li><a href="gallery.php">Galerie</a></li>
-            <li class="menu-has-children"><a href="blog-home.php">Blog</a>
             </li>
             <li class="menu-has-children"><a href="evenement.php">Evènements</a>
             </li>
@@ -54,10 +55,13 @@ session_start();
                 <li><a href="formulaire_modification.php">Modification</a></li>
 </div>
 
-<div style="margin-left: 20px;color:white;list-style: none;">
+<div style="margin-left: 10px;color:white;list-style: none;">
                 <li ><a href="formulaire_connexion_admin.php" class="red" ><i class="fas fa-user-alt"></i> Profil Admin</a></li>
                 <li><a href="panier.php" class="red"><i class="fas fa-shopping-cart"></i> Panier</a></li>
-                <li><a href="favoris.php" class="red" ><i class="far fa-heart"></i> Favoris</a></li>
+
+
+
+
 <div>
 
           <?php } ?>

@@ -34,8 +34,30 @@
 				<link rel="stylesheet" href="../css/animate.min.css">
 				<link rel="stylesheet" href="../css/owl.carousel.css">
 				<link rel="stylesheet" href="../css/main.css">
+
+				<style>
+
+			.comment-form {
+    background: #000000;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 50px 50px;
+    width: 500px;
+}
+
+
+
+.btn{background:#990017;
+	color:#fff;
+	font-size:12px;
+	font-weight:500;
+	padding:8px 20px;
+	border-radius:0}
+
+	.newsletter-title-1{background:#990017;color:#fff;text-align:center;padding:12px 0px}
+				</style>
 		</head>
-		<body>
+		<body style="background-color:#000000;">
 
 		<?php include "header.php"?>
 
@@ -59,20 +81,7 @@
 					<div class="row">
 						<div class="col-lg-8 posts-list">
 							<div class="single-post row">
-								<div class="col-lg-12">
-									<div class="feature-img">
-										<img class="img-fluid" src="img/blog/feature-img1.jpg" alt="">
-									</div>
-								</div>
-								<div class="col-lg-3  col-md-3 meta-details">
-									<ul class="tags">
-										<li><a href="#"></a></li>
-										<li><a href="#"></a></li>
-										<li><a href="#"></a></li>
-										<li><a href="#"></a></li>
-									</ul>
-									<div class="user-details row">
-										<p class="user-name col-lg-12 col-md-12 col-6"><a href="#">
+
 <?php
 
 error_reporting(-1);
@@ -92,34 +101,18 @@ $tableau = $nom_prenom->fetch();
 echo ucfirst($tableau['nom'])." ".ucfirst($tableau["prenom"]);
 
  ?>
-      </a> <span class="lnr lnr-user"></span></p>
-										<p class="date col-lg-12 col-md-12 col-6"><a href="#"><?php echo date('l jS \of F Y h:i:s A'); ?></a> <span class="lnr lnr-calendar-full"></span></p>
-										<p class="view col-lg-12 col-md-12 col-6"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
-										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>
-										<ul class="social-links col-lg-12 col-md-12 col-6">
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-github"></i></a></li>
-											<li><a href="#"><i class="fa fa-behance"></i></a></li>
-										</ul>
+      </a> <span style="margin-left:10px;"  class="lnr lnr-user"></span></p>
+										<p style="margin-left:30px;" class="date "> <a href="#"><?php echo date('l jS \of F Y h:i:s A'); ?></a> <span class="lnr lnr-calendar-full"></span></p>
+										<p style="margin-left:30px;"  class="view "><a href="#"> 1.2M Views</a> <span class="lnr lnr-eye"></span></p>
+										<p style="margin-left:30px;" class="comments "><a href="#"> 06 Comments</a> <span class="lnr lnr-bubble"></span></p>
 									</div>
 								</div>
-								<div class="col-lg-9 col-md-9">
-									<h3 class="mt-20 mb-20">Participation au food hotel : Le batiment intelligent surprise de l'édition 2020</h3>
-									<p class="excert">
 
-									Fort du succès des trois précédents salons dans la capitale et des débuts prometteurs de sa première édition décentralisée, à Nice, à l’automne dernier, FHT investit à nouveau le Paris Event Center de la porte de La Villette.
-									<p>
-									Créé par Karen Serfaty en 2017, le salon du digital et des innovations technologiques dédiées à l’hôtellerie et la restauration, réserve encore, cette année, de belles surprises à ses visiteurs.
-									</p>
-									<p>
-										Le « Smart Hôtel Resto » figure, certainement, au premier rang des nouveautés de cette édition 2020. Ce « bâtiment intelligent » propose aux professionnels une immersion dans les univers digital et domotique.
-									</p>
-								</div>
+
 								<div class="col-lg-12">
 									<div class="quotes">
 
-									<div style="margin-left:0px;" class="container">
+									<div style="margin-left:20px;" class="container">
 										<div class="row">
 											<div class="active-review-carusel">
 												<div class="single-review">
@@ -139,154 +132,38 @@ echo ucfirst($tableau['nom'])." ".ucfirst($tableau["prenom"]);
 										</p>
 									</div>
 
+									<div style="width:800px;margin-left:50px;"class="">
+										<div style="width:700px;">
+										<h4 style="border-bottom:1px solid black;"class="">Participation au food hotel : Le batiment intelligent surprise de l'édition 2020</h4>
+									</div>
+										<p class="excert">
+
+										Fort du succès des trois précédents salons dans la capitale et des débuts prometteurs de sa première édition décentralisée, à Nice, à l’automne dernier, FHT investit à nouveau le Paris Event Center de la porte de La Villette.
+										<p>
+										Créé par Karen Serfaty en 2017, le salon du digital et des innovations technologiques dédiées à l’hôtellerie et la restauration, réserve encore, cette année, de belles surprises à ses visiteurs.
+										</p>
+										<p>
+											Le « Smart Hôtel Resto » figure, certainement, au premier rang des nouveautés de cette édition 2020. Ce « bâtiment intelligent » propose aux professionnels une immersion dans les univers digital et domotique.
+										</p>
+									</div>
 
 
 								</div>
-									<div class="row mt-30 mb-30">
-										<div class="col-6">
-											<img class="img-fluid" src="img/blog/post-img1.jpg" alt="">
-										</div>
-										<div class="col-6">
-											<img class="img-fluid" src="img/blog/post-img2.jpg" alt="">
-										</div>
-										<div class="col-lg-12 mt-30">
+								</div>
+							</div>
+							</div>
+							<div style="background-color:#fafaff;margin-left: 800px;width:500px;"class="comment-form">
 
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="navigation-area">
-								<div class="row">
-									<div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
-										<div class="thumb">
-											<a href="#"><img class="img-fluid" src="img/blog/prev.jpg" alt=""></a>
-										</div>
-										<div class="arrow">
-											<a href="#"><span class="lnr text-white lnr-arrow-left"></span></a>
-										</div>
-										<div class="detials">
-											<a href="#"><h4>Espace commentaires</h4></a>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
-										<div class="detials">
-											<a href="#"><h4>Telescopes 101</h4></a>
-										</div>
-										<div class="arrow">
-											<a href="#"><span class="lnr text-white lnr-arrow-right"></span></a>
-										</div>
-										<div class="thumb">
-											<a href="#"><img class="img-fluid" src="img/blog/next.jpg" alt=""></a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="comments-area">
-								<h4>05 Comments</h4>
-								<div class="comment-list">
-                                    <div class="single-comment justify-content-between d-flex">
-                                        <div class="user justify-content-between d-flex">
-                                            <div class="thumb">
-                                                <img src="img/blog/c1.jpg" alt="">
-                                            </div>
-                                            <div class="desc">
-                                                <h5><a href="#">Emilly Blunt</a></h5>
-                                                <p class="date">December 4, 2017 at 3:12 pm </p>
-                                                <p class="comment">
-                                                    Never say goodbye till the end comes!
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="reply-btn">
-                                               <a href="" class="btn-reply text-uppercase">Reponse</a>
-                                        </div>
-                                    </div>
-                                </div>
-								<div class="comment-list left-padding">
-                                    <div class="single-comment justify-content-between d-flex">
-                                        <div class="user justify-content-between d-flex">
-                                            <div class="thumb">
-                                                <img src="img/blog/c2.jpg" alt="">
-                                            </div>
-                                            <div class="desc">
-                                                <h5><a href="#">Elsie Cunningham</a></h5>
-                                                <p class="date">December 4, 2017 at 3:12 pm </p>
-                                                <p class="comment">
-                                                    Never say goodbye till the end comes!
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="reply-btn">
-                                               <a href="" class="btn-reply text-uppercase">Reponse</a>
-                                        </div>
-                                    </div>
-                                </div>
-								<div class="comment-list left-padding">
-                                    <div class="single-comment justify-content-between d-flex">
-                                        <div class="user justify-content-between d-flex">
-                                            <div class="thumb">
-                                                <img src="img/blog/c3.jpg" alt="">
-                                            </div>
-                                            <div class="desc">
-                                                <h5><a href="#">Annie Stephens</a></h5>
-                                                <p class="date">December 4, 2017 at 3:12 pm </p>
-                                                <p class="comment">
-                                                    Never say goodbye till the end comes!
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="reply-btn">
-                                               <a href="" class="btn-reply text-uppercase">Reponse</a>
-                                        </div>
-                                    </div>
-                                </div>
-								<div class="comment-list">
-                                    <div class="single-comment justify-content-between d-flex">
-                                        <div class="user justify-content-between d-flex">
-                                            <div class="thumb">
-                                                <img src="img/blog/c4.jpg" alt="">
-                                            </div>
-                                            <div class="desc">
-                                                <h5><a href="#">Maria Luna</a></h5>
-                                                <p class="date">December 4, 2017 at 3:12 pm </p>
-                                                <p class="comment">
-                                                    Never say goodbye till the end comes!
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="reply-btn">
-                                               <a href="" class="btn-reply text-uppercase">Reponse</a>
-                                        </div>
-                                    </div>
-                                </div>
-								<div class="comment-list">
-                                    <div class="single-comment justify-content-between d-flex">
-                                        <div class="user justify-content-between d-flex">
-                                            <div class="thumb">
-                                                <img src="img/blog/c5.jpg" alt="">
-                                            </div>
-                                            <div class="desc">
-                                                <h5><a href="#">Ina Hayes</a></h5>
-                                                <p class="date">December 4, 2017 at 3:12 pm </p>
-                                                <p class="comment">
-                                                    Never say goodbye till the end comes!
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="reply-btn">
-                                               <a href="" class="btn-reply text-uppercase">Reponse</a>
-                                        </div>
-                                    </div>
-                                </div>
-							</div>
-							<div class="comment-form">
-								<h4>Leave a Comment</h4>
 								<form>
+									<div style="background-color:#990017;">
+										<h4 style="color:white;">Laisser un commentaire : </h4>
+
+									</div>
 									<div class="form-group form-inline">
-									  <div class="form-group col-lg-6 col-md-12 name">
+									  <div class="form-group name">
 									    <input type="text" class="form-control" id="name" placeholder="Enter Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name'">
 									  </div>
-									  <div class="form-group col-lg-6 col-md-12 email">
+									  <div style="margin-left:10px;"class="form-group email">
 									    <input type="email" class="form-control" id="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
 									  </div>
 									</div>
@@ -296,138 +173,18 @@ echo ucfirst($tableau['nom'])." ".ucfirst($tableau["prenom"]);
 									<div class="form-group">
 										<textarea class="form-control mb-10" rows="5" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
 									</div>
-									<a href="#" class="primary-btn text-uppercase">Post Comment</a>
+									<input style="color:#990017;border:1px solid #990017;"type="submit" value="Post Comment" class="primary-btn text-uppercase"></input>
 								</form>
 							</div>
 						</div>
-						<div class="col-lg-4 sidebar-widgets">
+						<div style="margin-left: 100px;margin-top:-450px;width:500px;" class="sidebar-widgets">
 							<div class="widget-wrap">
-								<div class="single-sidebar-widget search-widget">
-									<form class="search-form" action="#">
-			                            <input placeholder="Search Posts" name="search" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Posts'" >
-			                            <button type="submit"><i class="fa fa-search"></i></button>
-			                        </form>
-								</div>
-								<div class="single-sidebar-widget user-info-widget">
-									<img src="img/blog/user-info.png" alt="">
-									<a href="#"><h4>Sullivan Sextius </h4></a>
-									<p>
-										Administrateur
-									</p>
-									<ul class="social-links">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-github"></i></a></li>
-										<li><a href="#"><i class="fa fa-behance"></i></a></li>
-									</ul>
-									<p>
-
-										Commission :
-									<?php
 
 
-
-
-
-									 ?>
-									</p>
-								</div>
-								<div class="single-sidebar-widget popular-post-widget">
-									<h4 class="popular-title">Popular Posts</h4>
-									<div class="popular-post-list">
-										<div class="single-post-list d-flex flex-row align-items-center">
-											<div class="thumb">
-												<img class="img-fluid" src="img/blog/pp1.jpg" alt="">
-											</div>
-											<div class="details">
-												<a href="blog-single.html"><h6>Space The Final Frontier</h6></a>
-												<p>02 Hours ago</p>
-											</div>
-										</div>
-										<div class="single-post-list d-flex flex-row align-items-center">
-											<div class="thumb">
-												<img class="img-fluid" src="img/blog/pp2.jpg" alt="">
-											</div>
-											<div class="details">
-												<a href="blog-single.html"><h6>The Amazing Hubble</h6></a>
-												<p>02 Hours ago</p>
-											</div>
-										</div>
-										<div class="single-post-list d-flex flex-row align-items-center">
-											<div class="thumb">
-												<img class="img-fluid" src="img/blog/pp3.jpg" alt="">
-											</div>
-											<div class="details">
-												<a href="blog-single.html"><h6>Astronomy Or Astrology</h6></a>
-												<p>02 Hours ago</p>
-											</div>
-										</div>
-										<div class="single-post-list d-flex flex-row align-items-center">
-											<div class="thumb">
-												<img class="img-fluid" src="img/blog/pp4.jpg" alt="">
-											</div>
-											<div class="details">
-												<a href="blog-single.html"><h6>Asteroids telescope</h6></a>
-												<p>02 Hours ago</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="single-sidebar-widget ads-widget">
-									<a href="#"><img class="img-fluid" src="img/blog/ads-banner.jpg" alt=""></a>
-								</div>
-								<div class="single-sidebar-widget post-category-widget">
-									<h4 class="category-title">Post Catgories</h4>
-									<ul class="cat-list">
-										<li>
-											<a href="#" class="d-flex justify-content-between">
-												<p>Technology</p>
-												<p>37</p>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="d-flex justify-content-between">
-												<p>Lifestyle</p>
-												<p>24</p>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="d-flex justify-content-between">
-												<p>Fashion</p>
-												<p>59</p>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="d-flex justify-content-between">
-												<p>Art</p>
-												<p>29</p>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="d-flex justify-content-between">
-												<p>Food</p>
-												<p>15</p>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="d-flex justify-content-between">
-												<p>Architecture</p>
-												<p>09</p>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="d-flex justify-content-between">
-												<p>Adventure</p>
-												<p>44</p>
-											</a>
-										</li>
-									</ul>
-								</div>
 								<div class="single-sidebar-widget newsletter-widget">
-									<h4 class="newsletter-title">Newsletter</h4>
+									<h4 class="newsletter-title-1">Newsletter</h4>
 									<p>
-										Here, I focus on a range of items and features that we use in life without
-										giving them a second thought.
+									Recevez toutes les nouveautés par mail
 									</p>
 									<div class="form-group d-flex flex-row">
 									   <div class="col-autos">
@@ -436,32 +193,14 @@ echo ucfirst($tableau['nom'])." ".ucfirst($tableau["prenom"]);
 									          <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i>
 											</div>
 									        </div>
-									        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'" >
+									        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Entrer email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'" >
 									      </div>
 									    </div>
-									    <a href="#" class="bbtns">Subcribe</a>
+									    <a href="#" class="btn">Recevoir</a>
 									</div>
-									<p class="text-bottom">
-										You can unsubscribe at any time
-									</p>
+
 								</div>
-								<div class="single-sidebar-widget tag-cloud-widget">
-									<h4 class="tagcloud-title">Tag Clouds</h4>
-									<ul>
-										<li><a href="#">Technology</a></li>
-										<li><a href="#">Fashion</a></li>
-										<li><a href="#">Architecture</a></li>
-										<li><a href="#">Fashion</a></li>
-										<li><a href="#">Food</a></li>
-										<li><a href="#">Technology</a></li>
-										<li><a href="#">Lifestyle</a></li>
-										<li><a href="#">Art</a></li>
-										<li><a href="#">Adventure</a></li>
-										<li><a href="#">Food</a></li>
-										<li><a href="#">Lifestyle</a></li>
-										<li><a href="#">Adventure</a></li>
-									</ul>
-								</div>
+
 							</div>
 						</div>
 					</div>

@@ -197,7 +197,7 @@ transition: 1s;
     </style>
   </head>
   <body>
-<div style="margin-top:35px;background-color:black;height:100px;width:1300px;">
+<div style="margin-top:30px;background-color:black;height:150px;width:1400px;">
   <?php include "header.php"?>
 </div>
 
@@ -234,53 +234,12 @@ Nos sauces, faites maison, et nos accompagnements sont à volonté pour toujours
 </section>
 
 
-<section style="margin-left:580px;margin-top:-700px;">
-<img src="../img/salle_hippopotamus"/>
+<section style="margin-bottom: 10px;margin-left:350px;margin-top:-700px;">
+<img src="../img/salle_hippopotamus.jpg"/>
 
 
 </section>
 
-
-    <!-- End banner Area -->
-
-
-    <!-- Start home-about Area -->
-
-
-
-
-
-
-    <!-- End home-about Area -->
-
-    <!-- Start menu-area Area -->
-
-          <!-- End menu-area Area -->
-
-
-    <!-- Start reservation Area -->
-
-
-
-
-
-
-
-    <!-- End reservation Area -->
-
-    <!-- Start gallery-area Area -->
-
-          <!-- End gallery-area Area -->
-
-    <!-- Start review Area -->
-
-    <!-- End review Area -->
-
-    <!-- Start blog Area -->
-
-    <!-- End blog Area -->
-
-    <!-- start footer Area -->
   <?php include "footer.php"?>
   </body>
 </html>

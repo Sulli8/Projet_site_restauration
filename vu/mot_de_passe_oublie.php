@@ -49,9 +49,9 @@
 
 
 
-      <h1 style="color:#1B9CFC;">Mot de passe oublié</h1>
+      <h1 style="color:#fff;">Mot de passe oublié</h1>
 
-      <label style="color:#1B9CFC;" >Entrez votre adresse mail : </label>
+      <label style="color:#fff;" >Entrez votre adresse mail : </label>
       <div class="inputbox">
 
         <input  type="Mail" name="mail" placeholder="Mail" required=""/>

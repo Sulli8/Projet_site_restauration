@@ -67,9 +67,9 @@
 
 			<!-- Start gallery-area Area -->
 
-<div style="margin-bottom:100px;text-align: center;background:black;margin-left:250px;width:1000px;height:1000px;">
-	<h1 style="color:white;margin-left: 10px;margin-top:200px;">Galerie : Profitez de nos produits le mieux vendus.....</h1>
-            <table class=""  style="margin-bottom:20px;margin-left: 100px;margin-top:50px;">
+<div style="margin-bottom:100px;background:black;width:2000px;height:1000px;">
+	<h1 style="margin-left: -650px;text-align: center;color:white;margin-top:200px;">Galerie : Profitez de nos produits le mieux vendus.....</h1>
+            <table class=""  style="margin-bottom:20px;margin-left: 300px;margin-top:50px;">
 
 							<tr>
 <td><div class="img-hover-zoom img-hover-zoom--xyz"><img width="200" height="200" src="../img/tableau/img_1.jpeg"></img></div> <a href="../traitement/traitement_panier_repas_2.php">Ajoutez au panier</a></td>

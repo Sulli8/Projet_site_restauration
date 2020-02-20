@@ -32,7 +32,7 @@
 			<link rel="stylesheet" href="../css/main.css">
 			<script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
 			<style>
-		
+
 
 			.image {
 			  opacity: 1;
@@ -193,6 +193,21 @@
 
 
 
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 			</style>
 		</head>
@@ -202,9 +217,24 @@
 
 			<!-- start banner Area -->
 			<section style="background-image:url(../img/hippopotamus.jpg);">
+
 				<div class="container">
+
 					<div class="row fullscreen align-items-center justify-content-between">
 						<div class="col-lg-12 banner-content">
+
+								<form method="post" class="example" action="../traitement/traitement_barre_recherche.php" style="margin-left:5px;;max-width:300px">
+			  <input type="text" placeholder="Recherche une page.." name="barre_recherche">
+			  <button style="  float: left;
+				  width: 20%;
+				  padding: 10px;
+				  background: #990017;
+				  color: white;
+				  font-size: 17px;
+				  border: 1px solid grey;
+				  border-left: none;
+				  cursor: pointer;" type="submit"><i class="fa fa-search"></i></button>
+			</form>
 
 							<h1 class="text-white">Hippopotamus</h1>
 							<p class="text-white">
@@ -394,8 +424,8 @@
 		rendez-vous sur votre nouvel espace fidélité.
 	</p>
 
-<a href="CGU.pdf" class="text" style="margin-left:-600px;"id="hexagon">
-<p style="margin-top:15px ;margin-left:25px;">	Espace Fidélité</p>
+<a href="CGU.pdf" class="text" style="margin-top:-10px ; margin-left:-600px;"id="hexagon">
+<p style="margin-top:15px;margin-left:25px;">	Espace Fidélité</p>
 </a>
 
 </section>

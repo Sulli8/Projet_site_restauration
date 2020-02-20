@@ -30,74 +30,74 @@
 				<link rel="stylesheet" href="../css/owl.carousel.css">
 				<link rel="stylesheet" href="../css/main.css">
 		</head>
+
+		<style>
+
+		body{
+		 background-image:url(../img/tableau/contact.jpeg);
+		    height: 600px;
+		    background-size: cover;
+		    background-repeat: no-repeat;
+		    background-position: center center;
+		}
+
+		form{
+			transition: 0.5s;
+			border: 1px solid white;
+
+		}
+		</style>
 		<body>
 		<?php include "header.php" ?>
 
-			<!-- start banner Area -->
-
-			<section class="about-banner relative">
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="about-content col-lg-12">
-							<h1 class="text-white">
-							Contactez-nous
-							</h1>
-							<p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="menu.html"> Contact</a></p>
-						</div>
-					</div>
-				</div>
-			</section>
 
 
-			
-			<form class="box" action="" method="post">
-				<h1 >Contactez-nous : </h1>
-				<label   class="label" >Entrez votre adresse mail : </label>
+			<form class="border" style="  margin: 230px auto;;
+	      width:400px;
+	      padding:10px;
+	      height:400px;
+	      padding:10px 20px;
+	       opacity : 0.9;
+	      background-color:;
+	      box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	      border-radius: 10px;" class="box" action="../traitement/contact.php" method="post">
+				<h1 style="color:white;">Contactez-nous : </h1>
+				<label style="color:white;"  class="label" >Entrez votre adresse mail : </label>
 				<div class="inputbox">
 
 
-					<input  type="Mail" name="mail" placeholder="Mail" required=""/>
+					<input  style="width:200px;color:white;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="Mail" name="mail" placeholder="Mail" required=""/>
 
 				</div>
 
-				<label  class="label">Entrez votre mot de passe :</label>
+				<label style="color:white;"  class="label">Entrez votre mot de passe :</label>
 				<div class="inputbox" >
 
-					<input type="password" name="mot_de_passe" placeholder="Mot de passe" required=""/>
+					<input style="width:200px;color:white;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="password" name="mot_de_passe" placeholder="Mot de passe" required=""/>
 
 				</div>
 
-				<label  class="label">Laissez-nous un commentaire :</label>
+				<label style="color:white;" >Laissez-nous un commentaire :</label>
 				<div class="inputbox" >
 
-					<input type="Commentaires" name="commentaires" placeholder="Commentaires" required=""/>
+					<input  style="width:200px;color:white;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="Commentaires" name="commentaires" placeholder="Commentaires" required=""/>
 
 				</div>
 
-
-
-
-
-
+				<div style="margin-left:90px;">
 				<div>
-					<input type="submit" value="Contactez-nous"/>
+					<input style="width:200px;background-color: white;margin-top:10px;"type="submit" value="Contactez-nous"/>
 				</div>
 
 
 				<div>
-					<a style="color:white;" href="mot_de_passe_oublie.php">Mot de passe oublié?</a>
+					<a  style="color:white;" href="mot_de_passe_oublie.php">Mot de passe oublié?</a>
 
 					<a  style="color:white;" href="formulaire_inscription.php">Inscription</a>
 				</div>
+
+			</div>
 			</form>
-			<!-- End banner Area -->
-
-			<!-- Start contact-page Area -->
-
-			<!-- End contact-page Area -->
-
-			<!-- start footer Area -->
 	<?php include "footer.php" ?>
 		</body>
 	</html>
