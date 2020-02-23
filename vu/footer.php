@@ -33,18 +33,10 @@
         <div class="col-lg-4  col-md-6 col-sm-6">
           <div class="">
             <h4 style="color:white;">PLus d'informations</h4>
-            <p style="color:white;">Recevez toutes les nouveautés par e-mail</p>
+            <p style="color:white;">Contact : Hippopotamus@gmail.com</p>
             <div class="d-flex flex-row" id="mc_embed_signup">
 
-
-                <form class="navbar-form" action="traitement_email.php" method="post">
-            <div>
-              <input style="border-radius:40px;width:250px;" type="email" name="email" placeholder="Adresse email"/>
-              <input style="border:2px ;border-radius:40px;color:white; background-color:#f42f2c;" type="submit" value="Envoyer"/>
-            </div>
-
-
-                </form>
+<img src="../img/tableau/logo_h.png"></img>
             </div>
           </div>
         </div>
@@ -58,10 +50,9 @@
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous les droits réservé | Crée <i class="fa fa-heart-o" aria-hidden="true"></i> par <a href="https://colorlib.com" target="_blank">Sullivan Sextius</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
         <ul class="col-lg-4 col-mdcol-sm-6 -6 social-icons text-right">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="https://www.facebook.com/Hippopotamus/"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/hashtag/hippopotamus?lang=fr"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/hippopotamus_steakhouse/"><i class="fab fa-instagram"></i></a></li>
                     </ul>
       </div>
     </div>

@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="../css/animate.min.css">
         <link rel="stylesheet" href="../css/owl.carousel.css">
         <link rel="stylesheet" href="../css/main.css">
-        <script src="../javascript/bouton.js"></script>
+<script src="../javascript/bouton.js"></script>
 
         <style>
 
@@ -88,6 +88,10 @@ public function admin_connexion(admin $donnees){
     }
   }
 
+  else{
+    header("Location:../vu/index.php");
+  }
+
 }
 
 
@@ -96,7 +100,7 @@ public function admin_connexion(admin $donnees){
 ?>
 
 </div>
-<input id="bouton"  type="button" style="color:white;background-color:#990017;margin-top:300px ;margin-left:800px;" value="Déposer une commision" onclick="bouton()" />
+<input id="bouton"  type="button" style="color:white;background-color:#990017;margin-top:300px ;margin-left:800px;" value="Déposer une commision" onclick="bouton()"/>
 
 <form method="POST" action="../vu/evenement.php" id="formulaire">
 
@@ -105,7 +109,7 @@ public function admin_connexion(admin $donnees){
 <div id="submit"></div>
 
 </form>
-  </body>
 
+  </body>
 
 </html>

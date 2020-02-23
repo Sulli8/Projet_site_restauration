@@ -1,6 +1,5 @@
 
 function bouton(){
-  var bouton = document.getElementById("bouton");
   formulaire();
 }
 
