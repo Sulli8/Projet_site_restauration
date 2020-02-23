@@ -31,6 +31,7 @@
 			<link rel="stylesheet" href="../css/owl.carousel.css">
 			<link rel="stylesheet" href="../css/main.css">
 			<script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
+<script src="../javascript/bouton.js"></script>
 			<style>
 
 
@@ -235,6 +236,20 @@ form.example::after {
 				  border-left: none;
 				  cursor: pointer;" type="submit"><i class="fa fa-search"></i></button>
 			</form>
+
+<?php
+			if(isset($_POST["submit"])){
+					$_SESSION["commision"] = $_POST["textarea"];
+				?>
+
+				<div style="background-color:white;border:2px solid green;width:200px;height:90px;margin-left:800px;">
+				<p >L'administrateur à ajouté une commisson : </br>
+			 			<a style="margin-top:-5px;" href="../vu/voir_commission.php">Voir la Commisson	</a>
+				</p>
+
+
+					</div>
+		<?php  }?>
 
 							<h1 class="text-white">Hippopotamus</h1>
 							<p class="text-white">

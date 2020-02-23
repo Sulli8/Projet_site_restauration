@@ -23,7 +23,25 @@
         <link rel="stylesheet" href="../css/animate.min.css">
         <link rel="stylesheet" href="../css/owl.carousel.css">
         <link rel="stylesheet" href="../css/main.css">
-<script src="../javascript/bouton.js"></script>
+<script>
+
+
+
+function bouton(){
+  formulaire();
+}
+
+function formulaire(){
+  var label = document.getElementById('label');
+  label.innerHTML = 'Ecrivez une commission :';
+  var input = document.getElementById('input');
+  input.innerHTML = "<textarea name='textarea' style='width: 50%; height: 150px;padding: 12px 15px;'/>";
+  var submit = document.getElementById('submit');
+  submit.innerHTML = "<input ows='5' size='50' style='margin-top:20px;' type='submit' name='submit' value='Envoyer une commission'/>";
+
+}
+
+</script>
 
         <style>
 
@@ -102,7 +120,7 @@ public function admin_connexion(admin $donnees){
 </div>
 <input id="bouton"  type="button" style="color:white;background-color:#990017;margin-top:300px ;margin-left:800px;" value="Déposer une commision" onclick="bouton()"/>
 
-<form method="POST" action="../vu/evenement.php" id="formulaire">
+<form method="POST" action="../vu/index.php" id="formulaire">
 
 <div id="label"></div>
 <div id="input"></div>
