@@ -12,8 +12,7 @@ include "../vu/header.php";
      ?>
 
 <div> Voici la commisson de l'administrateur :</div>
-
-
+<p><?php echo $_SESSION["commission"] ?></p>
 
      <?php include "../vu/footer.php"; ?>
   </body>
