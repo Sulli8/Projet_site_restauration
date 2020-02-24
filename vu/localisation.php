@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My Google Map</title>
 
-  <!DOCTYPE html>
-  <html lang="zxx" class="no-js">
-  <head>
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
       <!--
       CSS
@@ -41,50 +39,31 @@
   </style>
 </head>
 <body>
-  <div style="margin-bottom:300px;">
+  <div >
   <?php include "header.php" ?>
 
 </div>
 
-  <h1 style="color:white;text-align:center;">Géolocalisation de notre restaurant :</h1>
-  <button style="margin-bottom: 200px;margin-top: 10px;margin-left: 600px;color:white;background-color:#990017;height:40px;" id = "find-me">Montrer ma localisation</button><br/>
-  <p id = "status"></p>
-  <a id = "map-link" target="_blank"></a>
+<div style="margin-top:200px;margin-bottom:200px;">
 
-  <script>
-  function geoFindMe() {
 
-    const status = document.querySelector('#status');
-    const mapLink = document.querySelector('#map-link');
+<div style="width:300px;height:300px;">​
+    <a class="twitter-timeline" data-width="500" data-height="700" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/restosducoeur">tweet by riles </a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>​
+    </div>​
 
-    mapLink.href = '';
-    mapLink.textContent = '';
+<div style="margin-left:500px;margin-top:-300px;">
 
-    function success(position) {
-      const latitude  = position.coords.latitude;
-      const longitude = position.coords.longitude;
 
-      status.textContent = '';
-      mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
-      mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
-    }
+  <h1 style="font-size: 30px;color:white;text-align:center;">Géolocalisation de notre restaurant :</h1>
 
-    function error() {
-      status.textContent = 'Unable to retrieve your location';
-    }
 
-    if (!navigator.geolocation) {
-      status.textContent = 'Geolocation is not supported by your browser';
-    } else {
-      status.textContent = 'Locating…';
-      navigator.geolocation.getCurrentPosition(success, error);
-    }
 
-  }
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83996.88349806979!2d2.2783060582031123!3d48.860067499999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1edd4e349b%3A0x8d73a89213d2fd24!2sHippopotamus%20Steakhouse!5e0!3m2!1sfr!2sfr!4v1582533347828!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
-  document.querySelector('#find-me').addEventListener('click', geoFindMe);
-</script>
 
+  </div>
+
+  </div>
 <?php include "footer.php" ?>
 </body>
 </html>

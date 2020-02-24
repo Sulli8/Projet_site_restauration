@@ -78,7 +78,7 @@ class connexion_admin {
 public function admin_connexion(admin $donnees){
   if($donnees->getMail_admin() === "az" && $donnees->getMdp_admin() === "az"){
     try {
-        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
+        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
      }
     catch(Exception $e)
     {

@@ -4,7 +4,7 @@
 session_start();
 var_dump($_SESSION);
 $id = $_SESSION['id'];
-$bdd = new PDO("mysql:host=localhost;dbname=restauration;",'root','root');
+$bdd = new PDO("mysql:host=localhost;dbname=restauration;",'root','');
 // Création de l'objet PDO
 $mail = $_POST["mail"];
 $req = $bdd->prepare('UPDATE adherent SET mail=:mail WHERE ID=:ID');

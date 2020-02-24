@@ -88,7 +88,7 @@ error_reporting(-1);
 ini_set("display_errors",1);
 
 try {
-		$bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
+		$bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
  }
 catch(Exception $e)
 {
@@ -146,7 +146,6 @@ echo ucfirst($tableau['nom'])." ".ucfirst($tableau["prenom"]);
 											Le « Smart Hôtel Resto » figure, certainement, au premier rang des nouveautés de cette édition 2020. Ce « bâtiment intelligent » propose aux professionnels une immersion dans les univers digital et domotique.
 										</p>
 									</div>
-
 
 								</div>
 								</div>

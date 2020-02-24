@@ -1,3 +1,4 @@
+
 <footer class="footer-area">
   <div class="wrap" style="background-color:#990017;">
     <div class="container">

@@ -10,7 +10,7 @@ class Manager{
 
   public function inscription(tableau $donnees){
     try {
-        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
+        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
      }
     catch(Exception $e)
     {
@@ -29,7 +29,7 @@ class Manager{
   public function connexion(tableau $donnees){
 
     try {
-        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
+        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
      }
     catch(Exception $e)
     {
@@ -37,7 +37,7 @@ class Manager{
     }
 
     $req = $bdd->prepare('SELECT * FROM  adherent WHERE mail=:mail and mot_de_passe=:mot_de_passe');
-    
+
     $req->execute(array('mail'=>$donnees->getMail(),'mot_de_passe'=>$donnees->getMot_de_passe()));
     $connexion = $req->fetch();
 

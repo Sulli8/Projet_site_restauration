@@ -1,4 +1,4 @@
-
+<?php session_start(); ?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -44,7 +44,7 @@
 <?php
 if($_POST["mail"] == $_SESSION['mail'] && $_POST["mot_de_passe"] == $_SESSION['mot_de_passe']){
     try {
-        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
+        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
      }
     catch(Exception $e)
     {

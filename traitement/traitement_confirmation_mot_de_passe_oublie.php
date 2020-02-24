@@ -6,7 +6,7 @@ error_reporting(-1);
 ini_set("display_errors",1);
 
 session_start();
-$bdd = new PDO("mysql:host=localhost;dbname=restauration;",'root','root');
+$bdd = new PDO("mysql:host=localhost;dbname=restauration;",'root','');
 // Création de l'objet PDO
 $mail = $_SESSION["mail"];
 $mdp = $_POST["password"];

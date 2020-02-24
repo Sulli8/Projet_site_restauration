@@ -3,7 +3,7 @@
 //Code de modification mail
 session_start();
 $id = $_SESSION['id'];
-$bdd = new PDO("mysql:host=localhost;dbname=restauration;",'root','root');
+$bdd = new PDO("mysql:host=localhost;dbname=restauration;",'root','');
 // Création de l'objet PDO
 $adresse = $_POST["adresse"];
 $req = $bdd->prepare('UPDATE adherent SET adresse=:adresse WHERE ID=:ID');

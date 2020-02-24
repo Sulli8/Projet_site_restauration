@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
  ?>
 	<script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
 <style>
