@@ -35,8 +35,8 @@ if(isset($connexion)){
   if(isset($mail)){
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Nouveaute hippopotamus :';
-    $mail->Body    = "Découvrez nos nouveaux plat et les nouveaux restaurants : <p style='color:red;'>En ce moment le Bullshouse rénove ses <a href='http://localhost:8888/Projet_site_Restauration_2/vu/nouveau_menu.php'>locaux</a></p>"."\n";
-    $mail->Body .="<a href='http://localhost/www/Projet_site_Restauration_SEXTIUS_Sullivan/img/plat.png'>Voir le nouveau plat du jour</a>"."\n";
+    $mail->Body    = "Découvrez nos nouveaux plat et les nouveaux restaurants : <p style='color:red;'>En ce moment le Bullshouse rénove ses <a href='http://localhost/Projet_site_Restauration_SEXTIUS_Sullivan/vu/nouveau_menu.php'>locaux</a></p>"."\n";
+    $mail->Body .="<a href='http://localhost/Projet_site_Restauration_SEXTIUS_Sullivan/img/plat.png'>Voir le nouveau plat du jour</a>"."\n";
     $mail->AltBody = 'This is the body in plain text for non-HTML mail client';
     $mail->send();
     header("Location: ../vu/index.php");

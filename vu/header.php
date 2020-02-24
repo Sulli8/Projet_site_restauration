@@ -50,7 +50,7 @@
 
          <?php } else { ?>
 
-            <li><a href="se_deconnecter.php">Déconnexion</a></li>
+
               <li><a href="formulaire_reservation.php">Réservation</a></li>
                 <li><a href="formulaire_modification.php">Modification</a></li>
 </div>
@@ -58,6 +58,7 @@
 <div style="margin-left: 10px;color:white;list-style: none;">
                 <li ><a href="formulaire_connexion_admin.php" class="red" ><i class="fas fa-user-alt"></i> Profil Admin</a></li>
                 <li><a href="panier.php" class="red"><i class="fas fa-shopping-cart"></i> Panier</a></li>
+                <li><a href="se_deconnecter.php">Déconnexion</a></li>
 
 
 
