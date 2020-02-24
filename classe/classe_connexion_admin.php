@@ -60,7 +60,7 @@ function formulaire(){
 
 
   <body style="  background-image:url(../img/tableau/admin.jpeg);
-    height: 1000px;
+    height: 2000px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;">
@@ -78,7 +78,7 @@ class connexion_admin {
 public function admin_connexion(admin $donnees){
   if($donnees->getMail_admin() === "az" && $donnees->getMdp_admin() === "az"){
     try {
-        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
+        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
      }
     catch(Exception $e)
     {
@@ -91,15 +91,15 @@ public function admin_connexion(admin $donnees){
 
 ?>
 
-<div style="margin-bottom:200px;background-color:black;margin-left:150px;margin-top:-100px;height:700px;width:600px;border:1px solid white;color:white;font-size:20px;">
+<div style="margin-bottom:200px;background-color:black;margin-left:150px;margin-top:200px;height:200px;width:600px;border:1px solid white;color:white;font-size:20px;">
+
+<div style="margin-top:10px;">
+
 <p style="text-align:center;color:white;">Les réservations :</p>
 
 
 <?php
     foreach($result as $key => $value){
-      ?>
-
-      <?php
 
       echo ucfirst($key)." : ".$value."</br>";
 
@@ -118,7 +118,9 @@ public function admin_connexion(admin $donnees){
 ?>
 
 </div>
-<input id="bouton"  type="button" style="color:white;background-color:#990017;margin-top:300px ;margin-left:800px;" value="Déposer une commision" onclick="bouton()"/>
+</div>
+<div style="margin-top:-400px;">
+<input id="bouton"  type="button" style="color:white;background-color:#990017;margin-top:-600px ;margin-left:800px;" value="Déposer une commision" onclick="bouton()"/>
 
 <form method="POST" action="../vu/index.php" id="formulaire">
 
@@ -128,6 +130,7 @@ public function admin_connexion(admin $donnees){
 
 </form>
 
+</div>
   </body>
 
 </html>

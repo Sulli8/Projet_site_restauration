@@ -9,7 +9,7 @@ class classe_manager_reservation {
   }
   public function reservation(reservation $reservation){
     try {
-        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
+        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
 
      }
     catch(Exception $e)
@@ -29,7 +29,7 @@ class classe_manager_reservation {
     $reservation->getHeure()));
         var_dump($req_2);
     if($req_2 == true){
-      header("Location: ../vu/index.php");
+      header("Location: ../vu/restaurant.php");
     }
     else {
       header("Location: ../vu/formulaire_reservation.php");

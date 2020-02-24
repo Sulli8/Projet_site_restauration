@@ -1,8 +1,9 @@
 <?php
-
+session_start();
  ?>
 	<script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
 <style>
+
 
 .red{
     color:#FFF;
@@ -30,14 +31,14 @@
     </div>
   </div>
   <div class="container main-menu">
-    <div style="margin-left: 200px;margin-top:20px;"class="row align-items-center justify-content-center d-flex">
-      <div style="margin-left:40px;">
+    <div style="margin-left: 40px;margin-top:20px;"class="row align-items-center justify-content-center d-flex">
+      <div style="margin-left:20px;">
         <nav id="nav-menu-container">
           <ul class="nav-menu">
-            <li><a href="../vu/index.php">Restaurant</a></li>
+
+            <li><a href="../vu/restaurant.php">Restaurant</a></li>
             <li><a href="../vu/localisation.php">Localisations</a></li>
-            <li><a href="../vu/gallery.php">Galerie</a></li>
-            <li class="menu-has-children"><a href="../vu/blog-home.php">Blog</a>
+            <li><a href="../vu/galerie.php">Galerie</a></li>
             </li>
             <li class="menu-has-children"><a href="../vu/evenement.php">Evènements</a>
             </li>
@@ -49,20 +50,23 @@
 
          <?php } else { ?>
 
-            <li><a href="se_deconnecter.php">Déconnexion</a></li>
-              <li><a href="formulaire_reservation.php">Réservation</a></li>
-                <li><a href="formulaire_modification.php">Modification</a></li>
+
+              <li><a href="../vu/reservation.php">Réservation</a></li>
+                <li><a href="../vu/formulaire_modification.php">Modification</a></li>
 </div>
 
-<div style="margin-left: 20px;color:white;list-style: none;">
+<div style="font-size:15px;margin-left: 10px;color:white;list-style: none;">
                 <li ><a href="../vu/formulaire_connexion_admin.php" class="red" ><i class="fas fa-user-alt"></i> Profil Admin</a></li>
-                <li><a href="../vu/panier.php" class="red"><i class="fas fa-shopping-cart"></i> Panier</a></li>
-                <li><a href="../vu/favoris.php" class="red" ><i class="far fa-heart"></i> Favoris</a></li>
-<div>
+                <li ><a class="red" href="../vu/se_deconnecter.php"><i class="fas fa-power-off"></i>Déconnexion</a></li>
+
+
+
+
+
 
           <?php } ?>
           </ul>
         </nav><!-- #nav-menu-container -->
-    </div>
+
   </div>
 </header><!-- #header -->

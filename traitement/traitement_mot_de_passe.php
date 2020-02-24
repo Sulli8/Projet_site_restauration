@@ -1,13 +1,13 @@
-
 <?php
-//Code de modification mail
+
 session_start();
+var_dump($_SESSION);
 $id = $_SESSION['id'];
 $bdd = new PDO("mysql:host=localhost;dbname=restauration;",'root','root');
 // Création de l'objet PDO
-$adresse = $_POST["adresse"];
-$req = $bdd->prepare('UPDATE adherent SET adresse=:adresse WHERE ID=:ID');
-$modification = $req->execute(array('adresse'=>$adresse,'ID'=>$id));
+$mdp = $_POST["mdp"];
+$req = $bdd->prepare('UPDATE adherent SET mot_de_passe=:mot_de_passe WHERE ID=:ID');
+$modification = $req->execute(array('mot_de_passe'=>$mdp,'ID'=>$id));
 //On modifie la base de donnée
 if($modification ==  true){
   // on redirige vers la page index
@@ -15,8 +15,7 @@ if($modification ==  true){
 }
 else {
   // on redirige vers le formulaire
-  header("Location: ../vu/telephone.php");
+  header("Location: ../vu/mot_de_passe.php");
 }
-
 
  ?>

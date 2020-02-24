@@ -55,12 +55,12 @@
       <label style="color:#fff;" >Entrez votre adresse mail : </label>
       <div class="inputbox">
 
-        <input  type="Mail" name="mail" placeholder="Mail" required=""/>
+        <input style="width:300px;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="Mail" name="mail" placeholder="Mail" required=""/>
 
       </div>
 
       <div>
-        <input style="color:#990017;" type="submit" value="Envoyer"/>
+        <input style="margin-top:10px;color:#990017;" type="submit" value="Envoyer"/>
       </div>
 
     </form>

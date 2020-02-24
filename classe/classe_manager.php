@@ -11,7 +11,7 @@ class Manager{
 
   public function inscription(tableau $donnees){
     try {
-        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
+        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
      }
     catch(Exception $e)
     {
@@ -47,7 +47,7 @@ class Manager{
         $_SESSION['id']=$connexion['id'];
         $_SESSION['nom']=$connexion['nom'];
         $_SESSION['prenom']=$connexion['prenom'];
-      header("Location: ../vu/index.php");
+      header("Location: ../vu/restaurant.php");
     }
 
     else{
@@ -74,7 +74,7 @@ class Manager{
 
 
     if($reservation_2 == true){
-        header("Location: ../vu/index.php");
+        header("Location: ../vu/restaurant.php");
     }
     else {
         header("Location: ../vu/formulaire_reservation.php");

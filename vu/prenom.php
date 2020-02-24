@@ -55,13 +55,13 @@
       <label  style="color:white;" >Entrez votre nouveau prenom : </label>
       <div class="inputbox">
 
-        <input  type="text" name="prenom" placeholder="Prenom" required=""/>
+        <input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="text" name="prenom" placeholder="Prenom" required=""/>
 
       </div>
 
 
       <div>
-        <input type="submit" value="Modification"/>
+        <input style="margin-top:10px;color:red;"type="submit" value="Modification"/>
       </div>
 
     </form>

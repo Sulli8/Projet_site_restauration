@@ -54,19 +54,19 @@
       <label class="label" style="color:#fff;" >Entrez votre nouveau mot de passe : </label>
       <div class="inputbox">
 
-        <input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="password" name="password" placeholder="Nouveau Mot de passe" required=""/>
+        <input style="width:300px;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="password" name="password" placeholder="Nouveau Mot de passe" required=""/>
 
       </div>
 
       <label class="label" style="color:#fff;">Confirmation mot de passe :</label>
       <div class="inputbox" >
 
-        <input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="password" name="mot_de_passe" placeholder="Confirmation Mot de passe" required=""/>
+        <input style="width:300px;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="password" name="mot_de_passe" placeholder="Confirmation Mot de passe" required=""/>
 
       </div>
 
       <div>
-        <input style="background-color:white;margin-top:15px;color:#990017;" type="submit" value="Envoyer"/>
+        <input style="color:red;margin-top:15px;color:#990017;" type="submit" value="Envoyer"/>
       </div>
     </form>
 

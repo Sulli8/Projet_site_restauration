@@ -54,19 +54,19 @@
       <label  style="color:white;" >Entrez votre adresse mail : </label>
       <div class="inputbox">
 
-        <input  type="Mail" name="mail" placeholder="Mail" required=""/>
+        <input  style="width:300px;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="Mail" name="mail" placeholder="Mail" required=""/>
 
       </div>
 
       <label  style="color:white;">Entrez votre mot de passe :</label>
       <div class="inputbox" >
 
-        <input type="password" name="mot_de_passe" placeholder="Mot de passe" required=""/>
+        <input style="width:300px;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="password" name="mot_de_passe" placeholder="Mot de passe" required=""/>
 
       </div>
 
       <div>
-        <input style="color:#990017;" type="submit" value="Connexion"/>
+        <input  style="margin-top:10px;color:red;" type="submit" value="Connexion"/>
       </div>
 
 

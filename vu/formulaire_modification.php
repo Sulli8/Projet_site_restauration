@@ -55,7 +55,7 @@
       <label  style="color:white;" >Entrez votre adresse mail : </label>
       <div class="inputbox">
 
-        <input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;" type="Mail" name="mail" placeholder="Mail" required=""/>
+        <input  style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;" type="Mail" name="mail" placeholder="Mail" required=""/>
 
       </div>
 
@@ -67,7 +67,7 @@
       </div>
 
       <div>
-        <input style="color:#990017;margin-top:10px;" type="submit" value="Afficher"/>
+        <input   style="margin-top:10px;color:#990017;margin-top:10px;" type="submit" value="Afficher"/>
       </div>
 
       <div>

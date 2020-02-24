@@ -10,7 +10,7 @@ class Manager{
 
   public function inscription(tableau $donnees){
     try {
-        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
+        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
      }
     catch(Exception $e)
     {
@@ -29,7 +29,7 @@ class Manager{
   public function connexion(tableau $donnees){
 
     try {
-        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
+        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
      }
     catch(Exception $e)
     {
@@ -48,7 +48,7 @@ class Manager{
         $_SESSION['prenom']=$connexion['prenom'];
         $_SESSION['mail'] =  $connexion['mail'];
         $_SESSION['mot_de_passe'] =  $connexion['mot_de_passe'];
-        header("Location: ../vu/index.php");
+        header("Location: ../vu/restaurant.php");
     }
 
     else{

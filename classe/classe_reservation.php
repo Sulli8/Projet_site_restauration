@@ -21,21 +21,21 @@ class reservation {
   }
   public function setNom($nom){
     if(empty($nom)){
-      header("Location:../vu/formulaire_reservation.php");
+      header("Location:../vu/reservation.php");
     }
     $this->_nom = $nom;
   }
 
   public function setPrenom($prenom){
     if(empty($prenom)){
-      header("Location:../vu/formulaire_reservation.php");
+      header("Location:../vu/reservation.php");
     }
     $this->_prenom = $prenom;
   }
 
   public function setMail($mail){
     if(empty($mail)){
-      header("Location:../vu/formulaire_reservation.php");
+      header("Location:../vu/reservation.php");
 
     }
     $this->_mail = $mail;
@@ -43,25 +43,25 @@ class reservation {
 
   public function setTelephone($telephone){
     if(empty($telephone)){
-      header("Location:../vu/formulaire_reservation.php");
+      header("Location:../vu/reservation.php");
     }
     $this->_telephone = $telephone;
   }
   public function setDates($dates){
     if(empty($dates)){
-      header("Location:../vu/formulaire_reservation.php");
+      header("Location:../vu/reservation.php");
     }
     $this->_dates = $dates;
   }
   public function setNombre_de_personne($nombre_de_personne){
     if(empty($nombre_de_personne)){
-      header("Location:../vu/formulaire_reservation.php");
+      header("Location:../vu/reservation.php");
     }
     $this->_nombre_de_personne = $nombre_de_personne;
   }
   public function setHeure($heure){
     if(empty($heure)){
-      header("Location:../vu/formulaire_reservation.php");
+      header("Location:../vu/reservation.php");
     }
     $this->_heure = $heure;
 

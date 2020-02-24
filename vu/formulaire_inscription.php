@@ -45,33 +45,33 @@
         <h1 style="text-align:center;">Inscription</h1>
         <label class="label" style="color:white;"for="">Entrez votre nom :</label>
         <div>
-          <input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="text" name="nom" placeholder="Nom"/>
+          <input style="width:300px;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="text" name="nom" placeholder="Nom"/>
         </div>
 
         <div>
           <label style="color:white;">Prenom :</label>
-          <input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="text" name="prenom" placeholder="Prenom"/>
+          <input style="width:300px;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="text" name="prenom" placeholder="Prenom"/>
         </div>
 
         <div>
           <label class="label" style="color:white;" for="">Mail :</label>
-          <input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="text" name="mail"  placeholder="Mail"value=""/>
+          <input style="width:300px;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="text" name="mail"  placeholder="Mail"value=""/>
         </div>
 
 <div>
   <label class="label" style="color:white;" for="">Adresse :</label>
-    <input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="text" name="adresse" placeholder="Adresse">
+    <input style="width:300px;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="text" name="adresse" placeholder="Adresse">
 </div>
 
 
         <label class="label" style="color:white;" for="">Numéro de téléphone :</label>
 
-<input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="text" name="numero" placeholder="Numéro"/>
+<input style="width:300px;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="text" name="numero" placeholder="Numéro"/>
 
 <label class="label" style="color:white;" for="">Mot de passe :</label>
-          <input style="background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="password" name="mot_de_passe" placeholder="Mot de passe"/>
+          <input style="width:300px;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;"  type="password" name="mot_de_passe" placeholder="Mot de passe"/>
 
-          <input  style="color:#990017;margin-top:10px;display:block;margin-left:0px;" type="submit" value="S'inscrire"/>
+          <input  style="color:red;margin-top:10px;display:block;margin-left:0px;" type="submit" value="S'inscrire"/>
 
       </form>
       <?php include "footer.php" ?>

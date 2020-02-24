@@ -44,7 +44,7 @@
 <?php
 if($_POST["mail"] == $_SESSION['mail'] && $_POST["mot_de_passe"] == $_SESSION['mot_de_passe']){
     try {
-        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
+        $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
      }
     catch(Exception $e)
     {
@@ -61,7 +61,7 @@ if($_POST["mail"] == $_SESSION['mail'] && $_POST["mot_de_passe"] == $_SESSION['m
 
 <?php
 
-      $tableau = array("nom"=>$modification["nom"]."<br />","prenom"=>$modification["prenom"]."<br />","mail"=>$modification["mail"]."<br />","adresse"=>$modification["adresse"]."<br />","telephone"=>$modification['telephone']."<br />","Mot_de_passe"=>$modification["mot_de_passe"]."<br />");
+      $tableau = array("nom"=>$modification["nom"]."<br />","prenom"=>$modification["prenom"]."<br />","mail"=>$modification["mail"]."<br />","adresse"=>$modification["adresse"]."<br />","telephone"=>$modification['telephone']."<br />","mot_de_passe"=>$modification["mot_de_passe"]."<br />");
 function hydrate($tableau){
   foreach($tableau as $key => $value){
     ?>

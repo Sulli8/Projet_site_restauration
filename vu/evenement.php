@@ -88,7 +88,7 @@ error_reporting(-1);
 ini_set("display_errors",1);
 
 try {
-		$bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
+		$bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
  }
 catch(Exception $e)
 {
@@ -151,32 +151,9 @@ echo ucfirst($tableau['nom'])." ".ucfirst($tableau["prenom"]);
 								</div>
 							</div>
 							</div>
-							<div style="background-color:#fafaff;margin-left: 800px;width:500px;"class="comment-form">
 
-								<form>
-									<div style="background-color:#990017;">
-										<h4 style="color:white;">Laisser un commentaire : </h4>
-
-									</div>
-									<div class="form-group form-inline">
-									  <div class="form-group name">
-									    <input type="text" class="form-control" id="name" placeholder="Enter Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name'">
-									  </div>
-									  <div style="margin-left:10px;"class="form-group email">
-									    <input type="email" class="form-control" id="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
-									  </div>
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" id="subject" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'">
-									</div>
-									<div class="form-group">
-										<textarea class="form-control mb-10" rows="5" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-									</div>
-									<input style="color:#990017;border:1px solid #990017;"type="submit" value="Post Comment" class="primary-btn text-uppercase"></input>
-								</form>
-							</div>
 						</div>
-						<div style="margin-left: 100px;margin-top:-450px;width:500px;" class="sidebar-widgets">
+						<div style="margin-left: 500px;margin-top:10px;width:500px;" class="sidebar-widgets">
 							<div class="widget-wrap">
 
 
@@ -206,6 +183,8 @@ echo ucfirst($tableau['nom'])." ".ucfirst($tableau["prenom"]);
 
 							</div>
 						</div>
+
+
 					</div>
 				</div>
 			</section>

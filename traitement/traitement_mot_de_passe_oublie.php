@@ -3,7 +3,7 @@ session_start();
 $mailto = $_POST['mail'];
 $_SESSION['mail']=$_POST['mail'];
 try {
-  $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','');
+  $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
 }
 catch(Exception $e)
 {
@@ -36,10 +36,10 @@ if(isset($connexion)){
   if(isset($mail)){
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Modification de mot de passe';
-    $mail->Body    = "<a href='http://localhost:8888/Projet_site_Restauration_2/vu/confirmation_mot_de_passe_oublie.php'>Réinitialiser mot de passe</a>";
+    $mail->Body    = "<a href='http://localhost:8888/Projet_site_Restauration/vu/confirmation_mot_de_passe_oublie.php'>Réinitialiser mot de passe</a>";
     $mail->AltBody = 'This is the body in plain text for non-HTML mail client';
     $mail->send();
-    header("Location: ../vu/index.php");
+    header("Location: ../vu/restaurant.php");
 
 }
 }

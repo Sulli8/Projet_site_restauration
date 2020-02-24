@@ -55,13 +55,13 @@
       <label  style="color:white;" >Entrez votre nouveau nom : </label>
       <div class="inputbox">
 
-        <input  type="text" name="nom" placeholder="Nom" required=""/>
+        <input style="width:300px;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="text" name="nom" placeholder="Nom" required=""/>
 
       </div>
 
 
       <div>
-        <input type="submit" value="Modification"/>
+        <input style="color:red;margin-top:10px;"  type="submit" value="Modification"/>
       </div>
 
     </form>
