@@ -1,5 +1,5 @@
 <?php
-
+//on demarre la session 
 session_start();
 var_dump($_SESSION);
 $id = $_SESSION['id'];

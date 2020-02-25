@@ -28,14 +28,18 @@
 
 
 function bouton(){
+  //On appelle la fonction formulaire
   formulaire();
 }
 
 function formulaire(){
+  //Déclaration de la variable label de type id
   var label = document.getElementById('label');
   label.innerHTML = 'Ecrivez une commission :';
+    //Déclaration de la variable input  de type id
   var input = document.getElementById('input');
   input.innerHTML = "<textarea name='textarea' style='width: 50%; height: 150px;padding: 12px 15px;'/>";
+    //Déclaration de la variable submit de type id
   var submit = document.getElementById('submit');
   submit.innerHTML = "<input ows='5' size='50' style='margin-top:20px;' type='submit' name='submit' value='Envoyer une commission'/>";
 
@@ -71,12 +75,15 @@ require_once('classe_erreur_connexion_admin.php');
 ?>
 
 <?php
+//On appele le fichier classe header.php
 include "classe_header.php";
 
 class connexion_admin {
 
 public function admin_connexion(admin $donnees){
-  if($donnees->getMail_admin() === "az" && $donnees->getMdp_admin() === "az"){
+  //Si getMail_admin() == az et getMdp_admin == az on fait......
+    if($donnees->getMail_admin() === "az" && $donnees->getMdp_admin() === "az"){
+      // on se connecter a la bdd
     try {
         $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
      }
@@ -84,9 +91,11 @@ public function admin_connexion(admin $donnees){
     {
       die('ERREUR:'.$e->getMessage());
     }
-
+//Déclarration de la varibale admin_req de type $bdd->query()
     $admin_req = $bdd->query('SELECT * FROM  reservation');
+    //Déclaration de la varibale $query de tye fetch()
     $query = $admin_req->fetch();
+//    Déclaration de la varibale $result de type array()
     $result = array_unique($query);
 
 ?>
@@ -99,15 +108,16 @@ public function admin_connexion(admin $donnees){
 
 
 <?php
+//pour $reqult as $key $value on fait ....
     foreach($result as $key => $value){
-
+// on affiche $key et $value
       echo ucfirst($key)." : ".$value."</br>";
 
     }
   }
-
+//Sinon on redirige
   else{
-    header("Location:../vu/index.php");
+    header("Location:../vu/restaurant.php");
   }
 
 }
@@ -122,7 +132,7 @@ public function admin_connexion(admin $donnees){
 <div style="margin-top:-400px;">
 <input id="bouton"  type="button" style="color:white;background-color:#990017;margin-top:-600px ;margin-left:800px;" value="Déposer une commision" onclick="bouton()"/>
 
-<form method="POST" action="../vu/index.php" id="formulaire">
+<form method="POST" action="../vu/restaurant.php" id="formulaire">
 
 <div id="label"></div>
 <div id="input"></div>

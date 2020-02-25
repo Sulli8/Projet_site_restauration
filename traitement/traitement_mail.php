@@ -11,7 +11,7 @@ $req = $bdd->prepare('UPDATE adherent SET mail=:mail WHERE ID=:ID');
 $modification = $req->execute(array('mail'=>$mail,'ID'=>$id));
 //On modifie la base de donnée
 if($modification ==  true){
-  // on redirige vers la page index
+  // on redirige vers la page restaurant 
   header("Location:../vu/restaurant.php");
 }
 else {

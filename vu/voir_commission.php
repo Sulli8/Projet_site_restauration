@@ -41,7 +41,7 @@ include "../vu/header.php"; ?>
 
 <div style="margin-bottom:100px;color:white;margin-top:200px;margin-left:400px;border:1px solid white;height:500px;width:500px;background-color:black;">
 <div style="color:white;margin-left:100px;"> Voici la commisson de l'administrateur :</div>
-<p><?php
+<p><?php // On affiche 
  echo $_SESSION["commision"];?></p></div>
 
      <?php include "../vu/footer.php"; ?>

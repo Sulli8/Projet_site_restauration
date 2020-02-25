@@ -45,7 +45,7 @@
         <h1 class="mb-10">Panier</h1>
         <?php
 
-
+//ON se connnecte a la BDD
         try {
             $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
          }
@@ -53,7 +53,9 @@
         {
           die('ERREUR:'.$e->getMessage());
         }
+        //on declare la varible req pui onappelle la methode query de l'objet pdo
         $req = $bdd->query('SELECT repas from panier');
+        //on declare la varible tableau
         $tableau = $req->fetchall();
          ?>
       </div>
@@ -75,7 +77,8 @@
         <div class="single-menu">
           <div class="title-wrap d-flex justify-content-between">
             <h4>Pâte chinoise</h4>
-            <h4 class="price"><?php   echo $tableau[0][0]."  €";
+            <h4 class="price"><?php  // on affiche
+            echo $tableau[0][0]."  €";
  ?></h4>
           </div>
           <p>
@@ -87,7 +90,9 @@
         <div class="single-menu">
           <div class="title-wrap d-flex justify-content-between">
             <h4>Boeuf à l'ail</h4>
-            <h4 class="price"><?php     echo $tableau[1][0]."  €";
+            <h4 class="price"><?php
+            // on affiche
+               echo $tableau[1][0]."  €";
  ?></h4>
           </div>
           <p>
@@ -99,7 +104,9 @@
         <div class="single-menu">
           <div class="title-wrap d-flex justify-content-between">
             <h4>Buger à l'oignon</h4>
-            <h4 class="price"><?php     echo $tableau[2][0]."  €";
+            <h4 class="price"><?php
+            // on affiche
+              echo $tableau[2][0]."  €";
  ?></h4>
           </div>
           <p>
@@ -111,7 +118,9 @@
         <div class="single-menu">
           <div class="title-wrap d-flex justify-content-between">
             <h4>Crème brulée</h4>
-            <h4 class="price"><?php     echo $tableau[3][0]."  €";
+            <h4 class="price"><?php
+// on affiche
+                 echo $tableau[3][0]."  €";
  ?></h4>
           </div>
           <p>
@@ -123,7 +132,9 @@
         <div class="single-menu">
           <div class="title-wrap d-flex justify-content-between">
             <h4>Pâte au chorizo</h4>
-            <h4 class="price"><?php     echo $tableau[4][0]."  €";
+            <h4 class="price"><?php
+// on affiche
+               echo $tableau[4][0]."  €";
  ?></h4>
           </div>
           <p>
@@ -135,7 +146,9 @@
         <div class="single-menu">
           <div class="title-wrap d-flex justify-content-between">
             <h4>Cafe + cookies aux chocolats</h4>
-            <h4 class="price"><?php     echo $tableau[5][0]."  €";
+            <h4 class="price"><?php
+// on affiche
+               echo $tableau[5][0]."  €";
  ?></h4>
           </div>
           <p>

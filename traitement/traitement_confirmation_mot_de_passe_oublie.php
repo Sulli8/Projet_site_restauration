@@ -1,9 +1,7 @@
 
 <?php
 //Code de modification mot_de_passe
-
-error_reporting(-1);
-ini_set("display_errors",1);
+//on demarre une session 
 
 session_start();
 $bdd = new PDO("mysql:host=localhost;dbname=restauration;",'root','root');

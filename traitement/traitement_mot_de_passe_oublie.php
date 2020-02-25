@@ -1,7 +1,11 @@
 <?php
+//on demarre la session
 session_start();
+//on declare la varibale mail de type POST
 $mailto = $_POST['mail'];
+// on delcare la varibale $_SESSION['mail'] de type session
 $_SESSION['mail']=$_POST['mail'];
+//on se connecte a la BDD
 try {
   $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
 }
@@ -39,14 +43,17 @@ if(isset($connexion)){
     $mail->Body    = "<a href='http://localhost:8888/Projet_site_Restauration/vu/confirmation_mot_de_passe_oublie.php'>Réinitialiser mot de passe</a>";
     $mail->AltBody = 'This is the body in plain text for non-HTML mail client';
     $mail->send();
+    //on redririge
     header("Location: ../vu/restaurant.php");
 
 }
 }
 else{
+      //on redririge
   header("Location: ../vu/mot_de_passe_oublie.php");
 }
 }
+//on affiche 
  catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }

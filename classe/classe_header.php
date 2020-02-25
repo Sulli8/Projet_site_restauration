@@ -43,12 +43,20 @@ session_start();
             <li class="menu-has-children"><a href="../vu/evenement.php">Evènements</a>
             </li>
             <li><a href="../vu/contact.php">Contact</a></li>
-
-            <?php if(empty($_SESSION)){   ?>
+            <?php
+//Si la session est vide alors on fait ...
+             if(empty($_SESSION)){
+//On affiche les liste html
+                ?>
            <li><a href="../vu/formulaire_connexion.php">Connexion</a></li>
           <li><a href="../vu/formulaire_inscription.php">inscription</a></li>
 
-         <?php } else { ?>
+         <?php }
+//Sinon on fait ...
+          else {
+
+//On affiche lesliste HTMl 
+            ?>
 
 
               <li><a href="../vu/reservation.php">Réservation</a></li>

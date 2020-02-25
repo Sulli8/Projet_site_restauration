@@ -31,7 +31,44 @@
 				<link rel="stylesheet" href="../css/owl.carousel.css">
 				<link rel="stylesheet" href="../css/main.css">
 		</head>
+<script>
 
+function valider()
+
+	{
+
+    if (document.getElementById('mail') == ""){
+	var rouge =  document.getElementById('msg').innerHTML = "Invalid";
+	rouge.style.color = "red";
+
+}else{
+	var msg = document.getElementById('msg').innerHTML = "Valid";
+}
+
+
+    if (document.getElementById('mot_de_passe') == ""){
+			var rouge =  document.getElementById('msg1').innerHTML = "Invalid";
+			rouge.style.color = "red";
+    }
+		else{
+			var msg = document.getElementById('msg1').innerHTML = "Valid";
+
+		}
+
+
+    if (document.getElementById('commentaire') == ""){
+			var rouge =  document.getElementById('msg2').innerHTML = "Invalid";
+			
+
+    }
+		else{
+			var msg = document.getElementById('msg2').innerHTML = "Valid";
+		}
+
+
+}
+
+</script>
 		<style>
 
 		body{
@@ -61,29 +98,30 @@
 	       opacity : 0.9;
 	      background-color:;
 	      box-shadow: 0 15px 25px rgba(0,0,0,.5);
-	      border-radius: 10px;" class="box" action="../traitement/contact.php" method="post">
+	      border-radius: 10px;" class="box" action="../vu/restaurant.php" method="post">
 				<h1 style="color:white;">Contactez-nous : </h1>
 				<label style="color:white;"  class="label" >Entrez votre adresse mail : </label>
 				<div class="inputbox">
 
 
-					<input  style="width:200px;color:white;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="Mail" name="mail" placeholder="Mail" required=""/>
-
+					<input  onclick="valider()" id="mail"  style="width:200px;color:white;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="Mail" name="mail" placeholder="Mail" required=""/>
+<div style="color:green;"id="msg"></div>
 				</div>
 
 				<label style="color:white;"  class="label">Entrez votre mot de passe :</label>
 				<div class="inputbox" >
 
-					<input style="width:200px;color:white;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="password" name="mot_de_passe" placeholder="Mot de passe" required=""/>
-
+					<input  onclick="valider()"  id="mot_de_passe"  style="width:200px;color:white;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="password" name="mot_de_passe" placeholder="Mot de passe" required=""/>
+<div style="color:green;"id="msg1"></div>
 				</div>
 
 				<label style="color:white;" >Laissez-nous un commentaire :</label>
 				<div class="inputbox" >
 
-					<input  style="width:200px;color:white;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="Commentaires" name="commentaires" placeholder="Commentaires" required=""/>
-
+					<input onclick="valider()"  id="commentaire"  style="width:200px;color:white;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;" type="Commentaires" name="commentaire" placeholder="Commentaires" required=""/>
+<div style="color:green;"id="msg2"></div>
 				</div>
+
 
 				<div style="margin-left:90px;">
 				<div>

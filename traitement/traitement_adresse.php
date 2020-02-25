@@ -1,6 +1,6 @@
 
 <?php
-//Code de modification mail
+//Code de modification  d'addresse
 session_start();
 $id = $_SESSION['id'];
 $bdd = new PDO("mysql:host=localhost;dbname=restauration;",'root','root');
@@ -10,7 +10,7 @@ $req = $bdd->prepare('UPDATE adherent SET adresse=:adresse WHERE ID=:ID');
 $modification = $req->execute(array('adresse'=>$adresse,'ID'=>$id));
 //On modifie la base de donnée
 if($modification ==  true){
-  // on redirige vers la page index
+  // on redirige vers la page restaurant 
   header("Location:../vu/restaurant.php");
 }
 else {

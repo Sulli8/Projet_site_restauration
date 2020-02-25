@@ -1,6 +1,9 @@
 <?php
+//ondemarre la session 
 session_start();
+//declare la varibale mailto de type POST
 $mailto = $_POST['adresse'];
+//on seconnecte a la BDD
 try {
   $bdd = new PDO('mysql:host=localhost;dbname=restauration;charset=utf8','root','root');
 }
